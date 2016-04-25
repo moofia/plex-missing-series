@@ -5,12 +5,18 @@ require 'sqlite3'
 require 'getopt/long'
 require 'awesome_print'
 
+# exit on ctrl-c
+trap("INT") do
+  puts
+  exit 2
+end 
+
 @script = File.basename $0 
 
-@eps             = {}
-$opts            = {}
-$opts["debug"]   = 0
-@season_complete = 0  # not used yet
+@eps                     = {} # shit name must change
+$opts                    = {}
+$opts["debug"]           = 0
+$opts["season_complete"] = 0  # not used yet
 
 def help
 
