@@ -111,6 +111,14 @@ def db_setup
   return db
 end
 
+def print_missing (show, pair)
+  puts "show --> #{show} #{pair} !!MISSING!!"
+end
+
+def process_missing (show, pair)
+  print_missing show, pair
+end
+
 # check if we have the previous episode
 def check_previous_episode ( show, season, episode)
 
@@ -119,7 +127,7 @@ def check_previous_episode ( show, season, episode)
   for i in (episode - 1).downto(1)
     if not @eps[show][season][i]
       missing_index = create_number season, i
-      missing[i] = "show --> #{show} #{missing_index} !!MISSING!!"
+      missing[i] = "#{show};#{missing_index}"
     else 
       break
     end
@@ -127,7 +135,7 @@ def check_previous_episode ( show, season, episode)
 
   missing.keys.sort.each do |i| 
     if not missing[1]
-      puts missing[i]
+      process_missing missing[i].split(';')[0] , missing[i].split(';')[1]
     end
   end
 
