@@ -159,6 +159,7 @@ def show_print ( show, season, episode, name)
   end
 end
 
+# controll loop which selects from sqlite shows / seasons / episodes
 def episodes_sql_get
 
   db = db_setup
