@@ -67,13 +67,19 @@ end
 
 def find_db
   file_name = 'com.plexapp.plugins.library.db'
-  paths     = ['/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-in Support/Databases', '.' ]
+  paths     = [ '.',
+                '/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-in Support/Databases',
+                "#{ENV['HOME']}/Library/Application Support/Plex Media Server/Plug-in Support/Databases/"
+               ]
   db        = ''
   
   paths.each do |path|
     if File.directory? path
       if File.exists? "#{path}/#{file_name}"
-        db = "#{path}/#{file_name}"
+        # first match is used
+        if db == ''
+          db = "#{path}/#{file_name}"
+        end
       end
     end
   end
