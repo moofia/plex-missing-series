@@ -25,6 +25,7 @@ def help
 
   --help            help
   --debug           debugging enable
+  --show            show we interested in
   
   
 EOF
@@ -36,6 +37,7 @@ begin
   $opts = Getopt::Long.getopts(
     ["--debug", Getopt::BOOLEAN],
     ["--help",  Getopt::BOOLEAN],
+    ["--show",  Getopt::OPTIONAL],
     )
 rescue Getopt::Long::Error => e
   puts "#{@script} -> error #{e.message}"  
@@ -44,6 +46,13 @@ rescue Getopt::Long::Error => e
 end
 
 help if $opts["help"]
+
+# if debugging is turned on puts
+def puts_debug(msg)
+  if $opts["debug"]
+    puts "#{@script} --> DEBUG: #{msg}"
+  end
+end
 
 def debug(what)
   puts "#{@script} --> debug and exit..\n"
@@ -77,7 +86,7 @@ def find_db
   # can add locations as we find them. only the first match is used
   paths     = [ '.',
                 '/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-in Support/Databases',
-                "#{ENV['HOME']}/Library/Application Support/Plex Media Server/Plug-in Support/Databases/"
+                "#{ENV['HOME']}/Library/Application Support/Plex Media Server/Plug-in Support/Databases"
                ]
   db        = ''
   
@@ -97,6 +106,7 @@ def find_db
     exit 2
   end
   
+  puts_debug "find_db using \"#{db}\""
   return db
 end
 
@@ -162,22 +172,29 @@ end
 # controll loop which selects from sqlite shows / seasons / episodes
 def episodes_sql_get
 
+  puts_debug "episodes_sql_get"
   db = db_setup
+  
   # shows
-  db.execute( "select id,title from metadata_items where metadata_type=2 and library_section_id in (select id from library_sections where section_type = 2) order by title" ) do |row_shows|
+  
+  # build syntax if we looking for a specific show
+  show_wanted = ''
+  if $opts['show']
+    show_wanted = "and title = '#{$opts['show']}'"
+  end
+  
+  show_sql = "select id,title from metadata_items where metadata_type=2 and library_section_id in (select id from library_sections where section_type = 2) #{show_wanted} order by title"  
+  db.execute( show_sql ) do |row_shows|
 
     # seasons
     db.execute( "select id,\"index\" from metadata_items where metadata_type=3 and parent_id=#{row_shows[0]} order by \"index\"") do |row_seasons|
       show    = row_shows[1]
       season  = row_seasons[1]
-      #next if show !~ /Arrested/
-      #next if season != 1
       episode = 0
 
       #episodes
       db.execute(  "select \"index\",title from metadata_items where metadata_type=4 and parent_id=#{row_seasons[0]} order by \"index\"" ) do |row_episodes|
         episode = row_episodes[0]
-        #next if episode < 16
         name    = row_episodes[1]
 
         episodes_seen show, season, episode, name
