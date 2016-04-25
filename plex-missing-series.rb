@@ -51,7 +51,7 @@ def debug(what)
   exit
 end
 
-def create_number(season, episode)
+def number_pad(season, episode)
 
   if ( episode < 10 ) 
     episode = "0#{episode}"
@@ -65,7 +65,7 @@ def create_number(season, episode)
 
 end
 
-def seen_episodes ( show, season, episode, name)
+def episodes_seen ( show, season, episode, name)
   @eps[show]                 = {} if @eps[show].class.to_s != 'Hash'
   @eps[show][season]         = {} if @eps[show][season].class.to_s != 'Hash'
   @eps[show][season][episode] = name
@@ -73,6 +73,8 @@ end
 
 def find_db
   file_name = 'com.plexapp.plugins.library.db'
+  # for dev it looks in current directory first
+  # can add locations as we find them. only the first match is used
   paths     = [ '.',
                 '/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-in Support/Databases',
                 "#{ENV['HOME']}/Library/Application Support/Plex Media Server/Plug-in Support/Databases/"
@@ -91,13 +93,15 @@ def find_db
   end
   
   if db !~ /\w/
-    puts "error : could not find db file"
+    puts "error : could not find db file \"#{file_name}\" "
     exit 2
   end
   
   return db
 end
 
+# very basic db setup
+# should test / rescue sqlite3
 def db_setup
   
   db_file = find_db
@@ -117,22 +121,22 @@ def db_setup
   return db
 end
 
-def print_missing (show, pair)
+def missing_print (show, pair)
   puts "show --> #{show} #{pair} !!MISSING!!"
 end
 
-def process_missing (show, pair)
-  print_missing show, pair
+def missing_process (show, pair)
+  missing_print show, pair
 end
 
 # check if we have the previous episode
-def check_previous_episode ( show, season, episode)
+def episode_check_previous ( show, season, episode)
 
   missing = {}
 
   for i in (episode - 1).downto(1)
     if not @eps[show][season][i]
-      missing_index = create_number season, i
+      missing_index = number_pad season, i
       missing[i] = "#{show};#{missing_index}"
     else 
       break
@@ -141,21 +145,21 @@ def check_previous_episode ( show, season, episode)
 
   missing.keys.sort.each do |i| 
     if not missing[1]
-      process_missing missing[i].split(';')[0] , missing[i].split(';')[1]
+      missing_process missing[i].split(';')[0] , missing[i].split(';')[1]
     end
   end
 
 end
 
 # print the shows that are found only in debug mode
-def print_show ( show, season, episode, name)
+def show_print ( show, season, episode, name)
   if $opts["debug"]
-    show_index = create_number season, episode
+    show_index = number_pad season, episode
     puts "show --> #{show} #{show_index} #{name}"
   end
 end
 
-def get_episodes
+def episodes_sql_get
 
   db = db_setup
   # shows
@@ -175,9 +179,9 @@ def get_episodes
         #next if episode < 16
         name    = row_episodes[1]
 
-        seen_episodes show, season, episode, name
-        check_previous_episode show, season, episode
-        print_show show, season, episode, name 
+        episodes_seen show, season, episode, name
+        episode_check_previous show, season, episode
+        show_print show, season, episode, name 
 
       end
     end
@@ -188,5 +192,5 @@ end
 # Start
 #
 
-get_episodes
+episodes_sql_get
 
