@@ -1,1 +1,6 @@
 *.db
+*.log
+*.swp
+.DS_Store
+/var/tvdb/*
+/etc/config.yaml
