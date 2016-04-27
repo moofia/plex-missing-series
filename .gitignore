@@ -2,5 +2,5 @@
 *.log
 *.swp
 .DS_Store
-/var/tvdb/*
+/var/thetvdb/*
 /etc/config.yaml
