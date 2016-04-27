@@ -87,7 +87,6 @@ def plex_episodes_sql_get_all
     db.execute( "select id,\"index\" from metadata_items where metadata_type=3 and parent_id=#{row_shows[0]} order by \"index\"") do |row_seasons|
       show    = row_shows[1]
       season  = row_seasons[1]
-      episode = 0
 
       #episodes
       db.execute(  "select \"index\",title from metadata_items where metadata_type=4 and parent_id=#{row_seasons[0]} order by \"index\"" ) do |row_episodes|
