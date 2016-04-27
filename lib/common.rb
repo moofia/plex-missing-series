@@ -6,14 +6,20 @@ def log(msg,level=nil)
  puts "#{@script} -> #{msg}"
 end
 
-def log_debug(msg)
+def log_debug(msg=nil)
   if $opts['debug']
-    log "DEBUG #{msg}"
+    
+    label  = caller_locations(1,1)[0].label
+    lineno = caller_locations(1,1)[0].lineno
+    path   = File.basename caller_locations(1,1)[0].path
+    
+    log "DEBUG: [#{path}:#{lineno} #{label}] #{msg}"
+    
   end
 end
 
 def parse_config
-  log_debug "read_config"
+  log_debug
   begin
     $config = YAML::load(File.read("#{$script_dir}/etc/config.defaults.yaml"))
   rescue => e
@@ -53,13 +59,6 @@ def help
   
 EOF
   exit
-end
-
-# if debugging is turned on puts
-def puts_debug(msg)
-  if $opts["debug"]
-    puts "#{@script} -> DEBUG: #{msg}"
-  end
 end
 
 def debug(what)

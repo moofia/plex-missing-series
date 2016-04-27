@@ -2,16 +2,14 @@
 
 # print the shows that are found only in debug mode
 def plex_show_print_debug ( show, season, episode, name)
-  if $opts["debug"]
-    show_index = show_index season, episode
-    puts "show --> #{show} #{show_index} #{name}"
-  end
+  show_index = show_index season, episode
+  log_debug "show --> #{show} #{show_index} #{name}"
 end
 
 # very basic db setup
 # should test / rescue sqlite3
 def plex_db_setup
-  
+  log_debug
   db_file = plex_find_db
   db_tmp = '/tmp/plex_missing_tmp.db'
   
@@ -30,6 +28,7 @@ def plex_db_setup
 end
 
 def plex_find_db
+  log_debug
   file_name = 'com.plexapp.plugins.library.db'
   # for dev it looks in current directory first
   # can add locations as we find them. only the first match is used
@@ -55,7 +54,7 @@ def plex_find_db
     exit 2
   end
   
-  puts_debug "plex_find_db using \"#{db}\""
+  log_debug "plex_find_db using \"#{db}\""
   return db
 end
 
@@ -68,9 +67,8 @@ end
 
 # controll loop which selects from sqlite shows / seasons / episodes
 def plex_episodes_sql_get_all
-
+  log_debug
   episodes = {}
-  puts_debug "episodes_sql_get"
   db = plex_db_setup
   
   # shows
