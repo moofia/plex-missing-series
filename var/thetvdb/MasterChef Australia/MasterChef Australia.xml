@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+<Series>
+<seriesid>92091</seriesid>
+<language>en</language>
+<SeriesName>MasterChef Australia</SeriesName>
+<banner>graphical/92091-g4.jpg</banner>
+<Overview>MasterChef Australia is an Australian competitive cooking game show based on the original British version of MasterChef. Food critic Matt Preston, chef George Calombaris, and restaurateur and chef Gary Mehigan serve as the show's hosts and judges.</Overview>
+<FirstAired>2009-04-30</FirstAired>
+<Network>Network Ten</Network>
+<IMDB_ID>tt1433870</IMDB_ID>
+<id>92091</id>
+</Series>
+<Series>
+<seriesid>265252</seriesid>
+<language>en</language>
+<SeriesName>MasterChef The Professionals Australia</SeriesName>
+<AliasNames>Masterchef Australia: The Professionals</AliasNames>
+<banner>graphical/265252-g2.jpg</banner>
+<Overview>MasterChef: The Professionals will see 18 qualified chefs competing in the toughest cooking environment in Australia. In a stunning, purpose-built commercial kitchen in Melbourne, they’ll bake, blanche and broil their way towards a tasty trophy - an around-the-world trip working at globally-renowned restaurants and a cash prize. A fresh format promises an intensified viewing experience, but you’ll still get to enjoy some of your favourite guest chefs and challenges.</Overview>
+<FirstAired>2013-01-20</FirstAired>
+<Network>Network Ten</Network>
+<id>265252</id>
+</Series>
+</Data>

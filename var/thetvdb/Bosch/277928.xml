@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>277928</id>
+  <Actors>|Titus Welliver|Jamie Hector|Amy Aquino|Jason Gedrick|Annie Wersching|Lance Reddick|Mimi Rogers|Sarah Clarke|</Actors>
+  <Airs_DayOfWeek>Friday</Airs_DayOfWeek>
+  <Airs_Time>22:00</Airs_Time>
+  <ContentRating>TV-MA</ContentRating>
+  <FirstAired>2015-02-13</FirstAired>
+  <Genre>|Crime|Drama|Mystery|</Genre>
+  <IMDB_ID>tt3502248</IMDB_ID>
+  <Language>en</Language>
+  <Network>Amazon</Network>
+  <NetworkID></NetworkID>
+  <Overview>For LAPD homicide cop Harry Bosch — hero, maverick, nighthawk. From a dangerous maze of blind alleys to a daring criminal heist beneath the city to the tortuous link that must be uncovered, his survival instincts will be tested to their limit. Joining with an enigmatic and seductive female FBI agent, pitted against enemies inside his own department, Bosch must make the agonizing choice between justice and vengeance, as he tracks down a killer whose true face will shock him.</Overview>
+  <Rating>7.8</Rating>
+  <RatingCount>21</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID>193742</SeriesID>
+  <SeriesName>Bosch</SeriesName>
+  <Status>Continuing</Status>
+  <added>2014-01-29 02:28:49</added>
+  <addedBy>44861</addedBy>
+  <banner>graphical/277928-g2.jpg</banner>
+  <fanart>fanart/original/277928-4.jpg</fanart>
+  <lastupdated>1461732398</lastupdated>
+  <poster>posters/277928-1.jpg</poster>
+  <tms_wanted_old>0</tms_wanted_old>
+  <zap2it_id>EP01873753</zap2it_id>
+</Series>
+<Episode>
+  <id>4791787</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Jim McKay</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Pilot</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2014-02-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>An LAPD homicide detective works to solve the murder of a 13-year-old boy while standing trial in federal court for the murder of a serial killer.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.3</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer>Michael Connelly</Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1424612336</lastupdated>
+  <seasonid>574962</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added></thumb_added>
+  <thumb_height></thumb_height>
+  <thumb_width></thumb_width>
+</Episode>
+<Episode>
+  <id>4988544</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Jim McKay</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Tis the Season</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2015-02-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3228778</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Based on Michael Connelly's best-selling novels, Harry Bosch (Titus Welliver), an LAPD homicide detective, stands trial for the fatal shooting of a serial murder suspect. A cold case involving the remains of a missing boy forces Bosch to confront his past. As daring recruit Julia Brasher (Annie Wersching) catches his eye, and departmental politics heat up, Bosch will pursue justice at all costs.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>12</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Michael Connelly|Eric Overmyer|</Writer>
+  <absolute_number>1</absolute_number>
+  <filename>episodes/277928/4988544.jpg</filename>
+  <lastupdated>1456468252</lastupdated>
+  <seasonid>596809</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2014-10-14 14:13:35</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5099183</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Kevin Dowling</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Lost Light</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2015-02-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3947936</IMDB_ID>
+  <Language>en</Language>
+  <Overview>A routine traffic stop lands a suspect who poses a lethal new threat, while Bosch and J. Edgar (Jamie Hector) pursue a promising lead in the bones case. Bosch locks horns with Deputy Chief Irving (Lance Reddick) over his ongoing court battle, just as his relationship with Brasher picks up. And murder suspect Raynard Waits (Jason Gedrick) makes a startling confession about Bosch's cold case. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>10</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Tom Smuts|Eric Overmyer|Malik Johnson|</Writer>
+  <absolute_number>2</absolute_number>
+  <filename>episodes/277928/5099183.jpg</filename>
+  <lastupdated>1456910507</lastupdated>
+  <seasonid>596809</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2015-02-15 12:59:48</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5099184</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Kevin Dowling</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Blue Religion</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2015-02-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4071618</IMDB_ID>
+  <Language>en</Language>
+  <Overview>After the young victim in the bones case is identified, Bosch and J. Edgar are pulled into the troubled world of the boy's family. As Bosch's own trial escalates, his romance with Brasher takes a turn. And an intense confrontation with Raynard Waits forces Bosch to rethink everything. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>9</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Diane Frolov|Andrew Schneider|</Writer>
+  <absolute_number>3</absolute_number>
+  <filename>episodes/277928/5099184.jpg</filename>
+  <lastupdated>1457342932</lastupdated>
+  <seasonid>596809</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2015-02-15 12:59:57</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5099186</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ernest Dickerson</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Fugazi</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2015-02-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4052098</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The bones investigation uncovers the family's dark past. As Bosch's court case reaches a climactic verdict, he gets caught up in a dangerous field trip with Waits, who may be setting him up. A stunning turn of events leads to a frantic citywide manhunt, and Bosch is back on the hot seat. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>9</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|George Pelecanos|Michael Connelly|</Writer>
+  <absolute_number>4</absolute_number>
+  <filename>episodes/277928/5099186.jpg</filename>
+  <lastupdated>1458107979</lastupdated>
+  <seasonid>596809</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2015-02-15 13:00:08</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5099187</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ernest Dickerson</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Mama's Boy</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2015-02-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4075826</IMDB_ID>
+  <Language>en</Language>
+  <Overview>As the Raynard Waits matter escalates, Deputy Chief Irving sidelines Bosch. The detective turns his focus to unraveling the mystery of the bones case - until he becomes ensnared in a dangerous game of cat and mouse. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>7</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|William N. Fordes|Malik Johnson|</Writer>
+  <absolute_number>5</absolute_number>
+  <filename>episodes/277928/5099187.jpg</filename>
+  <lastupdated>1458714607</lastupdated>
+  <seasonid>596809</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2015-02-15 13:00:17</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5099188</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roxann Dawson</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Donkey's Years</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2015-02-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4074402</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Bosch travels to Las Vegas to see his teenage daughter, Maddie, and to gain insight into Waits from his ex-wife, Eleanor Wish, once a brilliant forensic profiler. Back in LA, Waits taunts Bosch as he begins backing up his threats. Bosch returns to a maelstrom as the simple questioning of a witness in the bones case endangers Brasher. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>8</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Jennifer Ames|Steve Turner|</Writer>
+  <absolute_number>6</absolute_number>
+  <filename>episodes/277928/5099188.jpg</filename>
+  <lastupdated>1459318964</lastupdated>
+  <seasonid>596809</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2015-02-15 13:00:28</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5099189</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Alex Zakrzewski</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Lost Boys</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2015-02-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4151398</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Bosch struggles to manage both professional and personal fallout, as an echo of his past helps him discover pivotal clues in the Waits case. As the stakes escalate, a restless Waits hatches a deadly plan. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>8</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Joe Gonzalez|Eric Overmyer|</Writer>
+  <absolute_number>7</absolute_number>
+  <filename>episodes/277928/5099189.jpg</filename>
+  <lastupdated>1459919029</lastupdated>
+  <seasonid>596809</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2015-02-15 13:00:38</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5099190</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Matt Earl Beesley</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>High Low</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2015-02-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4177278</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Bosch gains a new ally in his ex-wife Eleanor. Deputy Chief Irving makes a series of deals that will shape the future of the police department - and possibly even the city itself. Waits's disturbing focus on Bosch intensifies. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.1</Rating>
+  <RatingCount>9</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|William N. Fordes|Tom Smuts|</Writer>
+  <absolute_number>8</absolute_number>
+  <filename>episodes/277928/5099190.jpg</filename>
+  <lastupdated>1460520981</lastupdated>
+  <seasonid>596809</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2015-02-15 13:00:47</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5099191</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Alex Zakrzewski</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Magic Castle</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2015-02-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4170632</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The true story of the bones murder is finally revealed, placing Bosch in hot water and stretching the LAPD to the breaking point. Bosch's own painful past leads him headlong into a showdown with Raynard Waits. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.3</Rating>
+  <RatingCount>8</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Diane Frolov|Andrew Schneider|</Writer>
+  <absolute_number>9</absolute_number>
+  <filename>episodes/277928/5099191.jpg</filename>
+  <lastupdated>1461132010</lastupdated>
+  <seasonid>596809</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2015-02-15 13:00:59</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5099193</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Thomas Carter</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Us and Them</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2015-02-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4230066</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Bosch has to face the aftermath of his confrontation with Waits, while his daughter's unexpected visit offers some precious time together. In the wake of the bones investigation, Bosch's job is in jeopardy, and he's suddenly on the outside once again. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>9</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Michael Connelly|T.L. Lankford|</Writer>
+  <absolute_number>10</absolute_number>
+  <filename>episodes/277928/5099193.jpg</filename>
+  <lastupdated>1461732461</lastupdated>
+  <seasonid>596809</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2015-02-15 13:01:13</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5411777</id>
+  <Combined_episodenumber>1.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>1.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Alex Zakrzewski</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Trunk Music</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2016-03-11</FirstAired>
+  <GuestStars>Jeri Ryan</GuestStars>
+  <IMDB_ID>tt4534068</IMDB_ID>
+  <Language>en</Language>
+  <Overview>LAPD homicide detective Harry Bosch is back on the job after a suspension. When a dead body found in the trunk of a car on Mulholland Drive appears to have mob connections, Bosch takes on a case that could prove his biggest challenge yet. George Irving has a new assignment. Deputy Chief Irving weighs his options.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.8</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Eric Overmyer</Writer>
+  <absolute_number>11</absolute_number>
+  <filename>episodes/277928/5411777.jpg</filename>
+  <lastupdated>1460499471</lastupdated>
+  <seasonid>645575</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2016-03-10 19:01:55</thumb_added>
+  <thumb_height>300</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5518898</id>
+  <Combined_episodenumber>2.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>2.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Alex Zakrzewski</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Thing about Secrets</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2016-03-11</FirstAired>
+  <GuestStars>Jeri Ryan</GuestStars>
+  <IMDB_ID>tt4565786</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Bosch discovers that his murder case has wider implications. Deputy Chief Irving tries to stay above the political fray. Danger escalates with George Irving's plainclothes position. Harry receives a tip relating to his mother's murder. The Tony Allen investigation sends Bosch to Sin City.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.3</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Eric Overmyer, Tom Bernardo</Writer>
+  <absolute_number>12</absolute_number>
+  <filename>episodes/277928/5518898.jpg</filename>
+  <lastupdated>1460499346</lastupdated>
+  <seasonid>645575</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2016-03-10 19:01:46</thumb_added>
+  <thumb_height>300</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5518900</id>
+  <Combined_episodenumber>3.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>3.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Pieter Jan Brugge</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Victim of the Night</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2016-03-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4565940</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Bosch is drawn into the underbelly of Las Vegas. A reunion with his daughter reveals that all is not well on the home front. Deputy Chief Irving chooses a side in the mayoral race. There's more to George Irving's assignment than meets the eye.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Diane Frolow, Andrew Schneider</Writer>
+  <absolute_number>13</absolute_number>
+  <filename>episodes/277928/5518900.jpg</filename>
+  <lastupdated>1460499497</lastupdated>
+  <seasonid>645575</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2016-03-10 19:01:32</thumb_added>
+  <thumb_height>300</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5518902</id>
+  <Combined_episodenumber>4.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>4.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Christine Moore</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Who's Lucky Now?</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2016-03-11</FirstAired>
+  <GuestStars>Jeri Ryan</GuestStars>
+  <IMDB_ID>tt4565944</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Bosch nabs a murder suspect, while others keep a close eye on the investigation. After an encounter with Vegas mob boss, Joey Marks, Bosch faces questions about the past of someone close to him. George Irving makes important inroads. Deputy Chief Irving clashes with LA's political machinations.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.7</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Tom Smuts</Writer>
+  <absolute_number>14</absolute_number>
+  <filename>episodes/277928/5518902.jpg</filename>
+  <lastupdated>1460499518</lastupdated>
+  <seasonid>645575</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2016-03-10 19:01:19</thumb_added>
+  <thumb_height>300</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5518903</id>
+  <Combined_episodenumber>5.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>5.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Ernest Dickerson</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Gone</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2016-03-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4565948</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Bosch and Edgar are now hot on Joey Marks's trail. George Irving is pulled deeper into his mission. And Bosch must go to extremes to ensure the safety of those closest to him.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.3</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>William N. Fordes</Writer>
+  <absolute_number>15</absolute_number>
+  <filename>episodes/277928/5518903.jpg</filename>
+  <lastupdated>1460499536</lastupdated>
+  <seasonid>645575</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2016-03-10 19:00:59</thumb_added>
+  <thumb_height>300</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5518904</id>
+  <Combined_episodenumber>6.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>6.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Adam Davidson</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Heart Attack</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2016-03-11</FirstAired>
+  <GuestStars>Jeri Ryan</GuestStars>
+  <IMDB_ID>tt4565950</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Heightened circumstances create an unlikely family reunion for Bosch. A surprising revelation forces Harry back to square one on his case. The FBI approaches Eleanor with an enticing deal. George Irving faces severe jeopardy.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Diane Frolow, Andrew Schneider</Writer>
+  <absolute_number>16</absolute_number>
+  <filename>episodes/277928/5518904.jpg</filename>
+  <lastupdated>1460499555</lastupdated>
+  <seasonid>645575</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2016-03-10 19:00:44</thumb_added>
+  <thumb_height>300</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5518906</id>
+  <Combined_episodenumber>7.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>7.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Kevin Dowling</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Exit Time</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2016-03-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4565956</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Deputy Chief Irving takes full measures in the wake of tragedy. Bosch finds himself in an unexpected alliance, which leads to a startling discovery. Eleanor seeks an advantage with the FBI. The nefarious gang behind serious crimes plans its exit strategy.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Tom Smuts, Tom Bernardo</Writer>
+  <absolute_number>17</absolute_number>
+  <filename>episodes/277928/5518906.jpg</filename>
+  <lastupdated>1460499573</lastupdated>
+  <seasonid>645575</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2016-03-10 19:00:30</thumb_added>
+  <thumb_height>300</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5518907</id>
+  <Combined_episodenumber>8.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>8.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Alex Zakrzewski</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Follow the Money</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2016-03-11</FirstAired>
+  <GuestStars>Jeri Ryan</GuestStars>
+  <IMDB_ID>tt4565958</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Bosch focuses on taking down a criminal mastermind. Eleanor delivers for the FBI. Opposing forces with violent intentions all converge on the same spot.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>William N. Fordes, Joe Gonzalez</Writer>
+  <absolute_number>18</absolute_number>
+  <filename>episodes/277928/5518907.jpg</filename>
+  <lastupdated>1460499591</lastupdated>
+  <seasonid>645575</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2016-03-10 19:00:19</thumb_added>
+  <thumb_height>300</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5518908</id>
+  <Combined_episodenumber>9.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>9.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Phil Abraham</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Queen of Martyrs</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2016-03-11</FirstAired>
+  <GuestStars>Jeri Ryan</GuestStars>
+  <IMDB_ID>tt4565962</IMDB_ID>
+  <Language>en</Language>
+  <Overview>A leading suspect eludes Bosch's grasp. Deputy Chief Irving's world has unravelled, even as he's handed a once in a lifetime opportunity. Bosch and Edgar's pursuit of a dangerous ringleader leads to an epic showdown.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.3</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Eric Overmyer, Tom Bernardo</Writer>
+  <absolute_number>19</absolute_number>
+  <filename>episodes/277928/5518908.jpg</filename>
+  <lastupdated>1460499607</lastupdated>
+  <seasonid>645575</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2016-03-10 19:00:07</thumb_added>
+  <thumb_height>300</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5518909</id>
+  <Combined_episodenumber>10.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>10.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Tim Hunter</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Everybody Counts</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2016-03-11</FirstAired>
+  <GuestStars>Jeri Ryan</GuestStars>
+  <IMDB_ID>tt4565968</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The season finale reaches an explosive climax. Bosch and Edgar discover the final piece of the Tony Allen investigation. Harry searches to uncover the truth behind his mother's murder.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.3</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Michael Connelly, Terrill Lee Lankford</Writer>
+  <absolute_number>20</absolute_number>
+  <filename>episodes/277928/5518909.jpg</filename>
+  <lastupdated>1460499630</lastupdated>
+  <seasonid>645575</seasonid>
+  <seriesid>277928</seriesid>
+  <thumb_added>2016-03-10 18:59:54</thumb_added>
+  <thumb_height>300</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+</Data>

@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>269613</id>
+  <Actors>|Martin Freeman|Billy Bob Thornton|Allison Tolman|Angus Sampson|Jeffrey Donovan|Bokeem Woodbine|Zahn McClarnon|Ted Danson|Rachel Keller|Patrick Wilson|Nick Offerman|Kirsten Dunst|Kieran Culkin|Jesse Plemons|Jean Smart|Cristin Milioti|Allan Dobrescu|Keith Carradine|Joey King|Kate Walsh|Oliver Platt|Russell Harvard|Adam Goldberg|Colin Hanks|Glenn Howerton|Bob Odenkirk|</Actors>
+  <Airs_DayOfWeek>Monday</Airs_DayOfWeek>
+  <Airs_Time>10:00 PM</Airs_Time>
+  <ContentRating>TV-MA</ContentRating>
+  <FirstAired>2014-04-15</FirstAired>
+  <Genre>|Crime|Drama|Thriller|</Genre>
+  <IMDB_ID>tt2802850</IMDB_ID>
+  <Language>en</Language>
+  <Network>FX (US)</Network>
+  <NetworkID></NetworkID>
+  <Overview>An American black comedy–crime drama anthology television series created and primarily written by Noah Hawley. The show is inspired by the 1996 film of the same name written and directed by the Coen brothers, who serve as executive producers on the series. Each season follows an anthology format, being set in a different era along with a different story, cast and set of characters.</Overview>
+  <Rating>9.1</Rating>
+  <RatingCount>103</RatingCount>
+  <Runtime>50</Runtime>
+  <SeriesID>179637</SeriesID>
+  <SeriesName>Fargo</SeriesName>
+  <Status>Continuing</Status>
+  <added>2013-05-10 06:42:59</added>
+  <addedBy>386264</addedBy>
+  <banner>graphical/269613-g3.jpg</banner>
+  <fanart>fanart/original/269613-1.jpg</fanart>
+  <lastupdated>1461033838</lastupdated>
+  <poster>posters/269613-12.jpg</poster>
+  <tms_wanted_old>0</tms_wanted_old>
+  <zap2it_id>SH01720858</zap2it_id>
+</Series>
+<Episode>
+  <id>4626050</id>
+  <Combined_episodenumber>1.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>1.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Adam Bernstein</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Crocodile's Dilemma</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2014-04-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3097534</IMDB_ID>
+  <Language>en</Language>
+  <Overview>A ruthless, manipulative man meets a small town insurance salesman and sets him on a path of destruction.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.1</Rating>
+  <RatingCount>67</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Noah Hawley</Writer>
+  <absolute_number>1</absolute_number>
+  <filename>episodes/269613/4626050.jpg</filename>
+  <lastupdated>1453219201</lastupdated>
+  <seasonid>526126</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2014-01-16 00:30:53</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>4808528</id>
+  <Combined_episodenumber>2.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>2.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Adam Bernstein</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Rooster Prince</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2014-04-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3296848</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Molly begins to suspect that Lester is involved in the murders, but her new boss points her in a different direction. Meanwhile, Malvo investigates the blackmail plot against a man known as the 'Supermarket King'.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>59</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Noah Hawley</Writer>
+  <absolute_number>2</absolute_number>
+  <filename>episodes/269613/4808528.jpg</filename>
+  <lastupdated>1444574506</lastupdated>
+  <seasonid>526126</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2014-04-16 22:25:50</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>4808529</id>
+  <Combined_episodenumber>3.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>3.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Randall Einhorn</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>A Muddy Road</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2014-04-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3519062</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Malvo flips the script on the blackmail operation, Molly sets a trap, and Gus debates whether he should come clean. Lester's return to work has complicated repercussions.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>52</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Noah Hawley</Writer>
+  <absolute_number>3</absolute_number>
+  <filename>episodes/269613/4808529.jpg</filename>
+  <lastupdated>1440164493</lastupdated>
+  <seasonid>526126</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2014-04-30 05:23:15</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>4808530</id>
+  <Combined_episodenumber>4.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>4.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Randall Einhorn</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Eating the Blame</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2014-05-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3578722</IMDB_ID>
+  <Language>en</Language>
+  <Overview>When Gus tries to right a wrong, Malvo embraces his alter ego. Lester finds himself in a surprising situation, and Molly uncovers a promising lead.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>55</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Noah Hawley</Writer>
+  <absolute_number>4</absolute_number>
+  <filename>episodes/269613/4808530.jpg</filename>
+  <lastupdated>1440164511</lastupdated>
+  <seasonid>526126</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2014-04-30 17:14:16</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>4808531</id>
+  <Combined_episodenumber>5.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>5.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Colin Bucksey</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Six Ungraspables</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2014-05-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3514096</IMDB_ID>
+  <Language>en</Language>
+  <Overview>When Lester has a close call, Molly makes an unorthodox decision. Gus weighs some neighborly advice, and Malvo gets what he wants.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>54</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Noah Hawley</Writer>
+  <absolute_number>5</absolute_number>
+  <filename>episodes/269613/4808531.jpg</filename>
+  <lastupdated>1453636203</lastupdated>
+  <seasonid>526126</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2014-05-14 04:38:43</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>4808533</id>
+  <Combined_episodenumber>6.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>6.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Colin Bucksey</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Buridan's Ass</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2014-05-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3551076</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Malvo executes his master plan, while Lester attempts to craft one of his own. Gus and Molly team up in Duluth. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.3</Rating>
+  <RatingCount>50</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Noah Hawley</Writer>
+  <absolute_number>6</absolute_number>
+  <filename>episodes/269613/4808533.jpg</filename>
+  <lastupdated>1453219222</lastupdated>
+  <seasonid>526126</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2014-05-21 07:38:18</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>4808534</id>
+  <Combined_episodenumber>7.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>7.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Scott Winant</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Who Shaves the Barber?</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2014-05-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3578728</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Malvo seeks answers, while Lester finagles a few of his own. Molly and Gus try to get past a setback in the investigation.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.1</Rating>
+  <RatingCount>53</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Noah Hawley</Writer>
+  <absolute_number>7</absolute_number>
+  <filename>episodes/269613/4808534.jpg</filename>
+  <lastupdated>1440164558</lastupdated>
+  <seasonid>526126</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2014-05-28 13:25:32</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>4808535</id>
+  <Combined_episodenumber>8.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>8.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Scott Winant</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Heap</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2014-06-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3468290</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Molly faces pressure to close the case, while Lester starts to feel like a new man.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>47</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Noah Hawley</Writer>
+  <absolute_number>8</absolute_number>
+  <filename>episodes/269613/4808535.jpg</filename>
+  <lastupdated>1440164571</lastupdated>
+  <seasonid>526126</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2014-06-03 14:57:40</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>4808536</id>
+  <Combined_episodenumber>9.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>9.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Matt Shakman</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>A Fox, a Rabbit, and a Cabbage</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2014-06-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3599898</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Lester has an unexpected encounter, Malvo changes course, and a new investigation leads Molly down a familiar path.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.2</Rating>
+  <RatingCount>44</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Noah Hawley</Writer>
+  <absolute_number>9</absolute_number>
+  <filename>episodes/269613/4808536.jpg</filename>
+  <lastupdated>1440164585</lastupdated>
+  <seasonid>526126</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2014-06-06 16:22:17</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>4808538</id>
+  <Combined_episodenumber>10.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>10.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Matt Shakman</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Morton's Fork</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2014-06-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3599918</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Molly takes the lead, while Gus pursues a hunch. Lester manipulates a situation, and Malvo finds a new target.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.6</Rating>
+  <RatingCount>45</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Noah Hawley</Writer>
+  <absolute_number>10</absolute_number>
+  <filename>episodes/269613/4808538.jpg</filename>
+  <lastupdated>1440164604</lastupdated>
+  <seasonid>526126</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2014-06-11 14:06:58</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5300871</id>
+  <Combined_episodenumber>1.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>1.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>|Michael Uppendahl|Randall Einhorn|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Waiting for Dutch</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2015-10-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3836974</IMDB_ID>
+  <Language>en</Language>
+  <Overview>In 1979, an unexpected turn of events at a diner disrupts the lives of the citizens in a small Minnesota town. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.2</Rating>
+  <RatingCount>24</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Noah Hawley</Writer>
+  <absolute_number>11</absolute_number>
+  <filename>episodes/269613/5300871.jpg</filename>
+  <lastupdated>1456170288</lastupdated>
+  <seasonid>634389</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2015-10-11 13:41:24</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5343365</id>
+  <Combined_episodenumber>2.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>2.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Noah Hawley</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Before the Law</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2015-10-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4001064</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Gerhardts get a surprising offer, and two unlikely murderers do their best to clean up their mess.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.4</Rating>
+  <RatingCount>16</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Noah Hawley</Writer>
+  <absolute_number>12</absolute_number>
+  <filename>episodes/269613/5343365.jpg</filename>
+  <lastupdated>1456170322</lastupdated>
+  <seasonid>634389</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2015-10-13 13:29:58</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5344820</id>
+  <Combined_episodenumber>3.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>3.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Michael Uppendahl</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Myth of Sisyphus</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2015-10-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4001074</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Gerhardts' search for Rye intensifies. Lou takes a trip to Fargo. Peggy overhears a new theory about the Waffle Hut shooter.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.2</Rating>
+  <RatingCount>13</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Bob DeLaurentis</Writer>
+  <absolute_number>13</absolute_number>
+  <filename>episodes/269613/5344820.jpg</filename>
+  <lastupdated>1456170346</lastupdated>
+  <seasonid>634389</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2015-10-24 21:09:54</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5359705</id>
+  <Combined_episodenumber>4.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>4.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Michael Uppendahl</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Fear and Trembling</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2015-11-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4001070</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Floyd responds to Kansas City’s proposal, Hanzee takes a road trip, and Lou has a realization.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.1</Rating>
+  <RatingCount>13</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Steve Blackman</Writer>
+  <absolute_number>14</absolute_number>
+  <filename>episodes/269613/5359705.jpg</filename>
+  <lastupdated>1456170948</lastupdated>
+  <seasonid>634389</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2015-11-01 17:51:19</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5360674</id>
+  <Combined_episodenumber>5.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>5.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Jeffrey Reiner</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Gift of the Magi</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2015-11-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4001084</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Floyd takes action, and Charlie tries to prove himself. Peggy and Ed disagree about what to do next, while Lou finds himself sidelined during Ronald Reagan’s campaign tour.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.3</Rating>
+  <RatingCount>12</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Matt Wolpert|Ben Nedivi|</Writer>
+  <absolute_number>15</absolute_number>
+  <filename>episodes/269613/5360674.jpg</filename>
+  <lastupdated>1456171036</lastupdated>
+  <seasonid>634389</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2015-11-03 17:31:16</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5360675</id>
+  <Combined_episodenumber>6.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>6.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Jeffrey Reiner</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Rhinoceros</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2015-11-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4001082</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Lou and Hank try to prevent an altercation, Peggy and Ed defend their choices and the Gerhardt clan attempts to get back one of their own.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.5</Rating>
+  <RatingCount>15</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Noah Hawley</Writer>
+  <absolute_number>16</absolute_number>
+  <filename>episodes/269613/5360675.jpg</filename>
+  <lastupdated>1456171117</lastupdated>
+  <seasonid>634389</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2015-11-11 20:52:56</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5360676</id>
+  <Combined_episodenumber>7.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>7.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Keith Gordon</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Did You Do This? No, You Did It!</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2015-11-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4001092</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Lou and Hank investigate in Fargo, The King of Breakfast visits Betsy and Molly, Floyd is summoned away and Bear questions a family member’s loyalty.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.3</Rating>
+  <RatingCount>14</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Noah Hawley|Matt Wolpert|Ben Nedivi|</Writer>
+  <absolute_number>17</absolute_number>
+  <filename>episodes/269613/5360676.jpg</filename>
+  <lastupdated>1459329644</lastupdated>
+  <seasonid>634389</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2015-11-17 18:02:40</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5369447</id>
+  <Combined_episodenumber>8.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>8.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Keith Gordon</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Loplop</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2015-11-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4001088</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hanzee searches for Peggy and Ed. Dodd ends up in unfamiliar territory.</Overview>
+  <ProductionCode>#208</ProductionCode>
+  <Rating>8.2</Rating>
+  <RatingCount>12</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Bob DeLaurentis</Writer>
+  <absolute_number>18</absolute_number>
+  <filename>episodes/269613/5369447.jpg</filename>
+  <lastupdated>1454290508</lastupdated>
+  <seasonid>634389</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2015-11-24 16:01:58</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5369448</id>
+  <Combined_episodenumber>9.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>9.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Adam Arkin</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Castle</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2015-12-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4001090</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Peggy and Ed agree to follow through with their plan at the Motor Motel, Lou faces jurisdictional politics and Hanzee reports back to the Gerhardts.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.2</Rating>
+  <RatingCount>13</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Noah Hawley|Steve Blackman|</Writer>
+  <absolute_number>19</absolute_number>
+  <filename>episodes/269613/5369448.jpg</filename>
+  <lastupdated>1456171232</lastupdated>
+  <seasonid>634389</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2015-12-01 17:13:23</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5370812</id>
+  <Combined_episodenumber>10.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>10.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Adam Arkin</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Palindrome</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2015-12-14</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3886622</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Peggy and Ed make a run for it.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>11</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Noah Hawley</Writer>
+  <absolute_number>20</absolute_number>
+  <filename>episodes/269613/5370812.jpg</filename>
+  <lastupdated>1456171264</lastupdated>
+  <seasonid>634389</seasonid>
+  <seriesid>269613</seriesid>
+  <thumb_added>2015-12-08 19:36:10</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+</Data>

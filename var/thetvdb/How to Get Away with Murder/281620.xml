@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>281620</id>
+  <Actors>|Viola Davis|Alfred Enoch|Karla Souza|Aja Naomi King|Kelsey Scott|Conrad Ricamora|Liza Weil|Charlie Weber|Matt McGorry|Katie Findlay|Jack Falahee|Billy Brown|</Actors>
+  <Airs_DayOfWeek>Thursday</Airs_DayOfWeek>
+  <Airs_Time>10:00 PM</Airs_Time>
+  <ContentRating>TV-14</ContentRating>
+  <FirstAired>2014-09-25</FirstAired>
+  <Genre>|Crime|Drama|Mystery|Thriller|</Genre>
+  <IMDB_ID>tt3205802</IMDB_ID>
+  <Language>en</Language>
+  <Network>ABC (US)</Network>
+  <NetworkID></NetworkID>
+  <Overview>Annalise Keating is a brilliant, charismatic and seductive professor of defense law, who teaches a class called 'How to Get Away with Murder'. Unexpectedly, she and her students end up having to apply practical knowledge from the course when they become entangled in a murder plot that not only shakes the entire university to the core but also changes the course of each of their lives.</Overview>
+  <Rating>8.8</Rating>
+  <RatingCount>42</RatingCount>
+  <Runtime>45</Runtime>
+  <SeriesID>3066606</SeriesID>
+  <SeriesName>How to Get Away with Murder</SeriesName>
+  <Status>Continuing</Status>
+  <added>2014-05-12 06:46:48</added>
+  <addedBy>356771</addedBy>
+  <banner>graphical/281620-g6.jpg</banner>
+  <fanart>fanart/original/281620-4.jpg</fanart>
+  <lastupdated>1461092654</lastupdated>
+  <poster>posters/281620-1.jpg</poster>
+  <tms_wanted_old>0</tms_wanted_old>
+  <zap2it_id>SH01921797</zap2it_id>
+</Series>
+<Episode>
+  <id>4883370</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Michael Offer</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Pilot</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2014-09-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3731190</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Annalise Keating is everything you hope your Criminal Law professor will be - brilliant, passionate, creative and charismatic. She's also everything you don't expect - sexy, glamorous, unpredictable and dangerous. As fearless in the courtroom as she is in the classroom, Annalise is a defense attorney who represents the most hardened, violent criminals - people who've committed everything from fraud to arson to murder - and she'll do almost anything to win their freedom. Each year, Annalise selects a group of the smartest, most promising students to come work at her law firm. Working for Annalise is the opportunity of a lifetime, one that can change the course of our students' lives forever, which is exactly what happens when they find themselves involved in a murder plot that will rock the entire university.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.4</Rating>
+  <RatingCount>20</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Peter Nowalk</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/4883370.jpg</filename>
+  <lastupdated>1459979630</lastupdated>
+  <seasonid>585526</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2014-07-09 06:18:46</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>4992091</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Bill D'Elia</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>It's All Her Fault</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2014-10-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3729170</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Annalise takes on a new client, Max St. Vincent, an eccentric millionaire who is the key suspect in his wife's brutal murder. All the clues point to St. Vincent as the killer, but Annalise challenges her students to prove he's innocent - whether that's the truth or not. Meanwhile, Annalise deals with issues in her own home when her growing suspicions that Sam is somehow involved in Lila's disappearance start to affect their marriage. In flash forwards, we go back to the night of the murder and learn that Wes might be hiding a few secrets of his own.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.3</Rating>
+  <RatingCount>20</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Pete Nowalk</Writer>
+  <absolute_number>2</absolute_number>
+  <filename>episodes/281620/4992091.jpg</filename>
+  <lastupdated>1459979640</lastupdated>
+  <seasonid>585526</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2014-09-27 08:01:20</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>4992934</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Randy Zisk</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Smile, or Go to Jail</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2014-10-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3731540</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Annalise helps Paula Murphy, a suburban soccer mom, get released from jail after she was arrested for a misdemeanor, but just as she’s about to walk free, she’s arrested again by the FBI in connection for felony murder. Annalise and her students are tasked with proving her innocence which will depend on the testimony from another suspect in the case. Meanwhile, the Middleton University president asks Annalise to represent Griffin O’ Reilly, the star quarterback who has also been linked to Lila’s disappearance but she’s unable to make a decision until she knows that Sam wasn’t involved in the case. In flash forwards, more clues are revealed and we discover someone else was also there besides the students during the night of the murder.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.4</Rating>
+  <RatingCount>17</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Rob Fresco</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/4992934.jpg</filename>
+  <lastupdated>1459979647</lastupdated>
+  <seasonid>585526</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2014-09-27 08:01:44</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5002978</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Laura Innes</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Let's Get to Scooping</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2014-10-16</FirstAired>
+  <GuestStars>|Elizabeth Perkins|Sara Paxton|</GuestStars>
+  <IMDB_ID>tt3810424</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Annalise and her students uncover a shocking truth while investigating the case of Marren Trudeau, founder and CEO of a major brokerage firm, who has recently been arrested for insider trading. Meanwhile, Wes discovers a cell phone hidden by Rebecca whose contents reveal an unsettling clue in the Lila Stangard murder case.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>17</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Erika Green Swafford</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5002978.jpg</filename>
+  <lastupdated>1459979654</lastupdated>
+  <seasonid>585526</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2014-10-09 00:07:20</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5003852</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Michael Listo</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>We're Not Friends</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2014-10-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3810426</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Annalise takes on a tough case defending a minor who fatally shoots his police officer father. Meanwhile, Annalise and Sam continue to argue over his relationship with Lila, and Wes and Rebecca begin to question Annalise’s motives. In flash-forwards, we learn more about Laurel’s relationship with Frank and why he was calling her the night of Sam’s death.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.3</Rating>
+  <RatingCount>12</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Tracey A. Bellomo</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5003852.jpg</filename>
+  <lastupdated>1459979661</lastupdated>
+  <seasonid>585526</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2014-10-10 11:15:43</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5014847</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Bill D'Elia</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Freakin' Whack-a-Mole</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2014-10-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3810430</IMDB_ID>
+  <Language>en</Language>
+  <Overview>A case gets personal for Annalise and the team when their client is a man from the projects who was sentenced to death by Asher’s father several years ago. Meanwhile, Wes is still angry at Annalise for hiding information about Lila’s case, so Annalise must convince him to get back in line. In flash-forwards, we find out exactly where Asher was on the night of the murder.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.3</Rating>
+  <RatingCount>15</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Mike Foley</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5014847.jpg</filename>
+  <lastupdated>1459979669</lastupdated>
+  <seasonid>585526</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2014-10-20 15:24:36</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5014848</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Eric Stoltz</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>He Deserved to Die</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2014-11-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3810436</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Annalise and the team are focused on Rebecca’s case, but when the judge enforces a gag order, Rebecca takes things into her own hands. Meanwhile, Michaela is surprised by a pre-nup, sparks fly between Laurel and Frank, and in flash-forwards, we find out more about Wes and Rebecca’s relationship.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>13</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Warren Hsu Leonard</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5014848.jpg</filename>
+  <lastupdated>1459979679</lastupdated>
+  <seasonid>585526</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2014-10-24 07:16:12</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5023600</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Debbie Allen</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>He Has a Wife</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2014-11-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The team represents a mother who's on trial for killing her family's nanny while on heavy medication. Meanwhile, a shocking discovery is revealed in Lila's case that could change everything for Rebecca and Bonnie's loyalty to Annalise. In flashbacks, we learn more about Lila and Sam's relationship.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>14</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Doug Stockstill</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5023600.jpg</filename>
+  <lastupdated>1459979687</lastupdated>
+  <seasonid>585526</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2014-11-07 13:51:34</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5031806</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Stephen Williams</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Kill Me, Kill Me, Kill Me</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2014-11-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>It’s the evening of the bonfire and we finally see what exactly happened on the night of Sam’s death.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>16</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Mike Foley|Erika Green Swafford|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5031806.jpg</filename>
+  <lastupdated>1459979707</lastupdated>
+  <seasonid>585526</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2014-11-18 19:16:34</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5079699</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Michael Offer</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Hello, Raskolnikov</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2015-01-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>It’s the day after Sam’s murder and the students are called in to help Annalise find her missing husband, but just how much does Annalise know? And when a surprise visitor shows up in town, getting away with this murder might not be as easy as the students had hoped.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>15</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Marcus Dalzine</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5079699.jpg</filename>
+  <lastupdated>1459979714</lastupdated>
+  <seasonid>585526</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2015-01-16 22:04:00</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5104114</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Michael Katleman</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Best Christmas Ever</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>2015-02-05</FirstAired>
+  <GuestStars>Marcia Gay Harden</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>School is back in session after the holiday break and the entire university is talking about Annalise's missing husband. The Keating Five continue to be questioned by the police and we find out exactly how they've been dealing with the guilt of killing Sam. Meanwhile, Annalise tries to keep things business as usual by taking on a new client who is in the mob, but Hannah continues to pressure her for answers.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.4</Rating>
+  <RatingCount>14</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Tracy A. Bellomo|Warren Hsu Leonard|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5104114.jpg</filename>
+  <lastupdated>1459979727</lastupdated>
+  <seasonid>585526</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2015-02-07 03:27:22</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5110638</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Bill D'Elia</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>She's a Murderer</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>2015-02-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A stunning discovery in Sam's murder case leads to changes for Annalise and the students.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.3</Rating>
+  <RatingCount>10</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Erika Harrison</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5110638.jpg</filename>
+  <lastupdated>1459979734</lastupdated>
+  <seasonid>585526</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2015-01-27 05:45:54</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5110639</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Michael Listo</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Mama's Here Now</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>2015-02-19</FirstAired>
+  <GuestStars>Cicely Tyson</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Annalise is wracked with guilt and turns to an unlikely source for help. Meanwhile, Bonnie must step up and represent a new client accused of rape.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>13</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Erika Green Swafford|Doug Stockstill|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5110639.jpg</filename>
+  <lastupdated>1459979743</lastupdated>
+  <seasonid>585526</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2015-02-13 14:57:36</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5110640</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Laura Innes</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Night Lila Died</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>2015-02-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>In flashbacks, we start to piece together what really happened the night of Lila's murder. In present day, Annalise takes on a priest who is accused of murdering another priest. Meanwhile, Connor and Oliver take things to a new level in their relationship, and Wes and Rebecca continue to grow suspicious of each other.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>11</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Mike Foley</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5110640.jpg</filename>
+  <lastupdated>1459979753</lastupdated>
+  <seasonid>585526</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2015-02-24 06:09:30</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5110641</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Bill D’Elia</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>It’s All My Fault</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>2015-02-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Wes, Connor, Michaela and Laurel may have dug themselves in too deep a hole for Annalise to save them, and the shocking truth about Lila's murder is finally revealed.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.1</Rating>
+  <RatingCount>12</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Pete Nowalk</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5110641.jpg</filename>
+  <lastupdated>1459979760</lastupdated>
+  <seasonid>585526</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2015-02-24 05:46:40</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5249002</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Bill D'Elia</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>It's Time to Move On</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2015-09-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4558528</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Annalise and her students must move on with their lives as though nothing has happened, but the students are still reeling over Rebecca’s disappearance. Only Annalise and Frank know that Rebecca was murdered and the two are determined to find out who killed her. Meanwhile, Annalise decides she wants to take on a new client, a brother and sister who are accused of killing their parents. And an old friend surprises Annalise at home and teaches her a valuable lesson.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>5</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Pete Nowalk</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5249002.jpg</filename>
+  <lastupdated>1459641087</lastupdated>
+  <seasonid>625701</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2015-09-11 16:55:24</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5336125</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Rob Hardy</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>She's Dying</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2015-10-01</FirstAired>
+  <GuestStars>Famke Janssen</GuestStars>
+  <IMDB_ID>tt4923908</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Annalise and her team are blindsided when investigators try to pin a new charge on the wealthy siblings she's been hired to represent. Meanwhile, things for Annalise become even more difficult when she's brutally cross-examined on the witness stand during Nate's preliminary hearing.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>6</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Erika Green Swafford</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5336125.jpg</filename>
+  <lastupdated>1459641109</lastupdated>
+  <seasonid>625701</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2015-09-27 12:35:24</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5337296</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>John Turlesky</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>It’s Called the Octopus</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2015-10-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt5053126</IMDB_ID>
+  <Language>en</Language>
+  <Overview>When Annalise takes on a new client, the team must investigate a very high end sex club to get answers. Meanwhile, Annalise is still representing the siblings accused of killing their parents, but the case takes a turn for the worse when a new motive surfaces, and Wes teams up with an unexpected ally.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Joe Fazzio</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5337296.jpg</filename>
+  <lastupdated>1461092712</lastupdated>
+  <seasonid>625701</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2015-10-05 08:29:35</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5337297</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Stephen Williams</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Skanks Get Shanked</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2015-10-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt5058476</IMDB_ID>
+  <Language>en</Language>
+  <Overview>When a teenager is found murdered in the woods, Annalise and her team is hired to represent an unlikely suspect named in the case. Meanwhile, Asher comes across a shocking confession, and Wes learns new information about Rebecca’s disappearance.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>5</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Angela Robinson</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5337297.jpg</filename>
+  <lastupdated>1459641149</lastupdated>
+  <seasonid>625701</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2015-10-10 20:08:33</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5337298</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Stephen Cragg</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Meet Bonnie</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2015-10-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt5068006</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Asher discovers not everything is what it seems when you work for Annalise. Meanwhile, Frank is presented with a situation that hits close to home, and Wes’ search to find out more about Rebecca’s disappearance culminates into an explosive confrontation.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Sarah L. Thompson</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5337298.jpg</filename>
+  <lastupdated>1459641164</lastupdated>
+  <seasonid>625701</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2015-10-10 20:09:55</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5337299</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Mike Listo</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Two Birds, One Millstone</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2015-10-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt5075860</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Annalise takes on a new client, a transgender professor accused of killing her husband. Meanwhile, the Keating 5 are left to handle the Hapstall case and they discover a shocking new suspect.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Michael Foley</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5337299.jpg</filename>
+  <lastupdated>1459641187</lastupdated>
+  <seasonid>625701</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2015-10-18 14:20:07</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5375116</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Kevin Bray</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>I Want You to Die</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2015-11-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt5075868</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Annalise and the team are hired to represent a client accused of badgering somebody to the point of suicide. Meanwhile, Eve returns to defend Nate after ADA Sinclair serves him for a possible new murder charge, and Bonnie learns about what happened at Trotter Lake.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Warren Hsu Leonard</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5375116.jpg</filename>
+  <lastupdated>1459641207</lastupdated>
+  <seasonid>625701</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2015-10-29 01:17:47</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5381918</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Jennifer Getzinger</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Hi, I’m Philip</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2015-11-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt5075872</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Philip makes a threatening move and ADA Sinclair may have figured out a way to take down Annalise. Meanwhile, Catherine and Caleb are forced to make a life changing decision.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Tanya Saracho</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5381918.jpg</filename>
+  <lastupdated>1459641234</lastupdated>
+  <seasonid>625701</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2015-11-11 20:55:13</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5389834</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Bill D'Elia</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>What Did We Do?</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2015-11-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt5075866</IMDB_ID>
+  <Language>en</Language>
+  <Overview>ADA Sinclair discovers a break in her favor in the Hapstall case, but her actions result in a deadly outcome as details are revealed about the night Annalise was shot, including the person responsible for pulling the trigger.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Mike Foley|Erika Green Swafford|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/281620/5389834.jpg</filename>
+  <lastupdated>1460026303</lastupdated>
+  <seasonid>625701</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2015-11-17 18:11:52</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5421691</id>
+  <Combined_episodenumber>10.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>10.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Laura Innes</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>What Happened to You, Annalise?</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2016-02-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt5075864</IMDB_ID>
+  <Language>en</Language>
+  <Overview>A few weeks have passed since Wes shot Annalise. Wes and The Keating 5 deal with the fallout from that night, as Annalise is faced with a complicated road to recovery.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>J.C. Lee</Writer>
+  <absolute_number>25</absolute_number>
+  <filename>episodes/281620/5421691.jpg</filename>
+  <lastupdated>1459641288</lastupdated>
+  <seasonid>625701</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2016-01-26 09:34:16</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5429011</id>
+  <Combined_episodenumber>11.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>11.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Bill D'Elia</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>She Hates Us</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>2016-02-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt5075870</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Tensions in the Keating household run high, as each student struggles in their own way trying to return to normalcy. In a flashback, we’ll learn new details about Annalise’s past.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.3</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Erika Harrison</Writer>
+  <absolute_number>26</absolute_number>
+  <filename>episodes/281620/5429011.jpg</filename>
+  <lastupdated>1461003355</lastupdated>
+  <seasonid>625701</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2016-02-14 23:19:58</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5506134</id>
+  <Combined_episodenumber>12.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>12.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Mike Listo</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>It's a Trap</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>2016-02-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt5075874</IMDB_ID>
+  <Language>en</Language>
+  <Overview>With Philip still out there, Annalise tries to keep the team from panicking and get one step ahead of Philip’s threats. Meanwhile, Wes and Laurel start putting the pieces of Wes’ mothers death together, but some things just aren’t adding up on.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Joe Fazio|Tanya Saracho|</Writer>
+  <absolute_number>27</absolute_number>
+  <filename>episodes/281620/5506134.jpg</filename>
+  <lastupdated>1459641344</lastupdated>
+  <seasonid>625701</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2016-02-16 16:42:56</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5516579</id>
+  <Combined_episodenumber>13.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>13.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Zetna Fuentes</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Something Bad Happened</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>2016-03-03</FirstAired>
+  <GuestStars>Famke Janssen</GuestStars>
+  <IMDB_ID>tt5075876</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Annalise moves forward with a plan to protect the team from Philip but the risk involved may prove to be too dangerous. Meanwhile, Wes continues to search for new information regarding his mother’s death. In flashback, the Mahoney case takes a drastic turn for Annalise’s client.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Michael Foley|Warren Hsu Leonard|</Writer>
+  <absolute_number>28</absolute_number>
+  <filename>episodes/281620/5516579.jpg</filename>
+  <lastupdated>1459641359</lastupdated>
+  <seasonid>625701</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2016-03-02 17:16:18</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5525052</id>
+  <Combined_episodenumber>14.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>14.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Stephen Williams</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>There’s My Baby</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>2016-03-10</FirstAired>
+  <GuestStars>Famke Janssen</GuestStars>
+  <IMDB_ID>tt5075878</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Keating 5 are called into questioning by A.D.A Denver about the night Emily Sinclair was murdered. Meanwhile, Caleb goes missing as the manhunt for Philip intensifies. In flashback, Annalise’s tactics in the Mahoney case leads to a devastating result.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|J.C. Lee|Erika Harrison|</Writer>
+  <absolute_number>29</absolute_number>
+  <filename>episodes/281620/5525052.jpg</filename>
+  <lastupdated>1459641381</lastupdated>
+  <seasonid>625701</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2016-03-02 17:17:54</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5525053</id>
+  <Combined_episodenumber>15.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>15.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>Bill D’Elia</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Anna Mae</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>2016-03-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt5075880</IMDB_ID>
+  <Language>en</Language>
+  <Overview>With chaos surrounding Annalise, she just can’t stand the pressure anymore and needs to escape. Meanwhile, Frank must come to terms with the things he has done while Wes continues to get closer to finding out about his past.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.3</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Peter Nowalk</Writer>
+  <absolute_number>30</absolute_number>
+  <filename>episodes/281620/5525053.jpg</filename>
+  <lastupdated>1459641394</lastupdated>
+  <seasonid>625701</seasonid>
+  <seriesid>281620</seriesid>
+  <thumb_added>2016-03-02 17:21:45</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+</Data>

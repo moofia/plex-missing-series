@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>283346</id>
+  <Actors>|Jay Baruchel|Eric Andre|Britt Lower|Maya Erskine|</Actors>
+  <Airs_DayOfWeek>Wednesday</Airs_DayOfWeek>
+  <Airs_Time>10:30 PM</Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>2015-01-14</FirstAired>
+  <Genre>|Comedy|Fantasy|Romance|</Genre>
+  <IMDB_ID>tt4189492</IMDB_ID>
+  <Language>en</Language>
+  <Network>FXX</Network>
+  <NetworkID></NetworkID>
+  <Overview>The series centers on Josh Greenberg, a naive romantic on a desperate quest for love. When his longtime girlfriend dumps him, Josh enters the dating scene, a nightmarish hellscape of untold horror. Despite the agony, Josh continues his search in the hopes of finding someone who will make all the misery worth it.</Overview>
+  <Rating>6.6</Rating>
+  <RatingCount>10</RatingCount>
+  <Runtime>25</Runtime>
+  <SeriesID>194212</SeriesID>
+  <SeriesName>Man Seeking Woman</SeriesName>
+  <Status>Continuing</Status>
+  <added>2014-07-02 09:55:35</added>
+  <addedBy>79791</addedBy>
+  <banner>graphical/283346-g.jpg</banner>
+  <fanart>fanart/original/283346-7.jpg</fanart>
+  <lastupdated>1460738557</lastupdated>
+  <poster>posters/283346-3.jpg</poster>
+  <tms_wanted_old>0</tms_wanted_old>
+  <zap2it_id>EP02051499</zap2it_id>
+</Series>
+<Episode>
+  <id>5052319</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>7</EpImgFlag>
+  <EpisodeName>Lizard</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2015-01-14</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt3518774</IMDB_ID>
+  <Language>en</Language>
+  <Overview>A breakup has lasting effect in the opener of this series following a naive twentysomething's unrelenting quest for love.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>5.6</Rating>
+  <RatingCount>9</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/283346/5052319.jpg</filename>
+  <lastupdated>1452294288</lastupdated>
+  <seasonid>604040</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2015-01-15 07:49:32</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5077742</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>7</EpImgFlag>
+  <EpisodeName>Traib</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2015-01-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4202282</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Josh's friends help him compose a text message.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/283346/5077742.jpg</filename>
+  <lastupdated>1452294294</lastupdated>
+  <seasonid>604040</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2015-01-22 09:54:55</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5077743</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>7</EpImgFlag>
+  <EpisodeName>Pitbull</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2015-01-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4202284</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Josh and Mike have a wild night out.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>10.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/283346/5077743.jpg</filename>
+  <lastupdated>1452294301</lastupdated>
+  <seasonid>604040</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2015-01-29 15:40:10</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5077744</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>7</EpImgFlag>
+  <EpisodeName>Dram</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2015-02-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4202250</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Josh's family decides that it's the right time to pressure him into settling down.
+</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/283346/5077744.jpg</filename>
+  <lastupdated>1452294310</lastupdated>
+  <seasonid>604040</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2015-02-06 17:29:18</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5080299</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Sizzurp</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2015-02-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A beautiful woman miraculously falls for Josh.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/283346/5080299.jpg</filename>
+  <lastupdated>1446231722</lastupdated>
+  <seasonid>604040</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2015-02-12 15:34:45</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5080300</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Jonathan Krisel</Director>
+  <EpImgFlag>7</EpImgFlag>
+  <EpisodeName>Gavel</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2015-02-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Josh finds a new girlfriend who's great for him.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Simon Rich</Writer>
+  <absolute_number>6</absolute_number>
+  <filename>episodes/283346/5080300.jpg</filename>
+  <lastupdated>1452294329</lastupdated>
+  <seasonid>604040</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2015-02-19 07:24:46</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5080301</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>7</EpImgFlag>
+  <EpisodeName>Stain</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2015-02-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Josh and Mike are invited to a destination wedding. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.5</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/283346/5080301.jpg</filename>
+  <lastupdated>1452294343</lastupdated>
+  <seasonid>604040</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2015-02-26 14:18:26</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5080302</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>7</EpImgFlag>
+  <EpisodeName>Branzino</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2015-03-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Josh is convinced that he’s finally found his soul mate. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/283346/5080302.jpg</filename>
+  <lastupdated>1452294349</lastupdated>
+  <seasonid>604040</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2015-03-05 13:19:52</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5080303</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Tim Kirkby</Director>
+  <EpImgFlag>7</EpImgFlag>
+  <EpisodeName>Teacup</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2015-03-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Liz struggles to move on after getting dumped by Leo.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.7</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Sofia Alvarez</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/283346/5080303.jpg</filename>
+  <lastupdated>1452294357</lastupdated>
+  <seasonid>604040</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2015-03-12 16:13:38</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5080304</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>7</EpImgFlag>
+  <EpisodeName>Scepter</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2015-03-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Josh tries to get Maggie back.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.8</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/283346/5080304.jpg</filename>
+  <lastupdated>1452294364</lastupdated>
+  <seasonid>604040</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2015-03-19 16:04:45</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5400032</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Dan Longino|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Wings</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2016-01-06</FirstAired>
+  <GuestStars>Sarah Gadon</GuestStars>
+  <IMDB_ID>tt4497020</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Mike resents Josh for spending all his time with his new girlfriend.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Sofia Alvarez|Simon Rich|</Writer>
+  <absolute_number>11</absolute_number>
+  <filename>episodes/283346/5400032.jpg</filename>
+  <lastupdated>1454382650</lastupdated>
+  <seasonid>644503</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2016-02-01 19:10:46</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5400033</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Michael Dowse|</Director>
+  <EpImgFlag>6</EpImgFlag>
+  <EpisodeName>Feather</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2016-01-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4513552</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Josh struggles to satisfy his girlfriend.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Robert Padnick|</Writer>
+  <absolute_number>12</absolute_number>
+  <filename>episodes/283346/5400033.jpg</filename>
+  <lastupdated>1454402589</lastupdated>
+  <seasonid>644503</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2016-01-14 09:43:28</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5400034</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Dan Schimpf|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Scythe</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2016-01-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4516116</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Josh becomes desperate and decides to settle.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Dan Mirk|Robert Padnick|</Writer>
+  <absolute_number>13</absolute_number>
+  <filename>episodes/283346/5400034.jpg</filename>
+  <lastupdated>1453478601</lastupdated>
+  <seasonid>644503</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2016-01-22 08:03:23</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5400035</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Michael Dowse|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Tinsel</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2016-01-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4516122</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Liz falls for an unavailable man.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Sofia Alvarez|</Writer>
+  <absolute_number>14</absolute_number>
+  <filename>episodes/283346/5400035.jpg</filename>
+  <lastupdated>1454168912</lastupdated>
+  <seasonid>644503</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2016-01-30 07:48:30</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5400036</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Daniel Gray Longino|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Card</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2016-02-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4550142</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Josh struggles with a difficult career choice.</Overview>
+  <ProductionCode>#205</ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Robert Padnick|</Writer>
+  <absolute_number>15</absolute_number>
+  <filename>episodes/283346/5400036.jpg</filename>
+  <lastupdated>1454567584</lastupdated>
+  <seasonid>644503</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2016-02-03 22:32:59</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5400037</id>
+  <Combined_episodenumber>6.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>6.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>|Daniel Gray Longino|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Honey</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2016-02-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4578156</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Josh tries to prove to Rosa that he’s a better option than her current boyfriend.</Overview>
+  <ProductionCode>#206</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Dan Mirk|</Writer>
+  <absolute_number>16</absolute_number>
+  <filename>episodes/283346/5400037.jpg</filename>
+  <lastupdated>1457619313</lastupdated>
+  <seasonid>644503</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2016-02-11 01:32:52</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5400038</id>
+  <Combined_episodenumber>7.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>7.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Bill Benz|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Cactus</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2016-02-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4579126</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Josh finally makes a move on Rosa.</Overview>
+  <ProductionCode>#207</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Marika Sawyer|</Writer>
+  <absolute_number>17</absolute_number>
+  <filename>episodes/283346/5400038.jpg</filename>
+  <lastupdated>1455795037</lastupdated>
+  <seasonid>644503</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2016-02-18 03:30:19</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5400039</id>
+  <Combined_episodenumber>8.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>8.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>|Dan Schimpf|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Fuse</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2016-02-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4579132</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Josh tries to convince Rosa that he’s over her.</Overview>
+  <ProductionCode>#208</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Dan Mirk|</Writer>
+  <absolute_number>18</absolute_number>
+  <filename>episodes/283346/5400039.jpg</filename>
+  <lastupdated>1456398219</lastupdated>
+  <seasonid>644503</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2016-02-25 03:03:21</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5400040</id>
+  <Combined_episodenumber>9.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>9.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>|Bill Benz|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Eel</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2016-03-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4579134</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Rosa wants her boyfriend to be exclusive.</Overview>
+  <ProductionCode>#209</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Marika Sawyer|</Writer>
+  <absolute_number>19</absolute_number>
+  <filename>episodes/283346/5400040.jpg</filename>
+  <lastupdated>1456978971</lastupdated>
+  <seasonid>644503</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2016-03-02 20:22:29</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5400042</id>
+  <Combined_episodenumber>10.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>10.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>|Bill Benz|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Balloon</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2016-03-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4497138</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Josh gets his chance to be with Rosa.</Overview>
+  <ProductionCode>#210</ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Ian Maxtone-Graham|</Writer>
+  <absolute_number>20</absolute_number>
+  <filename>episodes/283346/5400042.jpg</filename>
+  <lastupdated>1457592110</lastupdated>
+  <seasonid>644503</seasonid>
+  <seriesid>283346</seriesid>
+  <thumb_added>2016-03-09 22:41:18</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+</Data>

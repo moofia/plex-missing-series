@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>289108</id>
+  <Actors>|Cuba Gooding Jr.|Sarah Paulson|David Schwimmer|Rob Morrow|Steven Pasquale|Malcolm-Jamal Warner|Jordana Brewster|Joseph Siravo|Keesha Sharp|Nathan Lane|Bruce Greenwood|Kenneth Choi|Sterling K. Brown|Christian Clemenson|Selma Blair|Billy Magnussen|John Travolta|Courtney Vance|</Actors>
+  <Airs_DayOfWeek>Tuesday</Airs_DayOfWeek>
+  <Airs_Time>10:00 PM</Airs_Time>
+  <ContentRating>TV-MA</ContentRating>
+  <FirstAired>2016-02-02</FirstAired>
+  <Genre>|Crime|Drama|Horror|Mini-Series|Mystery|Suspense|Thriller|</Genre>
+  <IMDB_ID>tt2788432</IMDB_ID>
+  <Language>en</Language>
+  <Network>FX (US)</Network>
+  <NetworkID></NetworkID>
+  <Overview>American Crime Story is an anthology series centered around some of history's most famous criminals. The first season, subtitled The People vs. O. J. Simpson, focuses on the murder trial of O. J. Simpson.</Overview>
+  <Rating>9.5</Rating>
+  <RatingCount>2</RatingCount>
+  <Runtime>45</Runtime>
+  <SeriesID>194591</SeriesID>
+  <SeriesName>American Crime Story</SeriesName>
+  <Status>Continuing</Status>
+  <added>2014-12-08 17:28:39</added>
+  <addedBy>420041</addedBy>
+  <banner>graphical/289108-g.jpg</banner>
+  <fanart>fanart/original/289108-11.jpg</fanart>
+  <lastupdated>1461580847</lastupdated>
+  <poster>posters/289108-1.jpg</poster>
+  <tms_wanted_old>0</tms_wanted_old>
+  <zap2it_id>EP02308901</zap2it_id>
+</Series>
+<Episode>
+  <id>5163468</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ryan Murphy</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>From the Ashes of Tragedy</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2016-02-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4277096</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The murders of Nicole Brown Simpson and Ronald Goldman lead the LAPD to the home of O.J. Simpson.</Overview>
+  <ProductionCode>1WAX01</ProductionCode>
+  <Rating>8.2</Rating>
+  <RatingCount>6</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Scott Alexander|Larry Karaszewski|</Writer>
+  <absolute_number>1</absolute_number>
+  <filename>episodes/289108/5163468.jpg</filename>
+  <lastupdated>1459930485</lastupdated>
+  <seasonid>616800</seasonid>
+  <seriesid>289108</seriesid>
+  <thumb_added>2016-01-30 16:38:11</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5242623</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ryan Murphy</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Run of His Life</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2016-02-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4277098</IMDB_ID>
+  <Language>en</Language>
+  <Overview>With O.J. Simpson missing in the white Bronco, Robert Shapiro and Robert Kardashian deal with the fallout, as the D.A.’s office and LAPD scramble to save face and find him.</Overview>
+  <ProductionCode>1WAX02</ProductionCode>
+  <Rating>8.5</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Scott Alexander|Larry Karaszewski|</Writer>
+  <absolute_number>2</absolute_number>
+  <filename>episodes/289108/5242623.jpg</filename>
+  <lastupdated>1459930546</lastupdated>
+  <seasonid>616800</seasonid>
+  <seriesid>289108</seriesid>
+  <thumb_added>2016-02-11 15:05:15</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5242625</id>
+  <Combined_episodenumber>3.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>3.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Anthony Hemingway</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Dream Team</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2016-02-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4277102</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Marcia Clark announces that O.J. Simpson has been charged. Robert Shapiro seeks advice from F. Lee Bailey and comes up with a provocative strategy. As Shapiro starts putting together “The Dream Team”, he must convince O.J. to hire Johnnie Cochran.</Overview>
+  <ProductionCode>1WAX03</ProductionCode>
+  <Rating>8.3</Rating>
+  <RatingCount>6</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>D.V. DeVincentis</Writer>
+  <absolute_number>3</absolute_number>
+  <filename>episodes/289108/5242625.jpg</filename>
+  <lastupdated>1459930596</lastupdated>
+  <seasonid>616800</seasonid>
+  <seriesid>289108</seriesid>
+  <thumb_added>2016-02-16 16:54:18</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5242627</id>
+  <Combined_episodenumber>4.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>4.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Anthony Hemingway</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>100% Not Guilty</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2016-02-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4277100</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Johnnie Cochran brings an energy that transforms the case. As jury selection gets underway, the prosecution and defense seek out the assistance of jury research experts, who come back with some surprising results. Meanwhile, Faye Resnick publishes a tell-all book, complicating the court proceedings.</Overview>
+  <ProductionCode>1WAX04</ProductionCode>
+  <Rating>8.5</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Wally Wolodarsky|Maya Forbes|Scott Alexander|Larry Karaszewski|</Writer>
+  <absolute_number>4</absolute_number>
+  <filename>episodes/289108/5242627.jpg</filename>
+  <lastupdated>1461266240</lastupdated>
+  <seasonid>616800</seasonid>
+  <seriesid>289108</seriesid>
+  <thumb_added>2016-02-23 00:40:30</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5242628</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>John Singleton</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Race Card</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2016-03-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4277104</IMDB_ID>
+  <Language>en</Language>
+  <Overview>As the trial begins, Christopher Darden and Johnnie Cochran face off in court. Chris has doubts about Mark Fuhrman as a witness. The jury visits the crime scene.</Overview>
+  <ProductionCode>1WAX05</ProductionCode>
+  <Rating>8.3</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Joe Robert Cole</Writer>
+  <absolute_number>5</absolute_number>
+  <filename>episodes/289108/5242628.jpg</filename>
+  <lastupdated>1461266086</lastupdated>
+  <seasonid>616800</seasonid>
+  <seriesid>289108</seriesid>
+  <thumb_added>2016-03-01 10:56:12</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5318286</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ryan Murphy</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Marcia, Marcia, Marcia</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2016-03-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4277106</IMDB_ID>
+  <Language>en</Language>
+  <Overview>As Marcia Clark juggles her home and work obligations, she starts to feel the public scrutiny of her appearance.</Overview>
+  <ProductionCode>1WAX06</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>D.V. DeVincentis</Writer>
+  <absolute_number>6</absolute_number>
+  <filename>episodes/289108/5318286.jpg</filename>
+  <lastupdated>1461266014</lastupdated>
+  <seasonid>616800</seasonid>
+  <seriesid>289108</seriesid>
+  <thumb_added>2016-03-07 18:39:34</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5324992</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Anthony Hemingway</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Conspiracy Theories</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2016-03-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4277112</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Conspiracy theories start to arise around the case. The prosecution debates whether they should have O.J. Simpson try on the gloves in court.</Overview>
+  <ProductionCode>1WAX07</ProductionCode>
+  <Rating>8.3</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>D.V. DeVincentis</Writer>
+  <absolute_number>7</absolute_number>
+  <filename>episodes/289108/5324992.jpg</filename>
+  <lastupdated>1461266344</lastupdated>
+  <seasonid>616800</seasonid>
+  <seriesid>289108</seriesid>
+  <thumb_added>2016-03-15 22:43:57</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5324993</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Anthony Hemingway</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>A Jury in Jail</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2016-03-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4277114</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Months into the trial, cut off from their families, society and the media, the jurors grow stir crazy and start becoming unlikely targets for the prosecution and the defense. Meanwhile, the country gets an introduction to the science of DNA evidence.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.7</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>8</absolute_number>
+  <filename>episodes/289108/5324993.jpg</filename>
+  <lastupdated>1461266382</lastupdated>
+  <seasonid>616800</seasonid>
+  <seriesid>289108</seriesid>
+  <thumb_added>2016-03-24 10:02:53</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5324994</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Anthony Hemingway</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Manna from Heaven</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2016-03-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4277116</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Johnnie Cochran and F. Lee Bailey head across the country to get their hands on the Mark Fuhrman tapes. Judge Ito must decide whether the tapes, and the racial epithets they contain, are admissible.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.3</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Scott Alexander|Larry Karaszewski|</Writer>
+  <absolute_number>9</absolute_number>
+  <filename>episodes/289108/5324994.jpg</filename>
+  <lastupdated>1461433997</lastupdated>
+  <seasonid>616800</seasonid>
+  <seriesid>289108</seriesid>
+  <thumb_added>2016-04-06 05:28:40</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+<Episode>
+  <id>5545827</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Verdict</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2016-04-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt4277118</IMDB_ID>
+  <Language>en</Language>
+  <Overview>In the season finale, the prosecution and defense make their closing statements; the jurors deliberate; and the verdict is given.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/289108/5545827.jpg</filename>
+  <lastupdated>1461580909</lastupdated>
+  <seasonid>616800</seasonid>
+  <seriesid>289108</seriesid>
+  <thumb_added>2016-04-05 13:23:24</thumb_added>
+  <thumb_height>225</thumb_height>
+  <thumb_width>400</thumb_width>
+</Episode>
+</Data>
