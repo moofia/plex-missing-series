@@ -74,7 +74,8 @@ def number_pad(season, episode)
 
 end
 
-def episodes_seen ( show, season, episode, name)
+# keeps track of what episodes we have
+def episodes_track ( show, season, episode, name)
   @eps[show]                 = {} if @eps[show].class.to_s != 'Hash'
   @eps[show][season]         = {} if @eps[show][season].class.to_s != 'Hash'
   @eps[show][season][episode] = name
@@ -197,7 +198,7 @@ def episodes_sql_get
         episode = row_episodes[0]
         name    = row_episodes[1]
 
-        episodes_seen show, season, episode, name
+        episodes_track show, season, episode, name
         episode_check_previous show, season, episode
         show_print show, season, episode, name 
 
@@ -212,3 +213,4 @@ end
 
 episodes_sql_get
 
+debug @eps
