@@ -1,3 +1,5 @@
+# anything related to directly connecting to thetvdb
+
 # http://www.thetvdb.com/
 # http://www.thetvdb.com/wiki/index.php/Programmers_API
 

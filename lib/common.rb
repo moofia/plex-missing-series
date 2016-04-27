@@ -12,7 +12,7 @@ def log_debug(msg)
   end
 end
 
-def read_config
+def parse_config
   log_debug "read_config"
   begin
     $config = YAML::load(File.read("#{$script_dir}/etc/config.defaults.yaml"))
@@ -26,15 +26,18 @@ def get_opts
   # options 
   begin
     $opts = Getopt::Long.getopts(
-      ["--debug", Getopt::BOOLEAN],
-      ["--help",  Getopt::BOOLEAN],
-      ["--show",  Getopt::OPTIONAL],
+      ["--debug",    Getopt::BOOLEAN],
+      ["--help",     Getopt::BOOLEAN],
+      ["--show",     Getopt::OPTIONAL],
+      ["--thetvdb",  Getopt::BOOLEAN],
       )
   rescue Getopt::Long::Error => e
     puts "#{@script} -> error #{e.message}"  
     puts 
     help
   end
+  
+  help if $opts["help"]
 end
 
 def help
@@ -45,6 +48,7 @@ def help
   --help            help
   --debug           debugging enable
   --show            show we interested in
+  --thetvdb         use TheTVDB for missing episodes [caches data so might not be current]
   
   
 EOF

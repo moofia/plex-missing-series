@@ -1,6 +1,5 @@
 #! /usr/bin/env ruby
 
-
 require 'sqlite3'
 require 'getopt/long'
 require 'awesome_print'
@@ -19,7 +18,7 @@ require "#{$script_dir}/lib/plex"
 require "#{$script_dir}/lib/missing"
 require "#{$script_dir}/lib/http"
 require "#{$script_dir}/lib/thetvdb"
-require "#{$script_dir}/lib/last"
+require "#{$script_dir}/lib/thetvdb_last"
 
 # exit on ctrl-c
 trap("INT") do
@@ -29,18 +28,14 @@ end
 
 @script = File.basename $0 
 
-$opts           = {}
-$opts["debug"]  = 0
-
 get_opts
-
-help if $opts["help"]
-
-read_config
+parse_config
 
 episodes = plex_episodes_sql_get_all
-#look_for_last episodes
 
-look_for_missing episodes
-
+if $opts['thetvdb']
+  thetvdb_last episodes
+else 
+  look_for_missing episodes
+end
 
