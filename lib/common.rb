@@ -1,5 +1,29 @@
 # place for common methods
 
+def read_config
+  begin
+    $config = YAML::load(File.read("#{$script_dir}/etc/config.defaults.yaml"))
+  rescue => e
+    puts "#{@script} -> yaml error #{e.message}"  
+    exit 2
+  end
+end
+
+def get_opts
+  # options 
+  begin
+    $opts = Getopt::Long.getopts(
+      ["--debug", Getopt::BOOLEAN],
+      ["--help",  Getopt::BOOLEAN],
+      ["--show",  Getopt::OPTIONAL],
+      )
+  rescue Getopt::Long::Error => e
+    puts "#{@script} -> error #{e.message}"  
+    puts 
+    help
+  end
+end
+
 def help
 
   puts <<-EOF
