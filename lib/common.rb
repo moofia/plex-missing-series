@@ -1,5 +1,19 @@
 # place for common methods
 
+def help
+
+  puts <<-EOF
+#{@script} [OPTIONS]
+
+  --help            help
+  --debug           debugging enable
+  --show            show we interested in
+  
+  
+EOF
+  exit
+end
+
 # if debugging is turned on puts
 def puts_debug(msg)
   if $opts["debug"]

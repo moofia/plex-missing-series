@@ -4,6 +4,7 @@
 require 'sqlite3'
 require 'getopt/long'
 require 'awesome_print'
+require 'yaml'
 
 $script_dir = File.expand_path($0).gsub(/\/bin\/.*/,'')
 
@@ -25,20 +26,6 @@ $opts                    = {}
 $opts["debug"]           = 0
 $opts["season_complete"] = 0  # not used yet
 
-def help
-
-  puts <<-EOF
-#{@script} [OPTIONS]
-
-  --help            help
-  --debug           debugging enable
-  --show            show we interested in
-  
-  
-EOF
-  exit
-end
-
 # options 
 begin
   $opts = Getopt::Long.getopts(
@@ -53,6 +40,13 @@ rescue Getopt::Long::Error => e
 end
 
 help if $opts["help"]
+
+begin
+  $config = YAML::load(File.read("#{$script_dir}/etc/config.defaults.yaml"))
+rescue => e
+  puts "#{@script} -> yaml error #{e.message}"  
+  exit 2
+end
 
 plex_episodes_sql_get_all
 look_for_missing

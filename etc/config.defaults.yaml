@@ -1,0 +1,14 @@
+# Defaults which will be overwritten
+#
+---
+settings:
+  blah: moo
+  foo: blah
+  
+tvdb:
+  api_key: 31384A8E0F418F3B
+  mirror: http://thetvdb.com # should be changed to use the api prefered method of finding the correct mirror
+  # now defaults to home dir of script
+  #cache_directory: /tmp/tvdb
+  default: true # always query tvdb
+  tvdb_find_missing: false # enables finding the last episode from tvdb when finding missing shows
