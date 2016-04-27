@@ -1,9 +1,9 @@
 # all work related to finding the last episode
 
-def last_ep(show)
+def last_ep(episodes,show)
   last_ep = '0;0'
-  @eps[show].keys.each do |season|
-    @eps[show][season].keys.each do |episode|
+  episodes[show].keys.each do |season|
+    episodes[show][season].keys.each do |episode|
       last_ep = "#{season};#{episode}"
     end
   end
@@ -11,10 +11,10 @@ def last_ep(show)
   return last_ep.split(';')
 end
 
-def last_from_thetvdb(show)
+def last_from_thetvdb(episodes,show)
   thetvdb_episodes = thetvdb_lookup(show)
   
-  last_season, last_episode = last_ep(show)
+  last_season, last_episode = last_ep(episodes,show)
   
   thetvdb_episodes.keys.each do |show|
     thetvdb_episodes[show].keys.each do |season|
@@ -28,9 +28,9 @@ def last_from_thetvdb(show)
         missing = false
         
         # remove shows that we have
-        if @eps.has_key? show 
-          if @eps[show].has_key?(season.to_i)
-            if @eps[show][season.to_i].has_key?(episode.to_i)
+        if episodes.has_key? show 
+          if episodes[show].has_key?(season.to_i)
+            if episodes[show][season.to_i].has_key?(episode.to_i)
               plex_has = true              
             end
           end
@@ -63,18 +63,8 @@ def last_from_thetvdb(show)
 end
 
 # looks for the last episode
-# can decide what to do later or which API to use to see if 
-# a new one is available
-def look_for_last
-  
-  episodes_last = {}
-  @eps.keys.each do |show|
-    last_from_thetvdb(show)
-    #@eps[show].keys.each do |season|
-    #  @eps[show][season].keys.each do |episode|
-    #    episodes_last[show] = show_index(season, episode)
-    #  end
-    #end
+def look_for_last(episodes)  
+  episodes.keys.each do |show|
+    last_from_thetvdb(episodes,show)
   end
-  
 end

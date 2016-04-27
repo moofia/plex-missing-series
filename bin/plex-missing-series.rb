@@ -11,7 +11,6 @@ require 'xml/libxml'
 require 'cgi'
 require 'date'
 
-
 $script_dir = File.expand_path($0).gsub(/\/bin\/.*/,'')
 
 # main include file for the script
@@ -22,7 +21,6 @@ require "#{$script_dir}/lib/http"
 require "#{$script_dir}/lib/thetvdb"
 require "#{$script_dir}/lib/last"
 
-
 # exit on ctrl-c
 trap("INT") do
   puts
@@ -31,10 +29,8 @@ end
 
 @script = File.basename $0 
 
-@eps                     = {} # shit name must change
-$opts                    = {}
-$opts["debug"]           = 0
-$opts["season_complete"] = 0  # not used yet
+$opts           = {}
+$opts["debug"]  = 0
 
 get_opts
 
@@ -42,12 +38,9 @@ help if $opts["help"]
 
 read_config
 
-plex_episodes_sql_get_all
-look_for_last
+episodes = plex_episodes_sql_get_all
+#look_for_last episodes
 
-exit
-
-plex_episodes_sql_get_all
-look_for_missing
+look_for_missing episodes
 
 

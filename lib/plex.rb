@@ -60,15 +60,16 @@ def plex_find_db
 end
 
 # keeps track of what episodes we have
-def plex_episodes_track ( show, season, episode, name)
-  @eps[show]                 = {} if @eps[show].class.to_s != 'Hash'
-  @eps[show][season]         = {} if @eps[show][season].class.to_s != 'Hash'
-  @eps[show][season][episode] = name
+def plex_episodes_track ( episodes, show, season, episode, name)
+  episodes[show]                 = {} if episodes[show].class.to_s != 'Hash'
+  episodes[show][season]         = {} if episodes[show][season].class.to_s != 'Hash'
+  episodes[show][season][episode] = name
 end
 
 # controll loop which selects from sqlite shows / seasons / episodes
 def plex_episodes_sql_get_all
 
+  episodes = {}
   puts_debug "episodes_sql_get"
   db = plex_db_setup
   
@@ -93,10 +94,11 @@ def plex_episodes_sql_get_all
         episode = row_episodes[0]
         name    = row_episodes[1]
 
-        plex_episodes_track show, season, episode, name
+        plex_episodes_track episodes, show, season, episode, name
         plex_show_print_debug show, season, episode, name 
 
       end
     end
   end
+  return episodes
 end
