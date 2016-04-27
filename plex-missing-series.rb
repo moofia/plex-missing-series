@@ -60,7 +60,9 @@ def debug(what)
   exit
 end
 
-def number_pad(season, episode)
+# XXX: terrible name!
+# what do you s01e01 ? the season episode combo?
+def show_index(season, episode)
 
   if ( episode < 10 ) 
     episode = "0#{episode}"
@@ -147,7 +149,7 @@ def episode_check_previous ( show, season, episode)
 
   for i in (episode - 1).downto(1)
     if not @eps[show][season][i]
-      missing_index = number_pad season, i
+      missing_index = show_index season, i
       missing[i] = "#{show};#{missing_index}"
     else 
       break
@@ -163,15 +165,15 @@ def episode_check_previous ( show, season, episode)
 end
 
 # print the shows that are found only in debug mode
-def show_print ( show, season, episode, name)
+def show_print_debug ( show, season, episode, name)
   if $opts["debug"]
-    show_index = number_pad season, episode
+    show_index = show_index season, episode
     puts "show --> #{show} #{show_index} #{name}"
   end
 end
 
 # controll loop which selects from sqlite shows / seasons / episodes
-def episodes_sql_get
+def episodes_sql_get_all
 
   puts_debug "episodes_sql_get"
   db = db_setup
@@ -199,18 +201,44 @@ def episodes_sql_get
         name    = row_episodes[1]
 
         episodes_track show, season, episode, name
-        episode_check_previous show, season, episode
-        show_print show, season, episode, name 
+        show_print_debug show, season, episode, name 
 
       end
     end
   end
 end
 
+def look_for_missing
+  @eps.keys.each do |show|
+    @eps[show].keys.each do |season|
+      @eps[show][season].keys.each do |episode|
+        episode_check_previous show, season, episode
+      end
+    end
+  end
+end
+
+# looks for the last episode
+# can decide what to do later or which API to use to see if 
+# a new one is available
+def look_for_last
+  
+  episodes_last = {}
+  @eps.keys.each do |show|
+    @eps[show].keys.each do |season|
+      @eps[show][season].keys.each do |episode|
+        episodes_last[show] = show_index(season, episode)
+      end
+    end
+  end
+  debug episodes_last
+end
+
 #
 # Start
 #
 
-episodes_sql_get
+episodes_sql_get_all
+look_for_missing
+#look_for_last
 
-debug @eps
