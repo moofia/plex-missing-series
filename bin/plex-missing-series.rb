@@ -36,6 +36,6 @@ episodes = plex_episodes_sql_get_all
 if $opts['thetvdb']
   thetvdb_last episodes
 else 
-  look_for_missing episodes
+  missing episodes
 end
 

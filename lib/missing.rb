@@ -9,7 +9,7 @@ def missing_process (show, pair)
 end
 
 # check if we have the previous episode
-def episode_check_previous ( episodes, show, season, episode)
+def missing_episode_check_previous ( episodes, show, season, episode)
 
   missing = {}
 
@@ -30,11 +30,11 @@ def episode_check_previous ( episodes, show, season, episode)
 
 end
 
-def look_for_missing(episodes)
+def missing(episodes)
   episodes.keys.each do |show|
     episodes[show].keys.each do |season|
       episodes[show][season].keys.each do |episode|
-        episode_check_previous episodes, show, season, episode
+        missing_episode_check_previous episodes, show, season, episode
       end
     end
   end

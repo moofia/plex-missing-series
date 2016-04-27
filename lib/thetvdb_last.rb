@@ -1,4 +1,4 @@
-# all work related to finding the last episode
+# all work related to finding the last episode from thetvdb
 
 def thetvdb_last_ep(episodes,show)
   last_ep = '0;0'
