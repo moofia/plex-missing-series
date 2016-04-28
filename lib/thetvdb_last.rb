@@ -53,7 +53,7 @@ def thetvdb_last_process(episodes,show)
           date_available = Date.today + 1
           date_aired     = Date.parse first_aired
           if ( date_available > date_aired ) and missing
-            puts "show --> #{show} #{show_index} !!MISSING!! aired: #{first_aired}"
+            missing_print show, show_index,"aired: #{first_aired}"
             
           end
         end
