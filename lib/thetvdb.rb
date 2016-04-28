@@ -86,6 +86,7 @@ def get_doc(show_id,show)
       file.puts xml_data
     end
   end
+  return doc
 end
 
 # not really sure yet on when we will force this
@@ -102,6 +103,7 @@ end
 # the time stamps to know when to fetch new data.
 def thetvdb_get_show_episodes(show_id,show)
   episodes = {}
+  $opts["thetvdb-refresh"] = true;
 
   doc = get_doc(show_id,show);
   #force_refresh(doc)
