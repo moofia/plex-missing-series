@@ -43,12 +43,13 @@ def thetvdb_get_show_id(show)
       #xml_data.each {|x| file.puts x}
     end
   end
-  showIncorrectStatus = false
   
   doc.find('//Data/Series').each do |item|
     find = show
     find = Regexp.escape(show) if show =~ /\'|\(|\&|\*|\?/
     
+    #status      = item.find('Status')[0].child.to_s
+    #debug status
     series_name = item.find('SeriesName')[0].child.to_s
     series_name = CGI.unescapeHTML(series_name)
     pre_regex = '^'
@@ -57,7 +58,6 @@ def thetvdb_get_show_id(show)
 
     if series_name  =~ /#{pre_regex}#{find}$/i     
        show_id = item.find('id')[0].child.to_s
-       showIncorrectStatus = false       
     end
 
   end

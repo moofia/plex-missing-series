@@ -63,6 +63,7 @@ end
 
 def debug(what)
   puts "#{@script} -> debug and exit..\n"
+  ap what.class
   ap what
   exit
 end
