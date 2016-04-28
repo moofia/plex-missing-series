@@ -32,10 +32,12 @@ def get_opts
   # options 
   begin
     $opts = Getopt::Long.getopts(
-      ["--debug",    Getopt::BOOLEAN],
-      ["--help",     Getopt::BOOLEAN],
-      ["--show",     Getopt::OPTIONAL],
-      ["--thetvdb",  Getopt::BOOLEAN],
+      ["--debug",        Getopt::BOOLEAN],
+      ["--help",         Getopt::BOOLEAN],
+      ["--show",         Getopt::OPTIONAL],
+      ["--thetvdb",      Getopt::BOOLEAN],
+      ["--torrents",     Getopt::BOOLEAN],
+      ["--torrentsonly", Getopt::BOOLEAN],
       )
   rescue Getopt::Long::Error => e
     puts "#{@script} -> error #{e.message}"  
@@ -54,6 +56,8 @@ def help
   --help            help
   --debug           debugging enable
   --show            request a single show
+  --torrents        include Torrent links in the output of missing episodes.
+  --torrentsonly    list only the torrent links for the missing episodes found.
   --thetvdb         use TheTVDB for missing episodes
   
   
