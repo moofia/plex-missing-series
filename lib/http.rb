@@ -1,6 +1,6 @@
 # returns a xml of the url to get via a proxy
 def http_get_via_proxy(url)
-  log("http get via proxy : #{url}") if $opts["debug"]
+  log_debug("http get via proxy : #{url}")
   begin
     proxy = ENV['http_proxy']
     proxy_host, proxy_port = proxy.gsub(/^http:\/\//,'').split(/:/)
@@ -18,7 +18,7 @@ end
 
 # returns a xml of the url to gets directly
 def http_get_direct(url)
-  log("http get : #{url}") if $opts["debug"]
+  log_debug("http get : #{url}")
   begin
     html = Net::HTTP.get_response(URI.parse(url)).body
   # XXX must fix the rescue its not working

@@ -5,7 +5,9 @@
 
 # TODO: needs massive refactoring!
 
-def thetvdb_download(show, url)
+def thetvdb_get_xml(show, url, filename)
+  log_debug
+  
   local_file = show.gsub(/\*/,'_') # seems really spaz, should encode the file to disk
   
   cache_dir = $script_dir + "/var/thetvdb/" + local_file
@@ -13,8 +15,11 @@ def thetvdb_download(show, url)
 
   
   FileUtils.mkdir_p(cache_dir) if not File.directory? cache_dir
-  cache = cache_dir + "/" + show + ".xml"
-  if File.exists? cache and not $opts["tvdb-refresh"]
+  cache = cache_dir + "/" + filename + ".xml"
+    
+  if File.exists? cache and not $config["tvdb-refresh"]
+    
+    log_debug("thetvdb cache: #{show}")
     parser = XML::Parser.file cache
     begin
       doc = parser.parse
@@ -23,7 +28,7 @@ def thetvdb_download(show, url)
       return 
     end
   else
-    log_debug("thetvdb retrieving show id via www: #{show}")
+    log_debug("thetvdb direct: #{show}")
 
     xml_data =  http_get(url)
     parser = XML::Parser.string xml_data
@@ -33,6 +38,7 @@ def thetvdb_download(show, url)
       log("thetvdb error: #{err} when retrieving \'#{show}\'")
       return 
     end
+    log_debug("saving cache \"#{cache}\"")
     File.open(cache, 'w') do |file| 
       file.puts xml_data
     end
@@ -42,9 +48,11 @@ end
 
 # query thetvdb.com to get the show id.
 def thetvdb_get_show_id(show)
+  log_debug
   show_escaped = CGI.escape(show)
   url = $config["thetvdb"]["mirror"] + '/api/GetSeries.php?&language=en&seriesname=' + show_escaped
-  doc = thetvdb_download(show, url)
+  $config["tvdb-refresh"] = false;
+  doc = thetvdb_get_xml(show, url, show)
   
   show_id = ""
   
@@ -70,34 +78,9 @@ def thetvdb_get_show_id(show)
   show_id
 end
 
-# alot of the data can be cached for increased speed. 
-def thetvdb_get_doc(show_id,show)
-  local_file = show.gsub(/\*/,'_')
-  cache_dir = $script_dir + "/var/thetvdb/" + local_file
-  cache_dir = $config["thetvdb"]["cache_directory"] + "/" + local_file if $config["thetvdb"].has_key? "cache_directory"
-  cache = cache_dir + "/" + show_id + ".xml"
-  
-  if File.exists? cache and not $opts["thetvdb-refresh"]
-    log_debug("thetvdb retrieving episodes via cache: #{show} (#{show_id})")
-    parser = XML::Parser.file cache
-    doc = parser.parse
-  else
-    log_debug("thetvdb retrieving episodes via www: #{show} (#{show_id})")
-    url = $config["thetvdb"]["mirror"] + '/api/' + $config["thetvdb"]["api_key"] + '/series/' + show_id + '/all/en.xml'
-    xml_data =  http_get(url)
-  
-    parser = XML::Parser.string xml_data
-    doc = parser.parse
-    
-    File.open(cache, 'w') do |file|
-      file.puts xml_data
-    end
-  end
-  return doc
-end
-
 # not really sure yet on when we will force this
 def thetvdb_force_refresh(doc)
+  log_debug
   refresh = false
   doc.find('//Data/Series').each do |item| 
    status  = item.find('Status')[0].child.to_s
@@ -109,10 +92,13 @@ end
 # query thetvdb.com to get the episodes of the show, right now this is cached but one will have to look
 # the time stamps to know when to fetch new data.
 def thetvdb_get_show_episodes(show_id,show)
+  log_debug
   episodes = {}
-  $opts["thetvdb-refresh"] = true;
+  $config["tvdb-refresh"] = true;
 
-  doc = thetvdb_get_doc(show_id,show);
+  url = $config["thetvdb"]["mirror"] + '/api/' + $config["thetvdb"]["api_key"] + '/series/' + show_id + '/all/en.xml'  
+  doc = thetvdb_get_xml(show, url, show_id)
+
   #thetvdb_force_refresh(doc)
   
   doc.find('//Data/Episode').each do |item| 
@@ -131,6 +117,7 @@ end
 
 # returns a hash of episodes
 def thetvdb_find(show)
+  log_debug
   episodes = {}
   show_id = thetvdb_get_show_id(show)
   log_debug "thetvdb show : #{show} : show_id : #{show_id}"
