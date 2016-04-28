@@ -36,6 +36,7 @@ def get_opts
       ["--help",     Getopt::BOOLEAN],
       ["--show",     Getopt::OPTIONAL],
       ["--thetvdb",  Getopt::BOOLEAN],
+      ["--torrents", Getopt::BOOLEAN],
       )
   rescue Getopt::Long::Error => e
     puts "#{@script} -> error #{e.message}"  
@@ -54,6 +55,7 @@ def help
   --help            help
   --debug           debugging enable
   --show            request a single show
+  --torrents        include Torrent links in the output of missing episodes.
   --thetvdb         use TheTVDB for missing episodes
   
   
