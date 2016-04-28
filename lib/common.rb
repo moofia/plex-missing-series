@@ -54,7 +54,7 @@ def help
   --help            help
   --debug           debugging enable
   --show            request a single show
-  --thetvdb         use TheTVDB for missing episodes [caches data so might not be current]
+  --thetvdb         use TheTVDB for missing episodes
   
   
 EOF
