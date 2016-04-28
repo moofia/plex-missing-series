@@ -3,4 +3,6 @@
 *.swp
 .DS_Store
 /var/thetvdb/*
+/var/thetvdb/*/*
+/var/thetvdb/*/*/*
 /etc/config.yaml
