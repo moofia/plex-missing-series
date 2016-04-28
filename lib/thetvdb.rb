@@ -3,13 +3,11 @@
 # http://www.thetvdb.com/
 # http://www.thetvdb.com/wiki/index.php/Programmers_API
 
-# needs massive refactoring!
+# TODO: needs massive refactoring!
 
 # query thetvdb.com to get the show id.
 def thetvdb_get_show_id(show)
-  # so confused why this is here suddenly!
-  #show.gsub!(/:/,'')
-  local_file = show.gsub(/\*/,'_')
+  local_file = show.gsub(/\*/,'_') # seems really spaz, should encode the file to disk
   
   show_id = ""
   cache_dir = $script_dir + "/var/thetvdb/" + local_file
@@ -40,7 +38,6 @@ def thetvdb_get_show_id(show)
     end
     File.open(cache, 'w') do |file| 
       file.puts xml_data
-      #xml_data.each {|x| file.puts x}
     end
   end
   
@@ -48,8 +45,6 @@ def thetvdb_get_show_id(show)
     find = show
     find = Regexp.escape(show) if show =~ /\'|\(|\&|\*|\?/
     
-    #status      = item.find('Status')[0].child.to_s
-    #debug status
     series_name = item.find('SeriesName')[0].child.to_s
     series_name = CGI.unescapeHTML(series_name)
     pre_regex = '^'
@@ -68,21 +63,19 @@ def thetvdb_get_show_id(show)
   show_id
 end
 
-# query thetvdb.com to get the episodes of the show, right now this is cached but one will have to look
-# the time stamps to know when to fetch new data.
-def thetvdb_get_show_episodes(show_id,show)
-  episodes = {}
+# alot of the data can be cached for increased speed. 
+def get_doc(show_id,show)
   local_file = show.gsub(/\*/,'_')
   cache_dir = $script_dir + "/var/thetvdb/" + local_file
   cache_dir = $config["thetvdb"]["cache_directory"] + "/" + local_file if $config["thetvdb"].has_key? "cache_directory"
   cache = cache_dir + "/" + show_id + ".xml"
   
   if File.exists? cache and not $opts["thetvdb-refresh"]
-    log_debug("thetvdb retrieving show episodes via cache: #{show} (#{show_id})")
+    log_debug("thetvdb retrieving episodes via cache: #{show} (#{show_id})")
     parser = XML::Parser.file cache
     doc = parser.parse
   else
-    log_debug("thetvdb retrieving show episodes via www: #{show} (#{show_id})")
+    log_debug("thetvdb retrieving episodes via www: #{show} (#{show_id})")
     url = $config["thetvdb"]["mirror"] + '/api/' + $config["thetvdb"]["api_key"] + '/series/' + show_id + '/all/en.xml'
     xml_data =  http_get(url)
   
@@ -90,12 +83,29 @@ def thetvdb_get_show_episodes(show_id,show)
     doc = parser.parse
     
     File.open(cache, 'w') do |file|
-      # TODO: odd no idea whats changed here or why
       file.puts xml_data
-      #xml_data.split(/\n/).each {|x| file.puts x}
     end
   end
+end
 
+# not really sure yet on when we will force this
+def force_refresh(doc)
+  refresh = false
+  doc.find('//Data/Series').each do |item| 
+   status  = item.find('Status')[0].child.to_s
+   debug status
+  end
+  refresh
+end
+
+# query thetvdb.com to get the episodes of the show, right now this is cached but one will have to look
+# the time stamps to know when to fetch new data.
+def thetvdb_get_show_episodes(show_id,show)
+  episodes = {}
+
+  doc = get_doc(show_id,show);
+  #force_refresh(doc)
+  
   doc.find('//Data/Episode').each do |item| 
    season       = item.find('SeasonNumber')[0].child.to_s
    episode      = item.find('EpisodeNumber')[0].child.to_s
