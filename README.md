@@ -4,7 +4,7 @@ Script which displays missing series in PLEX
 ##REQUIREMENTS:
   SQLite3 development headers for the gem’s native extension to compile against.
     ```
-    sudo apt-get install libsqlite3-dev)
+    sudo apt-get install libsqlite3-dev
     ```
   SQLite3 Ruby Gem
   ```
@@ -25,5 +25,5 @@ Script which displays missing series in PLEX
   If you Cloned the Git Repo via http(s) then you won't be able to commit. Clone a fresh copy using SSH.
   Please note that your SSH Public Key needs to associated with your GitHub account (via https://github.com/settings/ssh).
   ```
-    git clone git@github.com:moofia/plex-missing-series.git)
+    git clone git@github.com:moofia/plex-missing-series.git
   ```
