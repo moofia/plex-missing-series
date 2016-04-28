@@ -5,11 +5,9 @@
 
 # TODO: needs massive refactoring!
 
-# query thetvdb.com to get the show id.
-def thetvdb_get_show_id(show)
+def thetvdb_download(show, url)
   local_file = show.gsub(/\*/,'_') # seems really spaz, should encode the file to disk
   
-  show_id = ""
   cache_dir = $script_dir + "/var/thetvdb/" + local_file
   cache_dir = $config["thetvdb"]["cache_directory"] + "/" + local_file if $config["thetvdb"].has_key? "cache_directory"
 
@@ -26,8 +24,7 @@ def thetvdb_get_show_id(show)
     end
   else
     log_debug("thetvdb retrieving show id via www: #{show}")
-    show_escaped = CGI.escape(show)
-    url = $config["thetvdb"]["mirror"] + '/api/GetSeries.php?&language=en&seriesname=' + show_escaped
+
     xml_data =  http_get(url)
     parser = XML::Parser.string xml_data
     begin
@@ -40,6 +37,16 @@ def thetvdb_get_show_id(show)
       file.puts xml_data
     end
   end
+  return doc
+end
+
+# query thetvdb.com to get the show id.
+def thetvdb_get_show_id(show)
+  show_escaped = CGI.escape(show)
+  url = $config["thetvdb"]["mirror"] + '/api/GetSeries.php?&language=en&seriesname=' + show_escaped
+  doc = thetvdb_download(show, url)
+  
+  show_id = ""
   
   doc.find('//Data/Series').each do |item|
     find = show
@@ -64,7 +71,7 @@ def thetvdb_get_show_id(show)
 end
 
 # alot of the data can be cached for increased speed. 
-def get_doc(show_id,show)
+def thetvdb_get_doc(show_id,show)
   local_file = show.gsub(/\*/,'_')
   cache_dir = $script_dir + "/var/thetvdb/" + local_file
   cache_dir = $config["thetvdb"]["cache_directory"] + "/" + local_file if $config["thetvdb"].has_key? "cache_directory"
@@ -90,7 +97,7 @@ def get_doc(show_id,show)
 end
 
 # not really sure yet on when we will force this
-def force_refresh(doc)
+def thetvdb_force_refresh(doc)
   refresh = false
   doc.find('//Data/Series').each do |item| 
    status  = item.find('Status')[0].child.to_s
@@ -105,8 +112,8 @@ def thetvdb_get_show_episodes(show_id,show)
   episodes = {}
   $opts["thetvdb-refresh"] = true;
 
-  doc = get_doc(show_id,show);
-  #force_refresh(doc)
+  doc = thetvdb_get_doc(show_id,show);
+  #thetvdb_force_refresh(doc)
   
   doc.find('//Data/Episode').each do |item| 
    season       = item.find('SeasonNumber')[0].child.to_s
@@ -123,7 +130,7 @@ def thetvdb_get_show_episodes(show_id,show)
 end
 
 # returns a hash of episodes
-def thetvdb_lookup(show)
+def thetvdb_find(show)
   episodes = {}
   show_id = thetvdb_get_show_id(show)
   log_debug "thetvdb show : #{show} : show_id : #{show_id}"

@@ -12,7 +12,7 @@ def thetvdb_last_ep(episodes,show)
 end
 
 def thetvdb_last_process(episodes,show)
-  thetvdb_episodes = thetvdb_lookup(show)
+  thetvdb_episodes = thetvdb_find(show)
   
   last_season, last_episode = thetvdb_last_ep(episodes,show)
   
