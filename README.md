@@ -3,9 +3,9 @@ Script which displays missing series in PLEX
 
 ##REQUIREMENTS:
   SQLite3 development headers for the gem’s native extension to compile against.
-    ```
-    sudo apt-get install libsqlite3-dev
-    ```
+  ```
+  sudo apt-get install libsqlite3-dev
+  ```
   SQLite3 Ruby Gem
   ```
   sudo gem install sqlite3
