@@ -1,7 +1,12 @@
 # missing episodes
 
 def missing_print (show, pair)
-  puts "show --> #{show} #{pair} !!MISSING!!"
+  if $opts["torrents"]
+    data = URI.escape(show+" "+pair)
+    puts "show --> #{show} #{pair} [ URL: http://thepiratebay.se/search/#{data}/0/7/200 ]"
+  else
+    puts "show --> #{show} #{pair} !!MISSING!!"
+  end
 end
 
 def missing_process (show, pair)
