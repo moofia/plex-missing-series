@@ -1,9 +1,9 @@
 # All Plex related things go here
 
 # print the shows that are found only in debug mode
-def plex_show_print_debug ( show, season, episode, name)
+def plex_found_debug ( show, season, episode, name)
   show_index = show_index season, episode
-  log_debug "show --> #{show} #{show_index} #{name}"
+  log_debug "found --> #{show} #{show_index} #{name}"
 end
 
 # very basic db setup
@@ -93,7 +93,7 @@ def plex_episodes_sql_get_all
         name    = row_episodes[1]
 
         plex_episodes_track episodes, show, season, episode, name
-        plex_show_print_debug show, season, episode, name 
+        plex_found_debug show, season, episode, name 
 
       end
     end
