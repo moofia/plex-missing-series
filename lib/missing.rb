@@ -1,28 +1,31 @@
 # missing episodes
 
-def missing_print (show, pair,msg=nil)
-  msg ||= '' # there are times when we need to display extra information
-  if $opts["torrentsonly"]
-    data = URI.escape(show+" "+pair)
-    if $opts["kat"]
-      puts "https://kat.cr/usearch/%22#{data}%20category%3Atv/?field=seeders&sorder=desc"
-    else
-      puts "http://thepiratebay.se/search/#{data}/0/7/200"
-    end
-  elsif $opts["torrents"]
-    data = URI.escape(show+" "+pair)
-    if $opts["kat"]
-      puts "show --> #{show} #{pair} #{msg} [ URL: https://kat.cr/usearch/%22#{data}%20category%3Atv/?field=seeders&sorder=desc"
-    else
-      puts "show --> #{show} #{pair} #{msg} [ URL: http://thepiratebay.se/search/#{data}/0/7/200 ]"
-    end
+def missing_torrent(show,pair)
+  data = URI.escape(show+" "+pair)
+  if $opts["kat"]
+    url = "https://kat.cr/usearch/%22#{data}%20category%3Atv/?field=seeders&sorder=desc"
   else
-    puts "show --> #{show} #{pair} !!MISSING!! #{msg}"
+    url = "http://thepiratebay.se/search/#{data}/0/7/200"
+  end
+  return url
+end
+
+def missing_display (show, pair,extra=nil)
+  extra ||= '' # there are times when we need to display extra information
+  
+  if $opts['urls']
+    extra = extra + ' ' + missing_torrent(show, pair)
+  end
+  
+  if $opts['urls_only']
+    puts extra
+  else
+    puts "show --> #{show} #{pair} !!MISSING!! #{extra}"
   end
 end
 
 def missing_process (show, pair)
-  missing_print show, pair
+  missing_display show, pair
 end
 
 # check if we have the previous episode

@@ -36,8 +36,8 @@ def get_opts
       ["--help",         Getopt::BOOLEAN],
       ["--show",         Getopt::OPTIONAL],
       ["--thetvdb",      Getopt::BOOLEAN],
-      ["--torrents",     Getopt::BOOLEAN],
-      ["--torrentsonly", Getopt::BOOLEAN],
+      ["--urls",         Getopt::BOOLEAN],
+      ["--urls_only",    Getopt::BOOLEAN],
       ["--kat",          Getopt::BOOLEAN],
       )
   rescue Getopt::Long::Error => e
@@ -54,13 +54,13 @@ def help
   puts <<-EOF
 #{@script} [OPTIONS]
 
-  --help            help
-  --debug           debugging enable
-  --show            request a single show
-  --torrents        include Torrent links in the output of missing episodes.
-  --torrentsonly    list only the torrent links for the missing episodes found.
+  --help            help.
+  --debug           debugging enable.
+  --show            request a single show.
+  --urls            include URLS in the output of missing episodes.
+  --urls_only       list only the URLS for the missing episodes found.
   --kat             provide KickAss Torrents Links instead of the default Pirate Bay Links.
-  --thetvdb         use TheTVDB for missing episodes
+  --thetvdb         use TheTVDB for missing episodes.
   
   
 EOF
