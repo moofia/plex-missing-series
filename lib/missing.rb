@@ -2,7 +2,7 @@
 
 def missing_torrent(show,pair)
   data = URI.escape(show+" "+pair)
-  if $opts["kat"]
+  if $opts['kat']
     url = "https://kat.cr/usearch/%22#{data}%20category%3Atv/?field=seeders&sorder=desc"
   else
     url = "http://thepiratebay.se/search/#{data}/0/7/200"
