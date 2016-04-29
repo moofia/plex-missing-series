@@ -50,9 +50,9 @@ def thetvdb_last_process(episodes,show)
         missing = false if plex_has
         
         if first_aired =~ /\w/
-          date_available = Date.today + 1
+          date_available = Date.today
           date_aired     = Date.parse first_aired
-          if ( date_available > date_aired ) and missing
+          if ( date_available > (date_aired + 1) ) and missing
             missing_print show, show_index,"aired: #{first_aired}"
             
           end
