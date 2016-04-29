@@ -1,7 +1,7 @@
 # missing episodes
 
 def missing_url(show,pair)
-  data = URI.escape(show+" "+pair)
+  data = URI.escape(show + ' ' + pair)
   if $opts['kat']
     url = "https://kat.cr/usearch/%22#{data}%20category%3Atv/?field=seeders&sorder=desc"
   else
