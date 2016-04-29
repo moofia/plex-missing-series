@@ -1,6 +1,6 @@
 # missing episodes
 
-def missing_torrent(show,pair)
+def missing_url(show,pair)
   data = URI.escape(show+" "+pair)
   if $opts['kat']
     url = "https://kat.cr/usearch/%22#{data}%20category%3Atv/?field=seeders&sorder=desc"
@@ -14,7 +14,7 @@ def missing_display (show, pair,extra=nil)
   extra ||= '' # there are times when we need to display extra information
   
   if $opts['urls']
-    extra = extra + ' ' + missing_torrent(show, pair)
+    extra = extra + ' ' + missing_url(show, pair)
   end
   
   if $opts['urls_only']
@@ -24,8 +24,9 @@ def missing_display (show, pair,extra=nil)
   end
 end
 
-def missing_process (show, pair)
-  missing_display show, pair
+def missing_process (show, pair,extra=nil)
+  extra ||= '' # there are times when we need to display extra information
+  missing_display show, pair, extra
 end
 
 # check if we have the previous episode
