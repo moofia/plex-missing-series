@@ -13,19 +13,16 @@ end
 
 def thetvdb_last_process(episodes,show)
   thetvdb_episodes = thetvdb_find(show)
-  
-  last_season, last_episode = thetvdb_last_ep(episodes,show)
-  
+    
   thetvdb_episodes.keys.each do |show|
     thetvdb_episodes[show].keys.each do |season|
       next if season == "0"
       thetvdb_episodes[show][season].keys.each do |episode|
-        #puts "#{show} #{season} #{episode}"
         first_aired = thetvdb_episodes[show][season][episode]['first_aired']
         show_index = show_index(season, episode)
         
         plex_has = false
-        missing = false
+        missing  = true
         
         # remove shows that we have
         if episodes.has_key? show 
@@ -36,17 +33,6 @@ def thetvdb_last_process(episodes,show)
           end
         end
         
-        # curerntly only look for episodes greater than the last one we have
-        #puts "#{season} #{episode} vs #{last_season} #{last_episode} "
-
-        if season.to_i > last_season.to_i
-          missing = true
-        end
-        
-        if season.to_i == last_season.to_i and episode.to_i > last_episode.to_i
-          missing = true
-        end
-        
         missing = false if plex_has
         
         if first_aired =~ /\w/
@@ -54,7 +40,6 @@ def thetvdb_last_process(episodes,show)
           date_aired     = Date.parse first_aired
           if ( date_available > (date_aired + 1) ) and missing
             missing_process show, show_index,"aired: #{first_aired}"
-            
           end
         end
       end

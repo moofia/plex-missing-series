@@ -89,12 +89,25 @@ def thetvdb_force_refresh(doc)
   refresh
 end
 
+# starts by looking at the cli argument
+# at a later stage can be more logical about when one should fetch live vs cache
+def thetvdb_check_cache
+  log_debug
+  
+  if $opts['cache']
+    $config["tvdb-refresh"] = false;
+  end
+  
+end
+
 # query thetvdb.com to get the episodes of the show, right now this is cached but one will have to look
 # the time stamps to know when to fetch new data.
 def thetvdb_get_show_episodes(show_id,show)
   log_debug
   episodes = {}
   $config["tvdb-refresh"] = true;
+  
+  thetvdb_check_cache  
 
   url = $config["thetvdb"]["mirror"] + '/api/' + $config["thetvdb"]["api_key"] + '/series/' + show_id + '/all/en.xml'  
   doc = thetvdb_get_xml(show, url, show_id)

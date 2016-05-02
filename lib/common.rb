@@ -39,6 +39,7 @@ def get_opts
       ["--urls",         Getopt::BOOLEAN],
       ["--urls_only",    Getopt::BOOLEAN],
       ["--kat",          Getopt::BOOLEAN],
+      ["--cache",        Getopt::BOOLEAN],
       )
   rescue Getopt::Long::Error => e
     puts "#{@script} -> error #{e.message}"  
@@ -61,6 +62,7 @@ def help
   --urls_only       list only the URLS for the missing episodes found.
   --kat             provide KickAss Torrents Links instead of the default Pirate Bay Links.
   --thetvdb         use TheTVDB for missing episodes.
+  --cache           mostly used in debugging, uses cache only data
   
   
 EOF
