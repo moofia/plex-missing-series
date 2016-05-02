@@ -13,7 +13,8 @@ end
 
 def thetvdb_last_process(episodes,show)
   thetvdb_episodes = thetvdb_find(show)
-    
+  season_last, episode_last = thetvdb_last_ep(episodes,show)
+  
   thetvdb_episodes.keys.each do |show|
     thetvdb_episodes[show].keys.each do |season|
       next if season == "0"
@@ -31,6 +32,11 @@ def thetvdb_last_process(episodes,show)
               plex_has = true              
             end
           end
+        end
+        
+        # for now we are only interested in current seasons or greater
+        if season.to_i <= season_last.to_i          
+          missing = false
         end
         
         missing = false if plex_has
