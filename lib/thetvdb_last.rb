@@ -11,9 +11,23 @@ def thetvdb_last_ep(episodes,show)
   return last_ep.split(';')
 end
 
+def thetvdb_first_ep(episodes,show)
+  first_ep = '0;0'
+  episodes[show].keys.each do |season|
+    episodes[show][season].keys.each do |episode|
+      if first_ep == '0;0'
+        first_ep = "#{season};#{episode}"
+      end
+    end
+  end
+    
+  return first_ep.split(';')
+end
+
 def thetvdb_last_process(episodes,show)
   thetvdb_episodes = thetvdb_find(show)
   season_last, episode_last = thetvdb_last_ep(episodes,show)
+  season_first, episode_first = thetvdb_first_ep(episodes,show)
   
   thetvdb_episodes.keys.each do |show|
     thetvdb_episodes[show].keys.each do |season|
@@ -34,8 +48,9 @@ def thetvdb_last_process(episodes,show)
           end
         end
         
-        # for now we are only interested in current seasons or greater
-        if season.to_i <= season_last.to_i          
+        # for now we are only interested in episodes greater than our first one and 
+        # inclusive of the whole season
+        if season.to_i <= season_first.to_i          
           missing = false
         end
         
