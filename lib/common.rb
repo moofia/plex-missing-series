@@ -32,14 +32,15 @@ def get_opts
   # options 
   begin
     $opts = Getopt::Long.getopts(
-      ["--debug",        Getopt::BOOLEAN],
-      ["--help",         Getopt::BOOLEAN],
-      ["--show",         Getopt::OPTIONAL],
-      ["--thetvdb",      Getopt::BOOLEAN],
-      ["--urls",         Getopt::BOOLEAN],
-      ["--urls_only",    Getopt::BOOLEAN],
-      ["--kat",          Getopt::BOOLEAN],
-      ["--cache",        Getopt::BOOLEAN],
+      ["--debug",         Getopt::BOOLEAN],
+      ["--help",          Getopt::BOOLEAN],
+      ["--show",          Getopt::OPTIONAL],
+      ["--thetvdb",       Getopt::BOOLEAN],
+      ["--urls",          Getopt::BOOLEAN],
+      ["--urls_only",     Getopt::BOOLEAN],
+      ["--urls_only_osx", Getopt::BOOLEAN],
+      ["--kat",           Getopt::BOOLEAN],
+      ["--cache",         Getopt::BOOLEAN],
       )
   rescue Getopt::Long::Error => e
     puts "#{@script} -> error #{e.message}"  
@@ -60,6 +61,8 @@ def help
   --show            request a single show.
   --urls            include URLS in the output of missing episodes.
   --urls_only       list only the URLS for the missing episodes found.
+  --urls_only_osx   list only the URLS for the missing episodes found and include the output in a launchable manner.
+                      eg: open -a safari "<link to url>"
   --kat             provide KickAss Torrents Links instead of the default Pirate Bay Links.
   --thetvdb         use TheTVDB for missing episodes.
   --cache           mostly used in debugging, uses cache only data
