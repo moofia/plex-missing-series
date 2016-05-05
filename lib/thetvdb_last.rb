@@ -1,6 +1,7 @@
 # all work related to finding the last episode from thetvdb
 
 def thetvdb_last_ep(episodes,show)
+  log_debug
   last_ep = '0;0'
   episodes[show].keys.each do |season|
     episodes[show][season].keys.each do |episode|
@@ -12,6 +13,7 @@ def thetvdb_last_ep(episodes,show)
 end
 
 def thetvdb_first_ep(episodes,show)
+  log_debug
   first_ep = '0;0'
   episodes[show].keys.each do |season|
     episodes[show][season].keys.each do |episode|
@@ -25,6 +27,7 @@ def thetvdb_first_ep(episodes,show)
 end
 
 def thetvdb_last_process(episodes,show)
+  log_debug
   thetvdb_episodes = thetvdb_find(show)
   season_last, episode_last = thetvdb_last_ep(episodes,show)
   season_first, episode_first = thetvdb_first_ep(episodes,show)
@@ -70,6 +73,7 @@ end
 
 # use the thetvdb
 def thetvdb_last(episodes)  
+  log_debug
   episodes.keys.each do |show|
     thetvdb_last_process(episodes,show)
   end
