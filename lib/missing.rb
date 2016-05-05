@@ -18,7 +18,7 @@ def missing_display (show, pair,extra=nil)
   end
   
   if $opts['urls_only']
-    puts extra
+    puts missing_url(show, pair)
   else
     puts "show --> #{show} #{pair} !!MISSING!! #{extra}"
   end
