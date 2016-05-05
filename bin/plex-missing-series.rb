@@ -18,7 +18,7 @@ require "#{$script_dir}/lib/plex"
 require "#{$script_dir}/lib/missing"
 require "#{$script_dir}/lib/http"
 require "#{$script_dir}/lib/thetvdb"
-require "#{$script_dir}/lib/thetvdb_last"
+require "#{$script_dir}/lib/thetvdb_missing"
 require "#{$script_dir}/lib/html"
 
 # exit on ctrl-c
@@ -36,7 +36,7 @@ episodes = plex_episodes_sql_get_all
 episodes_missing = {}
 
 if $opts['thetvdb']
-  thetvdb_last episodes, episodes_missing
+  missing_src_thetvdb episodes, episodes_missing
 else 
   missing episodes, episodes_missing
 end

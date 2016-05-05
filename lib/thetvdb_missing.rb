@@ -42,6 +42,7 @@ def thetvdb_last_process(episodes,episodes_missing,show)
         plex_has = false
         missing  = true
         
+      
         # remove shows that we have
         if episodes.has_key? show 
           if episodes[show].has_key?(season.to_i)
@@ -50,10 +51,10 @@ def thetvdb_last_process(episodes,episodes_missing,show)
             end
           end
         end
-        
+      
         # for now we are only interested in episodes greater than our first one and 
         # inclusive of the whole season
-        if season.to_i <= season_first.to_i          
+        if season.to_i < season_first.to_i 
           missing = false
         end
         
@@ -72,7 +73,7 @@ def thetvdb_last_process(episodes,episodes_missing,show)
 end
 
 # use the thetvdb
-def thetvdb_last(episodes,episodes_missing)  
+def missing_src_thetvdb(episodes,episodes_missing)  
   log_debug
   episodes.keys.each do |show|
     thetvdb_last_process(episodes,episodes_missing,show)

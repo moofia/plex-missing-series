@@ -104,3 +104,8 @@ def show_unindex(pair)
   episode.gsub!(/^0/,'')
   return [season, episode]
 end
+
+def show_pretty(show, season, episode)
+  display = "#{show} #{show_index season, episode}"
+  return display
+end
