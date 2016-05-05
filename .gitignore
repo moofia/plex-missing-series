@@ -2,6 +2,7 @@
 *.log
 *.swp
 *.xml
+*.html
 .DS_Store
 /var/thetvdb/*
 /var/thetvdb/*/*
