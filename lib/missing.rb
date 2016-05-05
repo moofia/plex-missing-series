@@ -19,6 +19,8 @@ def missing_display (show, pair,extra=nil)
   
   if $opts['urls_only']
     puts missing_url(show, pair)
+  elsif $opts['urls_only_osx']
+    puts "open -a safari \"#{missing_url(show, pair)}\""
   else
     puts "show --> #{show} #{pair} !!MISSING!! #{extra}"
   end
