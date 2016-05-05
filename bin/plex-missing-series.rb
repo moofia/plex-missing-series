@@ -19,6 +19,7 @@ require "#{$script_dir}/lib/missing"
 require "#{$script_dir}/lib/http"
 require "#{$script_dir}/lib/thetvdb"
 require "#{$script_dir}/lib/thetvdb_last"
+require "#{$script_dir}/lib/html"
 
 # exit on ctrl-c
 trap("INT") do
@@ -32,10 +33,14 @@ get_opts
 parse_config
 
 episodes = plex_episodes_sql_get_all
+episodes_missing = {}
 
 if $opts['thetvdb']
-  thetvdb_last episodes
+  thetvdb_last episodes, episodes_missing
 else 
-  missing episodes
+  missing episodes, episodes_missing
 end
 
+if $opts['html']
+  html_create episodes_missing
+end

@@ -26,7 +26,7 @@ def thetvdb_first_ep(episodes,show)
   return first_ep.split(';')
 end
 
-def thetvdb_last_process(episodes,show)
+def thetvdb_last_process(episodes,episodes_missing,show)
   log_debug
   thetvdb_episodes = thetvdb_find(show)
   season_last, episode_last = thetvdb_last_ep(episodes,show)
@@ -63,7 +63,7 @@ def thetvdb_last_process(episodes,show)
           date_available = Date.today
           date_aired     = Date.parse first_aired
           if ( date_available > (date_aired + 1) ) and missing
-            missing_process show, show_index,"aired: #{first_aired}"
+            missing_process episodes_missing, show, show_index,"aired: #{first_aired}"
           end
         end
       end
@@ -72,9 +72,9 @@ def thetvdb_last_process(episodes,show)
 end
 
 # use the thetvdb
-def thetvdb_last(episodes)  
+def thetvdb_last(episodes,episodes_missing)  
   log_debug
   episodes.keys.each do |show|
-    thetvdb_last_process(episodes,show)
+    thetvdb_last_process(episodes,episodes_missing,show)
   end
 end

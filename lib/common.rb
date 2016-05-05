@@ -41,6 +41,7 @@ def get_opts
       ["--urls_only_osx", Getopt::BOOLEAN],
       ["--kat",           Getopt::BOOLEAN],
       ["--cache",         Getopt::BOOLEAN],
+      ["--html",          Getopt::BOOLEAN],
       )
   rescue Getopt::Long::Error => e
     puts "#{@script} -> error #{e.message}"  
@@ -66,6 +67,7 @@ def help
   --kat             provide KickAss Torrents Links instead of the default Pirate Bay Links.
   --thetvdb         use TheTVDB for missing episodes.
   --cache           mostly used in debugging, uses cache only data
+  --html            saves all output in an html file [currently a single file]
   
   
 EOF
@@ -92,5 +94,13 @@ def show_index(season, episode)
 
   show_index = "s#{season}e#{episode}"
   return show_index
+  
+end
 
+# bad name once again
+def show_unindex(pair)
+  a,season, b, episode = pair.split(/(\d+)/)
+  season.gsub!(/^0/,'')
+  episode.gsub!(/^0/,'')
+  return [season, episode]
 end
