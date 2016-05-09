@@ -14,8 +14,9 @@ def html_header
   	
     <script type="text/javascript" class="init">
       $(document).ready(function() {
-  	    $('#example').DataTable( {
-  		    "order": [[ 3, "desc" ]]
+  	    $('#episodes').DataTable( {
+  		    "order": [[ 0, "asc" ]],
+          "lengthMenu": [ [50, 100, -1], [50, 100, "All"] ]
   	      } );
        } );
   	</script>
@@ -36,7 +37,7 @@ end
 
 def html_table_start
   html = <<-HTML 
-				<table id="example" class="display" cellspacing="0" width="100%">
+				<table id="episodes" class="display compact" cellspacing="0" width="100%">
 					<thead>
 						<tr>
 							<th>Episode</th>
