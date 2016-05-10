@@ -19,7 +19,7 @@ def thetvdb_get_xml(show, url, filename)
     
   if File.exists? cache and not $config["tvdb-refresh"]
     
-    log_debug("thetvdb cache: #{show}")
+    log_debug("thetvdb cache: #{cache}")
     parser = XML::Parser.file cache
     begin
       doc = parser.parse
@@ -28,7 +28,7 @@ def thetvdb_get_xml(show, url, filename)
       return 
     end
   else
-    log_debug("thetvdb direct: #{show}")
+    log_debug("thetvdb direct: #{url}")
 
     xml_data =  http_get(url)
     parser = XML::Parser.string xml_data
@@ -112,14 +112,24 @@ def thetvdb_get_show_episodes(show_id,show)
   url = $config["thetvdb"]["mirror"] + '/api/' + $config["thetvdb"]["api_key"] + '/series/' + show_id + '/all/en.xml'  
   doc = thetvdb_get_xml(show, url, show_id)
 
+  episodes[show] = Hash.new unless episodes[show].class == Hash
+
   #thetvdb_force_refresh(doc)
+  doc.find('//Data/Series').each do |item| 
+    episodes[show]['Genre']    = item.find('Genre')[0].child.to_s
+    episodes[show]['IMDB_ID']  = item.find('IMDB_ID')[0].child.to_s
+    episodes[show]['Overview'] = item.find('Overview')[0].child.to_s
+    episodes[show]['Status']   = item.find('Status')[0].child.to_s
+    episodes[show]['banner']   = item.find('banner')[0].child.to_s
+    episodes[show]['poster']   = item.find('poster')[0].child.to_s
+    episodes[show]['fanart']   = item.find('fanart')[0].child.to_s
+ end
   
   doc.find('//Data/Episode').each do |item| 
    season       = item.find('SeasonNumber')[0].child.to_s
    episode      = item.find('EpisodeNumber')[0].child.to_s
    name         = item.find('EpisodeName')[0].child.to_s
    first_aired  = item.find('FirstAired')[0].child.to_s
-   episodes[show] = Hash.new unless episodes[show].class == Hash
    episodes[show]['episodes'] = Hash.new unless episodes[show]['episodes'].class == Hash
    episodes[show]['episodes'][season] = Hash.new unless episodes[show]['episodes'][season].class == Hash
    episodes[show]['episodes'][season][episode] = Hash.new unless episodes[show]['episodes'][season][episode].class == Hash
@@ -136,6 +146,7 @@ def thetvdb_find(show)
   show_id = thetvdb_get_show_id(show)
   log_debug "thetvdb show : #{show} : show_id : #{show_id}"
   episodes = thetvdb_get_show_episodes(show_id,show) if show_id     
+  $thetvdb.merge!(episodes)
   return episodes
 end
 

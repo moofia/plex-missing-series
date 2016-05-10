@@ -1,6 +1,6 @@
 # all work related to finding the last episode from thetvdb
 
-def thetvdb_last_ep(episodes,show)
+def thetvdb_missing_last_ep(episodes,show)
   log_debug
   last_ep = '0;0'
   episodes[show].keys.each do |season|
@@ -12,7 +12,7 @@ def thetvdb_last_ep(episodes,show)
   return last_ep.split(';')
 end
 
-def thetvdb_first_ep(episodes,show)
+def thetvdb_missing_first_ep(episodes,show)
   log_debug
   first_ep = '0;0'
   episodes[show].keys.each do |season|
@@ -26,11 +26,11 @@ def thetvdb_first_ep(episodes,show)
   return first_ep.split(';')
 end
 
-def thetvdb_last_process(episodes,episodes_missing,show)
+def thetvdb_missing_last_process(episodes,episodes_missing,show)
   log_debug
   thetvdb_episodes = thetvdb_find(show)
-  season_last, episode_last = thetvdb_last_ep(episodes,show)
-  season_first, episode_first = thetvdb_first_ep(episodes,show)
+  season_last, episode_last = thetvdb_missing_last_ep(episodes,show)
+  season_first, episode_first = thetvdb_missing_first_ep(episodes,show)
   
   thetvdb_episodes.keys.each do |show|
     thetvdb_episodes[show]['episodes'].keys.each do |season|
@@ -73,9 +73,9 @@ def thetvdb_last_process(episodes,episodes_missing,show)
 end
 
 # use the thetvdb
-def thetvdb_missing_src_thetvdb(episodes,episodes_missing)  
+def thetvdb_missing(episodes,episodes_missing)  
   log_debug
   episodes.keys.each do |show|
-    thetvdb_last_process(episodes,episodes_missing,show)
+    thetvdb_missing_last_process(episodes,episodes_missing,show)
   end
 end
