@@ -120,10 +120,11 @@ def thetvdb_get_show_episodes(show_id,show)
    name         = item.find('EpisodeName')[0].child.to_s
    first_aired  = item.find('FirstAired')[0].child.to_s
    episodes[show] = Hash.new unless episodes[show].class == Hash
-   episodes[show][season] = Hash.new unless episodes[show][season].class == Hash
-   episodes[show][season][episode] = Hash.new unless episodes[show][season][episode].class == Hash
-   episodes[show][season][episode]['name'] = name
-   episodes[show][season][episode]['first_aired'] = first_aired
+   episodes[show]['episodes'] = Hash.new unless episodes[show]['episodes'].class == Hash
+   episodes[show]['episodes'][season] = Hash.new unless episodes[show]['episodes'][season].class == Hash
+   episodes[show]['episodes'][season][episode] = Hash.new unless episodes[show]['episodes'][season][episode].class == Hash
+   episodes[show]['episodes'][season][episode]['name'] = name
+   episodes[show]['episodes'][season][episode]['first_aired'] = first_aired
   end
   episodes
 end

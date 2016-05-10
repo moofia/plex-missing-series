@@ -33,10 +33,10 @@ def thetvdb_last_process(episodes,episodes_missing,show)
   season_first, episode_first = thetvdb_first_ep(episodes,show)
   
   thetvdb_episodes.keys.each do |show|
-    thetvdb_episodes[show].keys.each do |season|
+    thetvdb_episodes[show]['episodes'].keys.each do |season|
       next if season == "0"
-      thetvdb_episodes[show][season].keys.each do |episode|
-        first_aired = thetvdb_episodes[show][season][episode]['first_aired']
+      thetvdb_episodes[show]['episodes'][season].keys.each do |episode|
+        first_aired = thetvdb_episodes[show]['episodes'][season][episode]['first_aired']
         show_index = show_index(season, episode)
         
         plex_has = false
