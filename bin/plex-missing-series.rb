@@ -36,7 +36,7 @@ episodes = plex_episodes_sql_get_all
 episodes_missing = {}
 
 if $opts['thetvdb']
-  missing_src_thetvdb episodes, episodes_missing
+  thetvdb_missing_src_thetvdb episodes, episodes_missing
 else 
   missing episodes, episodes_missing
 end

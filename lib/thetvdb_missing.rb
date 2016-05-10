@@ -73,7 +73,7 @@ def thetvdb_last_process(episodes,episodes_missing,show)
 end
 
 # use the thetvdb
-def missing_src_thetvdb(episodes,episodes_missing)  
+def thetvdb_missing_src_thetvdb(episodes,episodes_missing)  
   log_debug
   episodes.keys.each do |show|
     thetvdb_last_process(episodes,episodes_missing,show)
