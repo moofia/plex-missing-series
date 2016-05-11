@@ -10,7 +10,7 @@ end
 def missing_url(show,pair)
   data = URI.escape(show + ' ' + pair)
   if $opts['kat']
-    url = "https://kat.cr/usearch/%22#{data}%20category%3Atv/?field=seeders&sorder=desc"
+    url = "https://kat.cr/usearch/#{data}%20category%3Atv/?field=seeders&sorder=desc"
   else
     url = "http://thepiratebay.se/search/#{data}/0/7/200"
   end
