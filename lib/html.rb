@@ -76,7 +76,7 @@ def html_table_row(show, season, episode, kat, bay)
 		<td>#{show}</td>
 		<td>#{season}</td>
 		<td>#{episode}</td>
-		<td>n/a</td>
+		<td>#{$thetvdb[show]['episodes'][season][episode]['first_aired']}</td>
 		<td><a target=\"blank\" href=\"#{kat}\">kat</a> | <a target=\"blank\" href=\"#{bay}\">bay</a></td>
 	</tr>
   HTML
