@@ -40,6 +40,8 @@ def html_table_start
 				<table id="episodes" class="display compact" cellspacing="0" width="100%">
 					<thead>
 						<tr>
+							<th>Show</th>
+							<th>Season</th>
 							<th>Episode</th>
 							<th>Air Date</th>
 							<th>Links</th>
@@ -47,8 +49,11 @@ def html_table_start
 					</thead>
 					<tfoot>
 						<tr>
+							<th>Show</th>
+							<th>Season</th>
 							<th>Episode</th>
 							<th>Air Date</th>
+							<th>Links</th>
 							<th></th>
 						</tr>
 					</tfoot>
@@ -65,10 +70,12 @@ def html_table_end
   puts html
 end
 
-def html_table_row(text, kat, bay)
+def html_table_row(show, season, episode, kat, bay)
   html = <<-HTML 
 	<tr>
-		<td>#{text}</td>
+		<td>#{show}</td>
+		<td>#{season}</td>
+		<td>#{episode}</td>
 		<td>n/a</td>
 		<td><a target=\"blank\" href=\"#{kat}\">kat</a> | <a target=\"blank\" href=\"#{bay}\">bay</a></td>
 	</tr>
@@ -85,7 +92,7 @@ def html_table_content(episodes_missing)
         data = URI.escape(show + ' ' + pair)
         kat  = "https://kat.cr/usearch/#{data}%20category%3Atv/?field=seeders&sorder=desc"
         bay  = "http://thepiratebay.se/search/#{data}/0/7/200"
-        html_table_row("#{show} #{pair}" , kat, bay)
+        html_table_row(show, season,episode, kat, bay)
       end
     end
   end
