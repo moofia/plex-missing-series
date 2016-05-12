@@ -78,7 +78,7 @@ def html_header
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     
 
-    #{html_data_table_init_grouped}
+    #{html_data_table_init}
   </head>
   <body>
  	<title>Plex missing episodes</title>
@@ -104,10 +104,9 @@ def html_table_labels
 	          <tr>
 	          	<th>Show</th>
 	          	<th>Name</th>
-	          	<th>Season</th>
 	          	<th>Episode</th>
 	          	<th>Air Date</th>
-	          	<th>Show Status</th>
+	          	<th>Status</th>
 	          	<th>Genre</th>
 	          	<th>Links</th>
 	          </tr>
@@ -141,16 +140,16 @@ def html_table_row(show, season, episode, kat, bay)
   
   url_imdb = 'http://www.imdb.com/title/' + $thetvdb[show]['imdb_id']
   url_thetvdb = 'http://thetvdb.com/?tab=series&id=' + $thetvdb[show]['id']
+  
   html = <<-HTML 
 	<tr>
-		<td>#{show}</td>
+		<td class="col-md-2">#{show}</td>
 		<td class="col-md-2">#{$thetvdb[show]['episodes'][season][episode]['name']}</td>
-		<td>#{season}</td>
-		<td>#{episode}</td>
-		<td>#{$thetvdb[show]['episodes'][season][episode]['first_aired']}</td>
-		<td>#{$thetvdb[show]['status']}</td>
-		<td>#{$thetvdb[show]['genre']}</td>
-		<td><a target=\"blank\" href=\"#{url_thetvdb}\">TheTVDB</a> | <a target=\"blank\" href=\"#{url_imdb}\">IMDb</a> | <a target=\"blank\" href=\"#{kat}\">kat</a> | <a target=\"blank\" href=\"#{bay}\">bay</a></td>
+		<td>#{show_index season, episode}</td>
+		<td class="col-md-1">#{$thetvdb[show]['episodes'][season][episode]['first_aired']}</td>
+		<td class="col-md-1">#{$thetvdb[show]['status']}</td>
+		<td class="col-md-2">#{$thetvdb[show]['genre']}</td>
+		<td class="col-md-2"><a target=\"blank\" href=\"#{url_thetvdb}\">TheTVDB</a> | <a target=\"blank\" href=\"#{url_imdb}\">IMDb</a> | <a target=\"blank\" href=\"#{kat}\">kat</a> | <a target=\"blank\" href=\"#{bay}\">bay</a></td>
 	</tr>
   HTML
   puts html
