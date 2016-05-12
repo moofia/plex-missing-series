@@ -1,5 +1,63 @@
 # home of everything html output related
 
+def html_data_table_init
+  html = <<-HTML
+  <script type="text/javascript" class="init">
+    $(document).ready(function() {
+	    $('#episodes').DataTable( {
+		    "order": [[ 0, "asc" ]],
+        "lengthMenu": [ [50, 100, -1], [50, 100, "All"] ]
+	      } );
+     } );
+	</script>
+  HTML
+  html
+end
+
+def html_data_table_init_grouped
+  html = <<-HTML
+  <script type="text/javascript" class="init">
+  $(document).ready(function() {
+      var table = $('#episodes').DataTable({
+          "columnDefs": [
+              { "visible": false, "targets": 0 }
+          ],
+		    "order": [[ 0, "asc" ]],
+        "lengthMenu": [ [50, 100, -1], [50, 100, "All"] ],
+          "drawCallback": function ( settings ) {
+              var api = this.api();
+              var rows = api.rows( {page:'current'} ).nodes();
+              var last=null;
+
+              api.column(0, {page:'current'} ).data().each( function ( group, i ) {
+                  if ( last !== group ) {
+                      $(rows).eq( i ).before(
+                          '<tr class="group"><td class="bg-primary"colspan="7">'+group+'</td></tr>'
+                      );
+
+                      last = group;
+                  }
+              } );
+          }
+      } );
+
+      // Order by the grouping
+      $('#episodes tbody').on( 'click', 'tr.group', function () {
+          var currentOrder = table.order()[0];
+          if ( currentOrder[0] === 0 && currentOrder[1] === 'asc' ) {
+              table.order( [ 0, 'desc' ] ).draw();
+          }
+          else {
+              table.order( [ 0, 'asc' ] ).draw();
+          }
+      } );
+  } );
+
+	</script>
+  HTML
+  html
+end
+
 def html_header
   html = <<-HTML
   <!DOCTYPE html>
@@ -19,15 +77,8 @@ def html_header
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     
-    <script type="text/javascript" class="init">
-      $(document).ready(function() {
-  	    $('#episodes').DataTable( {
-  		    "order": [[ 0, "asc" ]],
-          "lengthMenu": [ [50, 100, -1], [50, 100, "All"] ]
-  	      } );
-       } );
-  	</script>
-       
+
+    #{html_data_table_init_grouped}
   </head>
   <body>
  	<title>Plex missing episodes</title>
@@ -52,6 +103,7 @@ def html_table_labels
     html = <<-HTML 
 	          <tr>
 	          	<th>Show</th>
+	          	<th>Name</th>
 	          	<th>Season</th>
 	          	<th>Episode</th>
 	          	<th>Air Date</th>
@@ -92,6 +144,7 @@ def html_table_row(show, season, episode, kat, bay)
   html = <<-HTML 
 	<tr>
 		<td>#{show}</td>
+		<td class="col-md-2">#{$thetvdb[show]['episodes'][season][episode]['name']}</td>
 		<td>#{season}</td>
 		<td>#{episode}</td>
 		<td>#{$thetvdb[show]['episodes'][season][episode]['first_aired']}</td>
