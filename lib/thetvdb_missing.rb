@@ -28,8 +28,8 @@ end
 
 def thetvdb_missing_last_process(episodes,episodes_missing,show)
   log_debug
-  thetvdb_episodes = thetvdb_find(show)
-  season_last, episode_last = thetvdb_missing_last_ep(episodes,show)
+  thetvdb_episodes            = thetvdb_find(show)
+  season_last, episode_last   = thetvdb_missing_last_ep(episodes,show)
   season_first, episode_first = thetvdb_missing_first_ep(episodes,show)
   
   thetvdb_episodes.keys.each do |show|
@@ -58,8 +58,14 @@ def thetvdb_missing_last_process(episodes,episodes_missing,show)
           missing = false
         end
         
-        missing = false if plex_has
+        if $config["missing"]["start_at_first_found"]
+          if episode_first.to_i > episode.to_i 
+            missing = false            
+          end
+        end
         
+        missing = false if plex_has
+                
         if first_aired =~ /\w/
           date_available = Date.today
           date_aired     = Date.parse first_aired

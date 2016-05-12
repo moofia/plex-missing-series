@@ -10,3 +10,6 @@ thetvdb:
   api_key: 31384A8E0F418F3B
   mirror: http://thetvdb.com # should be changed to use the api prefered method of finding the correct mirror
   default: true # always query thetvdb
+
+missing:
+  start_at_first_found: false # enable when you want to start at the first found episode of a season and not 01
