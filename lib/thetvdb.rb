@@ -100,20 +100,9 @@ def thetvdb_check_cache
   
 end
 
-# query thetvdb.com to get the episodes of the show, right now this is cached but one will have to look
-# the time stamps to know when to fetch new data.
-def thetvdb_get_show_episodes(show_id,show)
-  log_debug
-  episodes = {}
-  $config["tvdb-refresh"] = true;
-  
-  thetvdb_check_cache  
-
-  url = $config["thetvdb"]["mirror"] + '/api/' + $config["thetvdb"]["api_key"] + '/series/' + show_id + '/all/en.xml'  
-  doc = thetvdb_get_xml(show, url, show_id)
-
-  episodes[show] = Hash.new unless episodes[show].class == Hash
-
+# extracts info about the show from XML using the
+# episodes XML
+def thetvdb_show_info(doc,episodes,show)
   doc.find('//Data/Series').each do |item| 
     episodes[show]['genre']    = item.find('Genre')[0].child.to_s
     episodes[show]['imdb_id']  = item.find('IMDB_ID')[0].child.to_s
@@ -128,7 +117,9 @@ def thetvdb_get_show_episodes(show_id,show)
  episodes[show]['genre'].gsub!(/^\|/,'')
  episodes[show]['genre'].gsub!(/\|$/,'')
  episodes[show]['genre'].gsub!(/\|/,' | ')
-  
+end
+
+def thetvdb_episode_info(doc, episodes,show)
   doc.find('//Data/Episode').each do |item| 
    season       = item.find('SeasonNumber')[0].child.to_s
    episode      = item.find('EpisodeNumber')[0].child.to_s
@@ -141,6 +132,25 @@ def thetvdb_get_show_episodes(show_id,show)
    episodes[show]['episodes'][season][episode]['first_aired'] = first_aired
    episodes[show]['episodes'][season][episode]['overview']    = item.find('Overview')[0].child.to_s
   end
+end
+
+# query thetvdb.com to get the episodes of the show, right now this is cached but one will have to look
+# the time stamps to know when to fetch new data.
+def thetvdb_get_show_episodes(show_id,show)
+  log_debug
+  episodes = {}
+  $config["tvdb-refresh"] = true;
+  
+  thetvdb_check_cache  
+
+  url = $config["thetvdb"]["mirror"] + '/api/' + $config["thetvdb"]["api_key"] + '/series/' + show_id + '/all/en.xml'  
+  doc = thetvdb_get_xml(show, url, show_id)
+
+  episodes[show] = Hash.new unless episodes[show].class == Hash
+
+  thetvdb_show_info(doc,episodes, show)
+  thetvdb_episode_info(doc, episodes,show)
+  
   episodes
 end
 
