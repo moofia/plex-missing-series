@@ -96,8 +96,8 @@ end
 
 def html_footer
   html = <<-HTML 
-</div>
-</div>
+  </div>
+  </div>
   </div>
   </body>
   </html>
