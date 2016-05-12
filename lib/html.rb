@@ -61,7 +61,7 @@ end
 def html_header
   html = <<-HTML
   <!DOCTYPE html>
-  <html>
+  <html lang="en">
   <head>
   
     <!-- DataTables -->
@@ -83,6 +83,9 @@ def html_header
   <body>
  	<title>Plex missing episodes</title>
 
+  <div class="container-fluid">
+  	<div class="row">
+  		<div class="col-md-12">
   <h1>PLEX<small>missing episodes</small></h1>
   <br>
   <br>
@@ -93,6 +96,9 @@ end
 
 def html_footer
   html = <<-HTML 
+</div>
+</div>
+  </div>
   </body>
   </html>
   HTML
