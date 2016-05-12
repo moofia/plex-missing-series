@@ -35,27 +35,29 @@ def html_footer
   puts html
 end
 
+def html_table_labels
+    html = <<-HTML 
+	          <tr>
+	          	<th>Show</th>
+	          	<th>Season</th>
+	          	<th>Episode</th>
+	          	<th>Air Date</th>
+	          	<th>Show Status</th>
+	          	<th>Genre</th>
+	          	<th>Links</th>
+	          </tr>
+  HTML
+  html
+end
+
 def html_table_start
   html = <<-HTML 
 				<table id="episodes" class="display compact" cellspacing="0" width="100%">
 					<thead>
-						<tr>
-							<th>Show</th>
-							<th>Season</th>
-							<th>Episode</th>
-							<th>Air Date</th>
-							<th>Links</th>
-						</tr>
+            #{html_table_labels}
 					</thead>
 					<tfoot>
-						<tr>
-							<th>Show</th>
-							<th>Season</th>
-							<th>Episode</th>
-							<th>Air Date</th>
-							<th>Links</th>
-							<th></th>
-						</tr>
+            #{html_table_labels}
 					</tfoot>
 					<tbody>
   HTML
@@ -71,13 +73,18 @@ def html_table_end
 end
 
 def html_table_row(show, season, episode, kat, bay)
+  
+  url_imdb = 'http://www.imdb.com/title/' + $thetvdb[show]['imdb_id']
+  url_thetvdb = 'http://thetvdb.com/?tab=series&id=' + $thetvdb[show]['id']
   html = <<-HTML 
 	<tr>
 		<td>#{show}</td>
 		<td>#{season}</td>
 		<td>#{episode}</td>
 		<td>#{$thetvdb[show]['episodes'][season][episode]['first_aired']}</td>
-		<td><a target=\"blank\" href=\"#{kat}\">kat</a> | <a target=\"blank\" href=\"#{bay}\">bay</a></td>
+		<td>#{$thetvdb[show]['status']}</td>
+		<td>#{$thetvdb[show]['genre']}</td>
+		<td><a target=\"blank\" href=\"#{url_thetvdb}\">TheTVDB</a> | <a target=\"blank\" href=\"#{url_imdb}\">IMDb</a> | <a target=\"blank\" href=\"#{kat}\">kat</a> | <a target=\"blank\" href=\"#{bay}\">bay</a></td>
 	</tr>
   HTML
   puts html

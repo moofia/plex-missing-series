@@ -114,16 +114,20 @@ def thetvdb_get_show_episodes(show_id,show)
 
   episodes[show] = Hash.new unless episodes[show].class == Hash
 
-  #thetvdb_force_refresh(doc)
   doc.find('//Data/Series').each do |item| 
-    episodes[show]['Genre']    = item.find('Genre')[0].child.to_s
-    episodes[show]['IMDB_ID']  = item.find('IMDB_ID')[0].child.to_s
-    episodes[show]['Overview'] = item.find('Overview')[0].child.to_s
-    episodes[show]['Status']   = item.find('Status')[0].child.to_s
+    episodes[show]['genre']    = item.find('Genre')[0].child.to_s
+    episodes[show]['imdb_id']  = item.find('IMDB_ID')[0].child.to_s
+    episodes[show]['overview'] = item.find('Overview')[0].child.to_s
+    episodes[show]['status']   = item.find('Status')[0].child.to_s
     episodes[show]['banner']   = item.find('banner')[0].child.to_s
     episodes[show]['poster']   = item.find('poster')[0].child.to_s
     episodes[show]['fanart']   = item.find('fanart')[0].child.to_s
+    episodes[show]['id']       = item.find('id')[0].child.to_s
  end
+  
+ episodes[show]['genre'].gsub!(/^\|/,'')
+ episodes[show]['genre'].gsub!(/\|$/,'')
+ episodes[show]['genre'].gsub!(/\|/,' | ')
   
   doc.find('//Data/Episode').each do |item| 
    season       = item.find('SeasonNumber')[0].child.to_s
@@ -135,6 +139,7 @@ def thetvdb_get_show_episodes(show_id,show)
    episodes[show]['episodes'][season][episode] = Hash.new unless episodes[show]['episodes'][season][episode].class == Hash
    episodes[show]['episodes'][season][episode]['name'] = name
    episodes[show]['episodes'][season][episode]['first_aired'] = first_aired
+   episodes[show]['episodes'][season][episode]['overview']    = item.find('Overview')[0].child.to_s
   end
   episodes
 end
