@@ -34,8 +34,8 @@ def parse_config
       puts "#{@script} -> yaml error #{e.message}"  
       exit 2
     end
+    $config.merge!(conf_local)
   end
-  $config.merge!(conf_local)
   
 end
 
