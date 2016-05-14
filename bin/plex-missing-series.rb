@@ -34,16 +34,15 @@ parse_config
 
 episodes_plex    = plex_episodes_sql_get_all
 episodes_missing = {}
-#$thetvdb         = {}
-
 
 if $opts['thetvdb']
   $thetvdb = MoofiaTheTvDb.new
   thetvdb_missing episodes_plex, episodes_missing
+  
+  if $opts['html']
+    html_create episodes_missing
+  end
 else 
   missing episodes_plex, episodes_missing
 end
 
-if $opts['html']
-  html_create episodes_missing
-end
