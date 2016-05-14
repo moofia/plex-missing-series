@@ -17,7 +17,7 @@ require "#{$script_dir}/lib/common"
 require "#{$script_dir}/lib/plex"
 require "#{$script_dir}/lib/missing"
 require "#{$script_dir}/lib/http"
-require "#{$script_dir}/lib/thetvdb"
+require "#{$script_dir}/lib/MoofiaTheTvDb"
 require "#{$script_dir}/lib/thetvdb_missing"
 require "#{$script_dir}/lib/html"
 
@@ -34,9 +34,11 @@ parse_config
 
 episodes_plex    = plex_episodes_sql_get_all
 episodes_missing = {}
-$thetvdb         = {}
+#$thetvdb         = {}
+
 
 if $opts['thetvdb']
+  $thetvdb = MoofiaTheTvDb.new
   thetvdb_missing episodes_plex, episodes_missing
 else 
   missing episodes_plex, episodes_missing

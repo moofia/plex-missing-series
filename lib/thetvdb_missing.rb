@@ -64,17 +64,20 @@ end
 # loop through all the episodes found in thetvdb for a show
 # remove those that exists in plex
 # ignore specials for now
+# TODO: terrible method name
 def thetvdb_missing_last_process(episodes_plex,episodes_missing,show)
   log_debug
-  thetvdb_episodes            = thetvdb_get(show)
+  
+  $thetvdb.thetvdb_get(show)
+
   season_last, episode_last   = thetvdb_missing_plex_last_ep(episodes_plex,show)
   season_first, episode_first = thetvdb_missing_plex_first_ep(episodes_plex,show)
   
-  thetvdb_episodes.keys.each do |show|
-    thetvdb_episodes[show]['episodes'].keys.each do |season|
+  $thetvdb.episodes.keys.each do |show|
+    $thetvdb.episodes[show]['episodes'].keys.each do |season|
       next if season == "0"
-      thetvdb_episodes[show]['episodes'][season].keys.each do |episode|
-        first_aired = thetvdb_episodes[show]['episodes'][season][episode]['first_aired']
+      $thetvdb.episodes[show]['episodes'][season].keys.each do |episode|
+        first_aired = $thetvdb.episodes[show]['episodes'][season][episode]['first_aired']
         show_index  = show_index(season, episode)
         plex_has    = false
         missing     = true
