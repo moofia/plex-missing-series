@@ -17,7 +17,6 @@ require "#{$script_dir}/lib/common"
 require "#{$script_dir}/lib/PlexDb"
 require "#{$script_dir}/lib/missing"
 require "#{$script_dir}/lib/TheTvDb/TheTvDb"
-require "#{$script_dir}/lib/thetvdb_missing"
 require "#{$script_dir}/lib/html"
 
 # exit on ctrl-c
@@ -25,8 +24,6 @@ trap("INT") do
   puts
   exit 2
 end 
-
-@script = File.basename $0 
 
 get_opts
 parse_config
@@ -37,7 +34,7 @@ $plex.episodes_get_all
 
 if $opts['thetvdb']
   $thetvdb = TheTvDb.new
-  thetvdb_missing
+  $thetvdb.missing.process
   
   if $opts['html']
     html_create

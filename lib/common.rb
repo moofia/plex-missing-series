@@ -1,9 +1,8 @@
 # place for common methods
 
 # generic logger
-def log(msg,level=nil)
- level ||= 1 # not needed
- puts "#{@script} -> #{msg}"
+def log(msg) 
+ puts "#{File.basename $0} -> #{msg}"
 end
 
 def log_debug(msg=nil)

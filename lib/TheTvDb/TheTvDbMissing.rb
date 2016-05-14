@@ -1,5 +1,10 @@
 # all work related to finding the last episode from thetvdb
 
+class TheTvDbMissing
+  
+  def initialize
+  end
+  
 # plex last episode of a show
 def thetvdb_missing_plex_last_ep(show)
   log_debug
@@ -100,9 +105,11 @@ def thetvdb_missing_last_process(show)
 end
 
 # use the thetvdb
-def thetvdb_missing  
+def process  
   log_debug
   $plex.episodes.keys.each do |show|
     thetvdb_missing_last_process(show)
   end
+end
+
 end

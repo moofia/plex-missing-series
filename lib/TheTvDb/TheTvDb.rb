@@ -12,12 +12,14 @@
 
 $LOAD_PATH << File.join(File.dirname(__FILE__))
 require 'http'
+require "TheTvDbMissing"
 
 class TheTvDb
-  attr_accessor :episodes
+  attr_accessor :episodes, :missing
   
   def initialize
     @episodes = {}
+    self.missing = TheTvDbMissing.new
   end
   
   def thetvdb_get_xml(show, url, filename)
