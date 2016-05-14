@@ -16,8 +16,7 @@ $script_dir = File.expand_path($0).gsub(/\/bin\/.*/,'')
 require "#{$script_dir}/lib/common"
 require "#{$script_dir}/lib/plex"
 require "#{$script_dir}/lib/missing"
-require "#{$script_dir}/lib/http"
-require "#{$script_dir}/lib/MoofiaTheTvDb"
+require "#{$script_dir}/lib/MoofiaTheTvDb/MoofiaTheTvDb"
 require "#{$script_dir}/lib/thetvdb_missing"
 require "#{$script_dir}/lib/html"
 

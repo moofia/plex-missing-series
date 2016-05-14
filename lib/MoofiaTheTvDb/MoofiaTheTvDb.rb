@@ -10,6 +10,9 @@
 # moo.thetvdb_get("Awkward.")
 # puts moo.episodes.class
 
+$LOAD_PATH << File.join(File.dirname(__FILE__))
+require 'http'
+
 class MoofiaTheTvDb
   attr_accessor :episodes
   
@@ -41,9 +44,10 @@ class MoofiaTheTvDb
       end
     else
       log_debug("thetvdb direct: #{url}")
-  
+      
       xml_data =  http_get(url)
-      parser = XML::Parser.string xml_data
+      parser   = XML::Parser.string xml_data
+      
       begin
         doc = parser.parse
       rescue => err
@@ -64,8 +68,7 @@ class MoofiaTheTvDb
     show_escaped = CGI.escape(show)
     url = $config["thetvdb"]["mirror"] + '/api/GetSeries.php?&language=en&seriesname=' + show_escaped
     $config["tvdb-refresh"] = false;
-    doc = thetvdb_get_xml(show, url, show)
-    
+    doc     = thetvdb_get_xml(show, url, show)
     show_id = ""
     
     doc.find('//Data/Series').each do |item|
