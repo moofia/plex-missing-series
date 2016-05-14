@@ -19,23 +19,27 @@ end
 
 def parse_config
   log_debug
+  $config = {}
+  $config['script_dir'] = File.dirname(__FILE__).gsub(/\/lib$/, '')
+  
   begin
-    $config = YAML::load(File.read("#{$script_dir}/etc/config.defaults.yaml"))
+    yaml = YAML::load(File.read("#{$config['script_dir']}/etc/config.defaults.yaml"))
+    $config.merge!(yaml)
   rescue => e
-    puts "#{@script} -> yaml error #{e.message}"  
+    puts "#{File.basename $0} -> yaml error #{e.message}"  
     exit 2
   end
   
-  if File.exists?("#{$script_dir}/etc/config.yaml")
+  if File.exists?("#{$config['script_dir']}/etc/config.yaml")
     begin
-      conf_local = YAML::load(File.read("#{$script_dir}/etc/config.yaml"))
+      conf_local = YAML::load(File.read("#{$config['script_dir']}/etc/config.yaml"))
     rescue => e
-      puts "#{@script} -> yaml error #{e.message}"  
+      puts "#{File.basename $0}} -> yaml error #{e.message}"  
       exit 2
     end
     $config.merge!(conf_local)
   end
-  
+
 end
 
 def get_opts
@@ -54,7 +58,7 @@ def get_opts
       ["--html",          Getopt::BOOLEAN],
       )
   rescue Getopt::Long::Error => e
-    puts "#{@script} -> error #{e.message}"  
+    puts "#{File.basename $0}} -> error #{e.message}"  
     puts 
     help
   end
@@ -65,7 +69,7 @@ end
 def help
 
   puts <<-EOF
-#{@script} [OPTIONS]
+#{File.basename $0}} [OPTIONS]
 
   --help            help.
   --debug           debugging enable.
@@ -85,7 +89,7 @@ EOF
 end
 
 def debug(what)
-  puts "#{@script} -> debug and exit..\n"
+  puts "#{File.basename $0}} -> debug and exit..\n"
   ap what.class
   ap what
   exit

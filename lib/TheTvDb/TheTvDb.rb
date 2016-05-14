@@ -27,10 +27,9 @@ class TheTvDb
     
     local_file = show.gsub(/\*/,'_') # seems really spaz, should encode the file to disk
     
-    cache_dir = $script_dir + "/var/thetvdb/" + local_file
+    cache_dir = $config['script_dir'] + '/var/thetvdb/' + local_file
     cache_dir = $config["thetvdb"]["cache_directory"] + "/" + local_file if $config["thetvdb"].has_key? "cache_directory"
   
-    
     FileUtils.mkdir_p(cache_dir) if not File.directory? cache_dir
     cache = cache_dir + "/" + filename + ".xml"
       

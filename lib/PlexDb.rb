@@ -14,6 +14,13 @@ class PlexDb
     db_setup
   end
   
+  # keeps track of what episodes we have
+  def missing_episodes_track ( show, season, episode,extra=nil)
+    @episodes_missing[show]                  = {} if @episodes_missing[show].class.to_s != 'Hash'
+    @episodes_missing[show][season]          = {} if @episodes_missing[show][season].class.to_s != 'Hash'
+    @episodes_missing[show][season][episode] = 'missing do something'
+  end
+  
   # print the shows that are found only in debug mode
   def found_debug ( show, season, episode, name)
     show_index = show_index season, episode

@@ -10,14 +10,12 @@ require 'xml/libxml'
 require 'cgi'
 require 'date'
 
-$script_dir = File.expand_path($0).gsub(/\/bin\/.*/,'')
-
-# main include file for the script
-require "#{$script_dir}/lib/common"
-require "#{$script_dir}/lib/PlexDb"
-require "#{$script_dir}/lib/missing"
-require "#{$script_dir}/lib/TheTvDb/TheTvDb"
-require "#{$script_dir}/lib/html"
+$LOAD_PATH << File.dirname(__FILE__) + '/../lib'
+require "common"
+require "PlexDb"
+require "missing"
+require "TheTvDb/TheTvDb"
+require "html"
 
 # exit on ctrl-c
 trap("INT") do

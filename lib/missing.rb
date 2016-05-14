@@ -1,11 +1,6 @@
 # missing episodes
 
-# keeps track of what episodes we have
-def missing_episodes_track ( show, season, episode,extra=nil)
-  $plex.episodes_missing[show]                  = {} if $plex.episodes_missing[show].class.to_s != 'Hash'
-  $plex.episodes_missing[show][season]          = {} if $plex.episodes_missing[show][season].class.to_s != 'Hash'
-  $plex.episodes_missing[show][season][episode] = 'missing do something'
-end
+
 
 def missing_url(show,pair)
   data = URI.escape(show + ' ' + pair)
@@ -37,7 +32,7 @@ def missing_process (show, pair,extra=nil)
   extra ||= '' # there are times when we need to display extra information
   if $opts['html']
     season, episode = show_unindex(pair)
-    missing_episodes_track show, season, episode, extra      
+    $plex.missing_episodes_track show, season, episode, extra      
   else 
     missing_display show, pair, extra
   end
