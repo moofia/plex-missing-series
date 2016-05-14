@@ -14,7 +14,7 @@ class PlexDb
     db_setup
   end
   
-  # keeps track of what episodes we have
+  # keeps track of missing episodes we have
   def missing_episodes_track ( show, season, episode,extra=nil)
     @episodes_missing[show]                  = {} if @episodes_missing[show].class.to_s != 'Hash'
     @episodes_missing[show][season]          = {} if @episodes_missing[show][season].class.to_s != 'Hash'

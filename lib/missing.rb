@@ -1,7 +1,5 @@
 # missing episodes
 
-
-
 def missing_url(show,pair)
   data = URI.escape(show + ' ' + pair)
   if $opts['kat']
