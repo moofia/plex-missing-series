@@ -75,7 +75,7 @@ end
 def thetvdb_missing_last_process(show)
   log_debug
   
-  $thetvdb.thetvdb_get(show)
+  $thetvdb.show(show)
 
   season_last,  episode_last  = thetvdb_missing_plex_last_ep(show)
   season_first, episode_first = thetvdb_missing_plex_first_ep(show)

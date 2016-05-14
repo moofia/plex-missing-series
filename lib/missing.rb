@@ -30,7 +30,7 @@ def missing_process (show, pair,extra=nil)
   extra ||= '' # there are times when we need to display extra information
   if $opts['html']
     season, episode = show_unindex(pair)
-    $plex.episodes_missing show, season, episode, extra      
+    $plex.episodes_missing_track show, season, episode, extra      
   else 
     missing_display show, pair, extra
   end

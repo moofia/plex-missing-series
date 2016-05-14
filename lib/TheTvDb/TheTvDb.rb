@@ -22,7 +22,8 @@ class TheTvDb
     self.missing = TheTvDbMissing.new
   end
   
-  def thetvdb_get_xml(show, url, filename)
+  # handles retrieval of xml
+  def get_xml(show, url, filename)
     log_debug
     
     local_file = show.gsub(/\*/,'_') # seems really spaz, should encode the file to disk
@@ -64,12 +65,12 @@ class TheTvDb
   end
   
   # query thetvdb.com to get the show id.
-  def thetvdb_get_show_id(show)
+  def api_show_id(show)
     log_debug
     show_escaped = CGI.escape(show)
     url = $config["thetvdb"]["mirror"] + '/api/GetSeries.php?&language=en&seriesname=' + show_escaped
     $config["tvdb-refresh"] = false;
-    doc     = thetvdb_get_xml(show, url, show)
+    doc     = get_xml(show, url, show)
     show_id = ""
     
     doc.find('//Data/Series').each do |item|
@@ -94,8 +95,27 @@ class TheTvDb
     show_id
   end
   
+  # query thetvdb.com to get the episodes of the show, right now this is cached but one will have to look
+  # the time stamps to know when to fetch new data.
+  def api_series(show_id,show)
+    log_debug
+    $config["tvdb-refresh"] = true;
+    
+    check_cache  
+  
+    url = $config["thetvdb"]["mirror"] + '/api/' + $config["thetvdb"]["api_key"] + '/series/' + show_id + '/all/en.xml'  
+    doc = get_xml(show, url, show_id)
+  
+    @episodes[show] = Hash.new unless @episodes[show].class == Hash
+  
+    show_info(doc, show)
+    episode_info(doc, show)
+    
+  end
+  
   # not really sure yet on when we will force this
-  def thetvdb_force_refresh(doc)
+  # XXX: not used
+  def force_refresh(doc)
     log_debug
     refresh = false
     doc.find('//Data/Series').each do |item| 
@@ -107,7 +127,7 @@ class TheTvDb
   
   # starts by looking at the cli argument
   # at a later stage can be more logical about when one should fetch live vs cache
-  def thetvdb_check_cache
+  def check_cache
     log_debug
     
     if $opts['cache']
@@ -118,7 +138,7 @@ class TheTvDb
   
   # extracts info about the show from XML using the
   # episodes XML
-  def thetvdb_show_info(doc, show)
+  def show_info(doc, show)
     doc.find('//Data/Series').each do |item| 
       @episodes[show]['genre']    = item.find('Genre')[0].child.to_s
       @episodes[show]['imdb_id']  = item.find('IMDB_ID')[0].child.to_s
@@ -130,12 +150,12 @@ class TheTvDb
       @episodes[show]['id']       = item.find('id')[0].child.to_s
    end
     
-   episodes[show]['genre'].gsub!(/^\|/,'')
-   episodes[show]['genre'].gsub!(/\|$/,'')
-   episodes[show]['genre'].gsub!(/\|/,' | ')
+   @episodes[show]['genre'].gsub!(/^\|/,'')
+   @episodes[show]['genre'].gsub!(/\|$/,'')
+   @episodes[show]['genre'].gsub!(/\|/,' | ')
   end
   
-  def thetvdb_episode_info(doc, show)
+  def episode_info(doc, show)
     doc.find('//Data/Episode').each do |item| 
      season       = item.find('SeasonNumber')[0].child.to_s
      episode      = item.find('EpisodeNumber')[0].child.to_s
@@ -150,32 +170,14 @@ class TheTvDb
     end
   end
   
-  # query thetvdb.com to get the episodes of the show, right now this is cached but one will have to look
-  # the time stamps to know when to fetch new data.
-  def thetvdb_get_show_episodes(show_id,show)
-    log_debug
-    $config["tvdb-refresh"] = true;
-    
-    thetvdb_check_cache  
-  
-    url = $config["thetvdb"]["mirror"] + '/api/' + $config["thetvdb"]["api_key"] + '/series/' + show_id + '/all/en.xml'  
-    doc = thetvdb_get_xml(show, url, show_id)
-  
-    @episodes[show] = Hash.new unless @episodes[show].class == Hash
-  
-    thetvdb_show_info(doc, show)
-    thetvdb_episode_info(doc, show)
-    
-  end
-  
   # returns a hash of episodes
-  def thetvdb_get(show)
+  def show(show)
     log_debug
-    show_id  = thetvdb_get_show_id(show)
+    show_id  = api_show_id(show)
 
     if show_id
       log_debug "thetvdb show : #{show} : show_id : #{show_id}"
-      thetvdb_get_show_episodes(show_id,show) 
+      api_series(show_id,show) 
     end
     
   end
