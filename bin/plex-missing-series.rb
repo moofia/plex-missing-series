@@ -14,7 +14,7 @@ $script_dir = File.expand_path($0).gsub(/\/bin\/.*/,'')
 
 # main include file for the script
 require "#{$script_dir}/lib/common"
-require "#{$script_dir}/lib/MoofiaPlexDb"
+require "#{$script_dir}/lib/PlexDb"
 require "#{$script_dir}/lib/missing"
 require "#{$script_dir}/lib/MoofiaTheTvDb/MoofiaTheTvDb"
 require "#{$script_dir}/lib/thetvdb_missing"
@@ -31,8 +31,8 @@ end
 get_opts
 parse_config
 
-$plex = MoofiaPlexDb.new
-$plex.plex_episodes_sql_get_all
+$plex = PlexDb.new
+$plex.episodes_get_all
 
 episodes_missing = {}
 

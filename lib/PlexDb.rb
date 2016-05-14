@@ -1,24 +1,26 @@
 # All Plex related things go here
 
-class MoofiaPlexDb
+class PlexDb
   attr_accessor :episodes
   
   def initialize
     @episodes = {}
+    db_setup
   end
   
   # print the shows that are found only in debug mode
-  def plex_found_debug ( show, season, episode, name)
+  def found_debug ( show, season, episode, name)
     show_index = show_index season, episode
     #log_debug "found --> #{show} #{show_index} #{name}"
   end
   
   # very basic db setup
   # should test / rescue sqlite3
-  def plex_db_setup
+  def db_setup
     log_debug
-    db_file = plex_find_db
-    db_tmp = '/tmp/plex_missing_tmp.db'
+    db_file = find_db
+    db_tmp  = '/tmp/plex_missing_tmp.db'
+    @db     = ''
     
     # cp to tmp as the db is locked if being used
     `cp "#{db_file}" #{db_tmp}`
@@ -26,15 +28,14 @@ class MoofiaPlexDb
     # not too sure why but i was having a problem where a 0 byte file was cp'd
     # def a local issue i assume but the check was needed
     if test ?s, db_tmp
-      db = SQLite3::Database.new db_tmp
+      @db = SQLite3::Database.new db_tmp
     else 
       puts "error-> can not open #{db_tmp} for reasing"
       exit 2
     end
-    return db
   end
   
-  def plex_find_db
+  def find_db
     log_debug
     file_name = 'com.plexapp.plugins.library.db'
     # for dev it looks in current directory first
@@ -61,49 +62,61 @@ class MoofiaPlexDb
       exit 2
     end
     
-    log_debug "plex_find_db using \"#{db}\""
+    log_debug "find_db using \"#{db}\""
     return db
   end
   
   # keeps track of what episodes we have
-  def plex_episodes_track ( episodes, show, season, episode, name)
+  def episodes_track ( episodes, show, season, episode, name)
     episodes[show]                 = {} if episodes[show].class.to_s != 'Hash'
     episodes[show][season]         = {} if episodes[show][season].class.to_s != 'Hash'
     episodes[show][season][episode] = name
   end
   
-  # controll loop which selects from sqlite shows / seasons / episodes
-  def plex_episodes_sql_get_all
-  log_debug
-  db = plex_db_setup
-
-  # shows
+  def sql_select(sql)
+    rows = []
+    begin
+      rows = @db.execute( sql )
+    rescue => err
+      log("sqlite error: #{err}")
+      exit 2
+    end
+    
+    rows
+  end
   
+  # get all the episodes
+  def episodes_get_all
+  log_debug
+
   # build syntax if we looking for a specific show
   show_wanted = ''
+  
   if $opts['show']
     show_wanted = "and title = '#{$opts['show']}'"
   end
   
-  show_sql = "select id,title from metadata_items where metadata_type=2 and library_section_id in (select id from library_sections where section_type = 2) #{show_wanted} order by title"  
-  db.execute( show_sql ) do |row_shows|
+  sql_shows   = "select id,title from metadata_items where metadata_type=2 and library_section_id in (select id from library_sections where section_type = 2) #{show_wanted} order by title"  
+  
+  sql_select(sql_shows).each do |row_shows|
 
-    # seasons
-    db.execute( "select id,\"index\" from metadata_items where metadata_type=3 and parent_id=#{row_shows[0]} order by \"index\"") do |row_seasons|
+    sql_seasons = "select id,\"index\" from metadata_items where metadata_type=3 and parent_id=#{row_shows[0]} order by \"index\""
+    sql_select(sql_seasons).each do  |row_seasons|
       show    = row_shows[1]
       season  = row_seasons[1]
-
-      #episodes
-      db.execute(  "select \"index\",title from metadata_items where metadata_type=4 and parent_id=#{row_seasons[0]} order by \"index\"" ) do |row_episodes|
+      
+      sql_episodes = "select \"index\",title from metadata_items where metadata_type=4 and parent_id=#{row_seasons[0]} order by \"index\""
+      sql_select(sql_episodes).each do |row_episodes|
         episode = row_episodes[0]
         name    = row_episodes[1]
-
-        plex_episodes_track @episodes, show, season, episode, name
-        plex_found_debug show, season, episode, name 
-
+      
+        episodes_track @episodes, show, season, episode, name
+        found_debug show, season, episode, name 
+      
+        end
       end
     end
+
   end
-end
 
 end
