@@ -45,12 +45,12 @@ end
 
 # check if we have the previous episode
 # TODO: name of method is dubious
-def missing_episode_check_previous ( episodes, episodes_missing, show, season, episode)
+def missing_episode_check_previous ( episodes_plex, episodes_missing, show, season, episode)
 
   missing = {}
 
   for i in (episode - 1).downto(1)
-    if not episodes[show][season][i]
+    if not episodes_plex[show][season][i]
       missing_index = show_index season, i
       missing[i] = "#{show};#{missing_index}"
     else 
@@ -68,11 +68,11 @@ def missing_episode_check_previous ( episodes, episodes_missing, show, season, e
 
 end
 
-def missing(episodes, episodes_missing)
-  episodes.keys.each do |show|
-    episodes[show].keys.each do |season|
-      episodes[show][season].keys.each do |episode|
-        missing_episode_check_previous episodes, episodes_missing, show, season, episode
+def missing(episodes_plex, episodes_missing)
+  episodes_plex.keys.each do |show|
+    episodes_plex[show].keys.each do |season|
+      episodes_plex[show][season].keys.each do |episode|
+        missing_episode_check_previous episodes_plex, episodes_missing, show, season, episode
       end
     end
   end

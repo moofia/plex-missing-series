@@ -32,14 +32,14 @@ end
 get_opts
 parse_config
 
-episodes         = plex_episodes_sql_get_all # TODO: refactor to have a name relating to source of plex
+episodes_plex    = plex_episodes_sql_get_all
 episodes_missing = {}
 $thetvdb         = {}
 
 if $opts['thetvdb']
-  thetvdb_missing episodes, episodes_missing
+  thetvdb_missing episodes_plex, episodes_missing
 else 
-  missing episodes, episodes_missing
+  missing episodes_plex, episodes_missing
 end
 
 if $opts['html']
