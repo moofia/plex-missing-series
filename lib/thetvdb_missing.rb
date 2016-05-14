@@ -43,6 +43,7 @@ def thetvdb_missing_plex_found(episodes_plex, show,season,episode)
   plex_has
 end
 
+# handle the range of where we loop up to for episodes
 def thetvdb_missing_range(season, season_first, episode, episode_first)
   missing = true
   
@@ -65,7 +66,7 @@ end
 # ignore specials for now
 def thetvdb_missing_last_process(episodes_plex,episodes_missing,show)
   log_debug
-  thetvdb_episodes            = thetvdb_find(show)
+  thetvdb_episodes            = thetvdb_get(show)
   season_last, episode_last   = thetvdb_missing_plex_last_ep(episodes_plex,show)
   season_first, episode_first = thetvdb_missing_plex_first_ep(episodes_plex,show)
   

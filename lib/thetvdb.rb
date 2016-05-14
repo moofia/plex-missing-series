@@ -155,13 +155,17 @@ def thetvdb_get_show_episodes(show_id,show)
 end
 
 # returns a hash of episodes
-def thetvdb_find(show)
+def thetvdb_get(show)
   log_debug
   episodes = {}
-  show_id = thetvdb_get_show_id(show)
-  log_debug "thetvdb show : #{show} : show_id : #{show_id}"
-  episodes = thetvdb_get_show_episodes(show_id,show) if show_id     
-  $thetvdb.merge!(episodes)
+  show_id  = thetvdb_get_show_id(show)
+  
+  if show_id
+    log_debug "thetvdb show : #{show} : show_id : #{show_id}"
+    episodes = thetvdb_get_show_episodes(show_id,show) 
+    $thetvdb.merge!(episodes)
+  end
+  
   return episodes
 end
 
