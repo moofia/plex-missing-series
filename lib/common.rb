@@ -26,6 +26,17 @@ def parse_config
     puts "#{@script} -> yaml error #{e.message}"  
     exit 2
   end
+  
+  if File.exists?("#{$script_dir}/etc/config.yaml")
+    begin
+      conf_local = YAML::load(File.read("#{$script_dir}/etc/config.yaml"))
+    rescue => e
+      puts "#{@script} -> yaml error #{e.message}"  
+      exit 2
+    end
+  end
+  $config.merge!(conf_local)
+  
 end
 
 def get_opts
