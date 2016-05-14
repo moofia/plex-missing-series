@@ -16,7 +16,7 @@ $script_dir = File.expand_path($0).gsub(/\/bin\/.*/,'')
 require "#{$script_dir}/lib/common"
 require "#{$script_dir}/lib/PlexDb"
 require "#{$script_dir}/lib/missing"
-require "#{$script_dir}/lib/MoofiaTheTvDb/MoofiaTheTvDb"
+require "#{$script_dir}/lib/TheTvDb/TheTvDb"
 require "#{$script_dir}/lib/thetvdb_missing"
 require "#{$script_dir}/lib/html"
 
@@ -35,10 +35,8 @@ $plex = PlexDb.new
 $plex.show = $opts['show']
 $plex.episodes_get_all
 
-episodes_missing = {}
-
 if $opts['thetvdb']
-  $thetvdb = MoofiaTheTvDb.new
+  $thetvdb = TheTvDb.new
   thetvdb_missing
   
   if $opts['html']

@@ -1,5 +1,9 @@
 # All Plex related things go here
 
+# $plex = PlexDb.new
+# $plex.show = $opts['show']
+# $plex.episodes_get_all.each..
+
 class PlexDb
   attr_reader :episodes
   attr_accessor :show, :episodes_missing

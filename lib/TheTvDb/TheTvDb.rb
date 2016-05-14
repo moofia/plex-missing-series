@@ -13,7 +13,7 @@
 $LOAD_PATH << File.join(File.dirname(__FILE__))
 require 'http'
 
-class MoofiaTheTvDb
+class TheTvDb
   attr_accessor :episodes
   
   def initialize
