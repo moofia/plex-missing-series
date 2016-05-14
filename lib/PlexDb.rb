@@ -14,8 +14,15 @@ class PlexDb
     db_setup
   end
   
+  # keeps track of what episodes we have
+  def episodes_track ( show, season, episode, name)
+    @episodes[show]                 = {} if @episodes[show].class.to_s != 'Hash'
+    @episodes[show][season]         = {} if @episodes[show][season].class.to_s != 'Hash'
+    @episodes[show][season][episode] = name
+  end
+  
   # keeps track of missing episodes we have
-  def missing_episodes_track ( show, season, episode,extra=nil)
+  def episodes_missing_track ( show, season, episode,extra=nil)
     @episodes_missing[show]                  = {} if @episodes_missing[show].class.to_s != 'Hash'
     @episodes_missing[show][season]          = {} if @episodes_missing[show][season].class.to_s != 'Hash'
     @episodes_missing[show][season][episode] = 'missing do something'
@@ -78,13 +85,6 @@ class PlexDb
     
     log_debug "find_db using \"#{db}\""
     return db
-  end
-  
-  # keeps track of what episodes we have
-  def episodes_track ( show, season, episode, name)
-    @episodes[show]                 = {} if @episodes[show].class.to_s != 'Hash'
-    @episodes[show][season]         = {} if @episodes[show][season].class.to_s != 'Hash'
-    @episodes[show][season][episode] = name
   end
   
   # sqlite wrapper
