@@ -3,7 +3,7 @@
 # print the shows that are found only in debug mode
 def plex_found_debug ( show, season, episode, name)
   show_index = show_index season, episode
-  log_debug "found --> #{show} #{show_index} #{name}"
+  #log_debug "found --> #{show} #{show_index} #{name}"
 end
 
 # very basic db setup

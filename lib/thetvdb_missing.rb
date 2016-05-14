@@ -17,9 +17,10 @@ end
 def thetvdb_missing_plex_first_ep(episodes_plex,show)
   log_debug
   first_ep = '0;0'
+  
   episodes_plex[show].keys.each do |season|
     episodes_plex[show][season].keys.each do |episode|
-      if first_ep == '0;0'
+      if first_ep == '0;0'        
         first_ep = "#{season};#{episode}"
       end
     end
@@ -58,6 +59,7 @@ def thetvdb_missing_range(season, season_first, episode, episode_first)
       missing = false            
     end
   end
+  
   missing
 end
 
@@ -70,21 +72,19 @@ def thetvdb_missing_last_process(episodes_plex,episodes_missing,show)
   
   $thetvdb.thetvdb_get(show)
 
-  season_last, episode_last   = thetvdb_missing_plex_last_ep(episodes_plex,show)
+  season_last,  episode_last  = thetvdb_missing_plex_last_ep(episodes_plex,show)
   season_first, episode_first = thetvdb_missing_plex_first_ep(episodes_plex,show)
-  
-  $thetvdb.episodes.keys.each do |show|
+  log_debug("#{show} start s#{season_first}e#{episode_first} : last s#{season_last}e#{episode_last}")
+
+  if $thetvdb.episodes.has_key?(show)
     $thetvdb.episodes[show]['episodes'].keys.each do |season|
       next if season == "0"
+      
       $thetvdb.episodes[show]['episodes'][season].keys.each do |episode|
         first_aired = $thetvdb.episodes[show]['episodes'][season][episode]['first_aired']
         show_index  = show_index(season, episode)
-        plex_has    = false
-        missing     = true
-
         plex_has    = thetvdb_missing_plex_found(episodes_plex,show,season,episode)
         missing     = thetvdb_missing_range(season, season_first, episode, episode_first)
-
         missing     = false if plex_has
                 
         if first_aired =~ /\w/
