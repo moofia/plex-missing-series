@@ -101,7 +101,7 @@ class PlexDb
   end
   
   # get all the episodes
-  def episodes_get_all
+  def episodes_get
   log_debug
 
   # build syntax if we looking for a specific show

@@ -104,8 +104,8 @@ def thetvdb_missing_last_process(show)
   end
 end
 
-# use the thetvdb
-def process  
+# get the missing episodes based on thetvdb
+def get  
   log_debug
   $plex.episodes.keys.each do |show|
     thetvdb_missing_last_process(show)

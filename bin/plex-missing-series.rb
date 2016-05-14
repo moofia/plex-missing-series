@@ -28,11 +28,11 @@ parse_config
 
 $plex = PlexDb.new
 $plex.show = $opts['show']
-$plex.episodes_get_all
+$plex.episodes_get
 
 if $opts['thetvdb']
   $thetvdb = TheTvDb.new
-  $thetvdb.missing.process
+  $thetvdb.missing.get
   
   if $opts['html']
     html_create
