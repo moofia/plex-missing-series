@@ -117,16 +117,16 @@ class TheTvDb
   
   # extracts info about the show from XML using the
   # episodes XML
-  def thetvdb_show_info(doc,episodes,show)
+  def thetvdb_show_info(doc, show)
     doc.find('//Data/Series').each do |item| 
-      episodes[show]['genre']    = item.find('Genre')[0].child.to_s
-      episodes[show]['imdb_id']  = item.find('IMDB_ID')[0].child.to_s
-      episodes[show]['overview'] = item.find('Overview')[0].child.to_s
-      episodes[show]['status']   = item.find('Status')[0].child.to_s
-      episodes[show]['banner']   = item.find('banner')[0].child.to_s
-      episodes[show]['poster']   = item.find('poster')[0].child.to_s
-      episodes[show]['fanart']   = item.find('fanart')[0].child.to_s
-      episodes[show]['id']       = item.find('id')[0].child.to_s
+      @episodes[show]['genre']    = item.find('Genre')[0].child.to_s
+      @episodes[show]['imdb_id']  = item.find('IMDB_ID')[0].child.to_s
+      @episodes[show]['overview'] = item.find('Overview')[0].child.to_s
+      @episodes[show]['status']   = item.find('Status')[0].child.to_s
+      @episodes[show]['banner']   = item.find('banner')[0].child.to_s
+      @episodes[show]['poster']   = item.find('poster')[0].child.to_s
+      @episodes[show]['fanart']   = item.find('fanart')[0].child.to_s
+      @episodes[show]['id']       = item.find('id')[0].child.to_s
    end
     
    episodes[show]['genre'].gsub!(/^\|/,'')
@@ -134,18 +134,18 @@ class TheTvDb
    episodes[show]['genre'].gsub!(/\|/,' | ')
   end
   
-  def thetvdb_episode_info(doc, episodes,show)
+  def thetvdb_episode_info(doc, show)
     doc.find('//Data/Episode').each do |item| 
      season       = item.find('SeasonNumber')[0].child.to_s
      episode      = item.find('EpisodeNumber')[0].child.to_s
      name         = item.find('EpisodeName')[0].child.to_s
      first_aired  = item.find('FirstAired')[0].child.to_s
-     episodes[show]['episodes'] = Hash.new unless episodes[show]['episodes'].class == Hash
-     episodes[show]['episodes'][season] = Hash.new unless episodes[show]['episodes'][season].class == Hash
-     episodes[show]['episodes'][season][episode] = Hash.new unless episodes[show]['episodes'][season][episode].class == Hash
-     episodes[show]['episodes'][season][episode]['name'] = name
-     episodes[show]['episodes'][season][episode]['first_aired'] = first_aired
-     episodes[show]['episodes'][season][episode]['overview']    = item.find('Overview')[0].child.to_s
+     @episodes[show]['episodes'] = Hash.new unless @episodes[show]['episodes'].class == Hash
+     @episodes[show]['episodes'][season] = Hash.new unless @episodes[show]['episodes'][season].class == Hash
+     @episodes[show]['episodes'][season][episode] = Hash.new unless @episodes[show]['episodes'][season][episode].class == Hash
+     @episodes[show]['episodes'][season][episode]['name'] = name
+     @episodes[show]['episodes'][season][episode]['first_aired'] = first_aired
+     @episodes[show]['episodes'][season][episode]['overview']    = item.find('Overview')[0].child.to_s
     end
   end
   
@@ -153,7 +153,6 @@ class TheTvDb
   # the time stamps to know when to fetch new data.
   def thetvdb_get_show_episodes(show_id,show)
     log_debug
-    episodes = {}
     $config["tvdb-refresh"] = true;
     
     thetvdb_check_cache  
@@ -161,24 +160,21 @@ class TheTvDb
     url = $config["thetvdb"]["mirror"] + '/api/' + $config["thetvdb"]["api_key"] + '/series/' + show_id + '/all/en.xml'  
     doc = thetvdb_get_xml(show, url, show_id)
   
-    episodes[show] = Hash.new unless episodes[show].class == Hash
+    @episodes[show] = Hash.new unless @episodes[show].class == Hash
   
-    thetvdb_show_info(doc,episodes, show)
-    thetvdb_episode_info(doc, episodes,show)
+    thetvdb_show_info(doc, show)
+    thetvdb_episode_info(doc, show)
     
-    episodes
   end
   
   # returns a hash of episodes
   def thetvdb_get(show)
     log_debug
-    episodes_new = {}
     show_id  = thetvdb_get_show_id(show)
 
     if show_id
       log_debug "thetvdb show : #{show} : show_id : #{show_id}"
-      episodes_new = thetvdb_get_show_episodes(show_id,show) 
-      @episodes.merge!(episodes_new)
+      thetvdb_get_show_episodes(show_id,show) 
     end
     
   end

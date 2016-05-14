@@ -41,6 +41,7 @@ class PlexDb
     end
   end
   
+  # find the correct db file
   def find_db
     log_debug
     file_name = 'com.plexapp.plugins.library.db'
@@ -73,12 +74,13 @@ class PlexDb
   end
   
   # keeps track of what episodes we have
-  def episodes_track ( episodes, show, season, episode, name)
-    episodes[show]                 = {} if episodes[show].class.to_s != 'Hash'
-    episodes[show][season]         = {} if episodes[show][season].class.to_s != 'Hash'
-    episodes[show][season][episode] = name
+  def episodes_track ( show, season, episode, name)
+    @episodes[show]                 = {} if @episodes[show].class.to_s != 'Hash'
+    @episodes[show][season]         = {} if @episodes[show][season].class.to_s != 'Hash'
+    @episodes[show][season][episode] = name
   end
   
+  # sqlite wrapper
   def sql_select(sql)
     rows = []
     begin
@@ -116,7 +118,7 @@ class PlexDb
         episode = row_episodes[0]
         name    = row_episodes[1]
       
-        episodes_track @episodes, show, season, episode, name
+        episodes_track show, season, episode, name
         found_debug show, season, episode, name 
       
         end
