@@ -1,11 +1,11 @@
 # all work related to finding the last episode from thetvdb
 
 # plex last episode of a show
-def thetvdb_missing_plex_last_ep(episodes_plex,show)
+def thetvdb_missing_plex_last_ep(show)
   log_debug
   last_ep = '0;0'
-  episodes_plex[show].keys.each do |season|
-    episodes_plex[show][season].keys.each do |episode|
+  $plex.episodes[show].keys.each do |season|
+    $plex.episodes[show][season].keys.each do |episode|
       last_ep = "#{season};#{episode}"
     end
   end
@@ -14,12 +14,12 @@ def thetvdb_missing_plex_last_ep(episodes_plex,show)
 end
 
 # plex first episode of a show
-def thetvdb_missing_plex_first_ep(episodes_plex,show)
+def thetvdb_missing_plex_first_ep(show)
   log_debug
   first_ep = '0;0'
   
-  episodes_plex[show].keys.each do |season|
-    episodes_plex[show][season].keys.each do |episode|
+  $plex.episodes[show].keys.each do |season|
+    $plex.episodes[show][season].keys.each do |episode|
       if first_ep == '0;0'        
         first_ep = "#{season};#{episode}"
       end
@@ -30,13 +30,13 @@ def thetvdb_missing_plex_first_ep(episodes_plex,show)
 end
 
 # remove episodes that are found in plex
-def thetvdb_missing_plex_found(episodes_plex, show,season,episode)
+def thetvdb_missing_plex_found(show,season,episode)
   plex_has = false
   
   # remove shows that we have
-  if episodes_plex.has_key? show 
-    if episodes_plex[show].has_key?(season.to_i)
-      if episodes_plex[show][season.to_i].has_key?(episode.to_i)
+  if $plex.episodes.has_key? show 
+    if $plex.episodes[show].has_key?(season.to_i)
+      if $plex.episodes[show][season.to_i].has_key?(episode.to_i)
         plex_has = true              
       end
     end
@@ -67,13 +67,13 @@ end
 # remove those that exists in plex
 # ignore specials for now
 # TODO: terrible method name
-def thetvdb_missing_last_process(episodes_plex,episodes_missing,show)
+def thetvdb_missing_last_process(episodes_missing,show)
   log_debug
   
   $thetvdb.thetvdb_get(show)
 
-  season_last,  episode_last  = thetvdb_missing_plex_last_ep(episodes_plex,show)
-  season_first, episode_first = thetvdb_missing_plex_first_ep(episodes_plex,show)
+  season_last,  episode_last  = thetvdb_missing_plex_last_ep(show)
+  season_first, episode_first = thetvdb_missing_plex_first_ep(show)
   log_debug("#{show} start s#{season_first}e#{episode_first} : last s#{season_last}e#{episode_last}")
 
   if $thetvdb.episodes.has_key?(show)
@@ -83,7 +83,7 @@ def thetvdb_missing_last_process(episodes_plex,episodes_missing,show)
       $thetvdb.episodes[show]['episodes'][season].keys.each do |episode|
         first_aired = $thetvdb.episodes[show]['episodes'][season][episode]['first_aired']
         show_index  = show_index(season, episode)
-        plex_has    = thetvdb_missing_plex_found(episodes_plex,show,season,episode)
+        plex_has    = thetvdb_missing_plex_found(show,season,episode)
         missing     = thetvdb_missing_range(season, season_first, episode, episode_first)
         missing     = false if plex_has
                 
@@ -100,9 +100,9 @@ def thetvdb_missing_last_process(episodes_plex,episodes_missing,show)
 end
 
 # use the thetvdb
-def thetvdb_missing(episodes_plex,episodes_missing)  
+def thetvdb_missing(episodes_missing)  
   log_debug
-  episodes_plex.keys.each do |show|
-    thetvdb_missing_last_process(episodes_plex,episodes_missing,show)
+  $plex.episodes.keys.each do |show|
+    thetvdb_missing_last_process(episodes_missing,show)
   end
 end
