@@ -1,10 +1,10 @@
 # missing episodes
 
 # keeps track of what episodes we have
-def missing_episodes_track ( episodes_missing, show, season, episode,extra=nil)
-  episodes_missing[show]                  = {} if episodes_missing[show].class.to_s != 'Hash'
-  episodes_missing[show][season]          = {} if episodes_missing[show][season].class.to_s != 'Hash'
-  episodes_missing[show][season][episode] = 'missing do something'
+def missing_episodes_track ( show, season, episode,extra=nil)
+  $plex.episodes_missing[show]                  = {} if $plex.episodes_missing[show].class.to_s != 'Hash'
+  $plex.episodes_missing[show][season]          = {} if $plex.episodes_missing[show][season].class.to_s != 'Hash'
+  $plex.episodes_missing[show][season][episode] = 'missing do something'
 end
 
 def missing_url(show,pair)
@@ -33,11 +33,11 @@ def missing_display (show, pair,extra=nil)
   end
 end
 
-def missing_process (episodes_missing, show,  pair,extra=nil)
+def missing_process (show, pair,extra=nil)
   extra ||= '' # there are times when we need to display extra information
   if $opts['html']
     season, episode = show_unindex(pair)
-    missing_episodes_track episodes_missing, show, season, episode, extra      
+    missing_episodes_track show, season, episode, extra      
   else 
     missing_display show, pair, extra
   end
@@ -45,7 +45,7 @@ end
 
 # check if we have the previous episode
 # TODO: name of method is dubious
-def missing_episode_check_previous ( episodes_missing, show, season, episode)
+def missing_episode_check_previous ( show, season, episode)
 
   missing = {}
 
@@ -62,17 +62,17 @@ def missing_episode_check_previous ( episodes_missing, show, season, episode)
     if not missing[1]
       show = missing[i].split(';')[0] 
       pair = missing[i].split(';')[1]
-      missing_process episodes_missing, show , pair
+      missing_process show , pair
     end
   end
 
 end
 
-def missing(episodes_missing)
+def missing
   $plex.episodes.keys.each do |show|
     $plex.episodes[show].keys.each do |season|
       $plex.episodes[show][season].keys.each do |episode|
-        missing_episode_check_previous episodes_missing, show, season, episode
+        missing_episode_check_previous show, season, episode
       end
     end
   end

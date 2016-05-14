@@ -1,10 +1,12 @@
 # All Plex related things go here
 
 class PlexDb
-  attr_accessor :episodes
+  attr_reader :episodes
+  attr_accessor :show, :episodes_missing
   
   def initialize
-    @episodes = {}
+    @episodes         = {}
+    @episodes_missing = {}
     db_setup
   end
   
@@ -91,9 +93,9 @@ class PlexDb
 
   # build syntax if we looking for a specific show
   show_wanted = ''
-  
-  if $opts['show']
-    show_wanted = "and title = '#{$opts['show']}'"
+    
+  if self.show
+    show_wanted = "and title = '#{self.show}'"
   end
   
   sql_shows   = "select id,title from metadata_items where metadata_type=2 and library_section_id in (select id from library_sections where section_type = 2) #{show_wanted} order by title"  

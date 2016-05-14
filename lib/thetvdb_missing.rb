@@ -67,7 +67,7 @@ end
 # remove those that exists in plex
 # ignore specials for now
 # TODO: terrible method name
-def thetvdb_missing_last_process(episodes_missing,show)
+def thetvdb_missing_last_process(show)
   log_debug
   
   $thetvdb.thetvdb_get(show)
@@ -91,7 +91,7 @@ def thetvdb_missing_last_process(episodes_missing,show)
           date_available = Date.today
           date_aired     = Date.parse first_aired
           if ( date_available > (date_aired + 1) ) and missing
-            missing_process episodes_missing, show, show_index,"aired: #{first_aired}"
+            missing_process show, show_index,"aired: #{first_aired}"
           end
         end
       end
@@ -100,9 +100,9 @@ def thetvdb_missing_last_process(episodes_missing,show)
 end
 
 # use the thetvdb
-def thetvdb_missing(episodes_missing)  
+def thetvdb_missing  
   log_debug
   $plex.episodes.keys.each do |show|
-    thetvdb_missing_last_process(episodes_missing,show)
+    thetvdb_missing_last_process(show)
   end
 end

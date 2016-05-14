@@ -32,18 +32,20 @@ get_opts
 parse_config
 
 $plex = PlexDb.new
+$plex.show = $opts['show']
 $plex.episodes_get_all
 
 episodes_missing = {}
 
 if $opts['thetvdb']
   $thetvdb = MoofiaTheTvDb.new
-  thetvdb_missing episodes_missing
+  thetvdb_missing
   
   if $opts['html']
-    html_create episodes_missing
+    html_create
   end
+  
 else 
-  missing episodes_missing
+  missing
 end
 

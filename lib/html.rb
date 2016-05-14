@@ -162,10 +162,10 @@ def html_table_row(show, season, episode, kat, bay)
 end
 
 # takes a Hash of HASH[SHOW][SEASON][EPISODE]
-def html_table_content(episodes_missing)
-  episodes_missing.keys.each do |show|
-    episodes_missing[show].keys.each do |season|
-      episodes_missing[show][season].keys.each do |episode|
+def html_table_content
+  $plex.episodes_missing.keys.each do |show|
+    $plex.episodes_missing[show].keys.each do |season|
+      $plex.episodes_missing[show][season].keys.each do |episode|
         pair = show_index season, episode
         data = URI.escape(show + ' ' + pair)
         kat  = "https://kat.cr/usearch/#{data}%20category%3Atv/?field=seeders&sorder=desc"
@@ -176,10 +176,10 @@ def html_table_content(episodes_missing)
   end
 end
 
-def html_create(episodes_missing)
+def html_create
   html_header
   html_table_start
-  html_table_content episodes_missing  
+  html_table_content  
   html_table_end
   html_footer
 end
