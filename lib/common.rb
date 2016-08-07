@@ -53,7 +53,6 @@ def get_opts
       ["--urls",          Getopt::BOOLEAN],
       ["--urls_only",     Getopt::BOOLEAN],
       ["--urls_only_osx", Getopt::BOOLEAN],
-      ["--kat",           Getopt::BOOLEAN],
       ["--cache",         Getopt::BOOLEAN],
       ["--html",          Getopt::BOOLEAN],
       )
