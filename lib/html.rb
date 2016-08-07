@@ -142,7 +142,7 @@ def html_table_end
   puts html
 end
 
-def html_table_row(show, season, episode, eztv, bay)
+def html_table_row(show, season, episode, eztv, bay, rarbg)
   
   url_imdb = 'http://www.imdb.com/title/' + $thetvdb.episodes[show]['imdb_id']
   url_thetvdb = 'http://thetvdb.com/?tab=series&id=' + $thetvdb.episodes[show]['id']
@@ -155,7 +155,10 @@ def html_table_row(show, season, episode, eztv, bay)
 		<td class="col-md-1">#{$thetvdb.episodes[show]['episodes'][season][episode]['first_aired']}</td>
 		<td class="col-md-1">#{$thetvdb.episodes[show]['status']}</td>
 		<td class="col-md-2">#{$thetvdb.episodes[show]['genre']}</td>
-		<td class="col-md-2"><a target=\"blank\" href=\"#{url_thetvdb}\">TheTVDB</a> | <a target=\"blank\" href=\"#{url_imdb}\">IMDb</a> | <a target=\"blank\" href=\"#{eztv}\">eztv</a> | <a target=\"blank\" href=\"#{bay}\">bay</a></td>
+		<td class="col-md-2"><a target=\"blank\" href=\"#{url_thetvdb}\">TheTVDB</a> | <a target=\"blank\" href=\"#{url_imdb}\">IMDb</a> 
+      | <a target=\"blank\" href=\"#{rarbg}\">rarbg</a> 
+      | <a target=\"blank\" href=\"#{eztv}\">eztv</a> 
+      | <a target=\"blank\" href=\"#{bay}\">bay</a></td>
 	</tr>
   HTML
   puts html
@@ -168,9 +171,10 @@ def html_table_content
       $plex.episodes_missing[show][season].keys.each do |episode|
         pair = show_index season, episode
         data = URI.escape(show + ' ' + pair)
-        eztv  = "https://eztv.ag/search/#{data}"
-        bay  = "http://thepiratebay.se/search/#{data}/0/7/200"
-        html_table_row(show, season,episode, eztv, bay)
+        eztv   = "https://eztv.ag/search/#{data}"
+        rarbg  = "https://rarbg.to/torrents.php?category=18;41&search=#{data}&order=seeders&by=DESC"
+        bay    = "http://thepiratebay.se/search/#{data}/0/7/200"
+        html_table_row(show, season,episode, eztv, bay, rarbg)
       end
     end
   end
