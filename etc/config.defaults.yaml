@@ -15,3 +15,8 @@ thetvdb:
 
 missing:
   start_at_first_found: false # enable when you want to start at the first found episode of a season and not 01
+  
+sonarr:
+  enable: false
+  api_key: ABC
+  api_url: http://localhost:8989/api

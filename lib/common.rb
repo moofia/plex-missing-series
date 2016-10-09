@@ -17,6 +17,16 @@ def log_debug(msg=nil)
   end
 end
 
+def log_error(msg=nil)
+    
+  label  = caller_locations(1,1)[0].label
+  lineno = caller_locations(1,1)[0].lineno
+  path   = File.basename caller_locations(1,1)[0].path
+  
+  log "ERROR: [#{path}:#{lineno} #{label}] #{msg}"
+    
+end
+
 def parse_config
   log_debug
   $config = {}
@@ -55,6 +65,7 @@ def get_opts
       ["--urls_only_osx", Getopt::BOOLEAN],
       ["--cache",         Getopt::BOOLEAN],
       ["--html",          Getopt::BOOLEAN],
+      ["--sonarr-sync",   Getopt::BOOLEAN],
       )
   rescue Getopt::Long::Error => e
     puts "#{File.basename $0}} -> error #{e.message}"  
@@ -81,6 +92,8 @@ def help
   --thetvdb         use TheTVDB for missing episodes.
   --cache           mostly used in debugging, uses cache only data
   --html            saves all output in an html file [currently a single file]
+  
+  --sonarr-sync     sync shows from Plex to Sonarr
   
   
 EOF

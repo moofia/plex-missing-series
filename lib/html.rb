@@ -142,7 +142,7 @@ def html_table_end
   puts html
 end
 
-def html_table_row(show, season, episode, eztv, bay, rarbg)
+def html_table_row(show, season, episode, eztv, bay, rarbg, nzbplanet)
   
   url_imdb = 'http://www.imdb.com/title/' + $thetvdb.episodes[show]['imdb_id']
   url_thetvdb = 'http://thetvdb.com/?tab=series&id=' + $thetvdb.episodes[show]['id']
@@ -158,7 +158,9 @@ def html_table_row(show, season, episode, eztv, bay, rarbg)
 		<td class="col-md-2"><a target=\"blank\" href=\"#{url_thetvdb}\">TheTVDB</a> | <a target=\"blank\" href=\"#{url_imdb}\">IMDb</a> 
       | <a target=\"blank\" href=\"#{rarbg}\">rarbg</a> 
       | <a target=\"blank\" href=\"#{eztv}\">eztv</a> 
-      | <a target=\"blank\" href=\"#{bay}\">bay</a></td>
+      | <a target=\"blank\" href=\"#{bay}\">bay</a>
+      | <a target=\"blank\" href=\"#{nzbplanet}\">nzbplanet</a>
+    </td>
 	</tr>
   HTML
   puts html
@@ -174,7 +176,8 @@ def html_table_content
         eztv   = "https://eztv.ag/search/#{data}"
         rarbg  = "https://rarbg.to/torrents.php?category=18;41&search=#{data}&order=seeders&by=DESC"
         bay    = "http://thepiratebay.se/search/#{data}/0/7/200"
-        html_table_row(show, season,episode, eztv, bay, rarbg)
+        nzbplanet = "http://nzbplanet.net/search/#{data}"
+        html_table_row(show, season,episode, eztv, bay, rarbg, nzbplanet)
       end
     end
   end
