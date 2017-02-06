@@ -1,14 +1,3 @@
-# anything related to directly connecting to thetvdb
-
-# http://www.thetvdb.com/
-# http://www.thetvdb.com/wiki/index.php/Programmers_API
-
-# TODO: needs massive refactoring!
-
-# moo = MoofiaTheTvDb.new
-# moo.thetvdb_get("Bones")
-# moo.thetvdb_get("Awkward.")
-# puts moo.episodes.class
 
 $LOAD_PATH << File.join(File.dirname(__FILE__))
 require 'http'
